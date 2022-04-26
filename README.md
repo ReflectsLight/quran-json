@@ -1,9 +1,9 @@
 # The Qur'an
 
 This repository contains the holy book, The Qur'an, in both
-English and its original Arabic, and described in the JSON format.
-The repository hopes to help those working with The Qur'an in the
-context of developing software, or websites.
+English and its original Arabic - described in the JSON format.
+It is hoped that through this repository - those working with The Qur'an
+in the context of software, or websites - will find a resource that's helpful to their work.
 
 ## Layout
 
@@ -42,10 +42,10 @@ For example:
 
 * [src/english/](src/english)
 
-The English translation follows the same structure as the Arabic content,
-with each JSON file representing a chapter, or surah. Like the Arabic
-JSON files, the data is stored in an array of arrays. For example, consider
-Al-Fatihah - [src/english/1.json](src/english/1.json):
+Each JSON file represents a chapter, or surah - as an English translation.
+The structure of the file can be described as an array of arrays,
+with each array representing a verse, or ayah. For example, consider
+the English translation of Al-Fatihah ([src/english/1.json](src/english/1.json)):
 
 ```
 [
@@ -101,7 +101,7 @@ The script dependencies can be installed by  running
 
 ## Credit, and thanks
 
-The content of this repository was automatically generated
+The content of the [src/](src/) directory was automatically generated
 thanks to the following websites:
 
   * https://sacred-texts.com - for the original Arabic.
