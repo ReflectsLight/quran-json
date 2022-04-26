@@ -99,6 +99,12 @@ The script dependencies can be installed by  running
  `gem install -g gem.deps.rb` from the root of the
  repository.
 
+
+## Download
+
+For those of you who don't have access to, or know how to use "git",
+a zip file of the repository is provided for download: [download zip file](https://github.com/0x1eef/The-Qur-an/archive/refs/tags/v0.1.0.zip).
+
 ## Credit, and thanks
 
 The content of the [src/](src/) directory was automatically generated
