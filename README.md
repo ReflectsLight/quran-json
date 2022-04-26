@@ -7,9 +7,14 @@ context of developing software, or websites.
 
 ## Layout
 
-### Arabic
+### The `src/` directory
 
-* [`src/arabic/*.json`](src/arabic/)
+The [src/arabic/](src/arabic/) directory contains The Qur'an in its original Arabic. <br>
+The [src/english/](src/english/) directory contains an English translation of The Qur'an.
+
+#### Arabic
+
+* [src/arabic/](src/arabic/)
 
 Each JSON file represents a chapter, or surah - in its original Arabic.
 For example, [src/arabic/1.json](src/arabic/1.json) contains Al-Fatihah. The structure of the file can be described as an array of arrays, with each array representing a verse, or ayah.
@@ -33,9 +38,9 @@ For example:
 ]
 ```
 
-### English
+#### English
 
-* [`src/english/*.json`](src/english)
+* [src/english/](src/english)
 
 The English translation follows the same structure as the Arabic content,
 with each JSON file representing a chapter, or surah. Like the Arabic
@@ -75,9 +80,29 @@ Al-Fatihah - [src/english/1.json](src/english/1.json):
 ]
 ```
 
-## Credit
+## The `bin/` directory
 
-The contents of this repository was built thanks to:
+The [bin/](bin/) directory contains two scripts that generate the
+contents of the [src/](src/) directory:
 
-* https://www.sacred-texts.com - for the original Arabic.
-* https://quran.com - for the English translation.
+  * [bin/pull-arabic](bin/pull-arabic) <br>
+    This script is responsible for populating [src/arabic/](src/arabic/).
+
+  * [bin/pull-english](bin/pull-english) <br>
+    This script is responsible for populating [src/english/](src/english/).
+
+**Notes**
+
+The scripts are written in [Ruby v3.1.0+](https://www.ruby-lang.org). <br>
+The ["pull-english"](bin/pull-english) script depends on the ["pull-arabic"](bin/pull-arabic) script being run first. <br>
+The script dependencies can be installed by  running
+ `gem install -g gem.deps.rb` from the root of the
+ repository.
+
+## Credit, and thanks
+
+The content of this repository was automatically generated
+thanks to the following websites:
+
+  * https://sacred-texts.com - for the original Arabic.
+  * https://quran.com - for the English translation.
