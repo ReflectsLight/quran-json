@@ -1,5 +1,15 @@
 #!/usr/bin/env ruby
 
+##
+# This script requests each verse, in each chapter
+# of The Qur'an - in the English language. The content
+# is requested from the https://quran.com website.
+#
+# Each chapter is then saved in a JSON file, for example:
+# "src/english/<chapter_num>.json"
+
+##
+# Dependencies
 require "net/http"
 require "nokogiri"
 require "json"
