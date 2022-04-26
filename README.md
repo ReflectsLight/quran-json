@@ -80,4 +80,4 @@ Al-Fatihah - [src/english/1.json](src/english/1.json):
 The contents of this repository was built thanks to:
 
 * https://www.sacred-texts.com - for the original Arabic.
-* https://quran.com - for the English transaction.
+* https://quran.com - for the English translation.
