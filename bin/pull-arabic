@@ -7,16 +7,16 @@ require "paint"
 
 ##
 # Configuration variables.
-base_uri      = "www.sacred-texts.com"
-path          = "/isl/uq/%{htm_file}"
-dest_path     = File.join(__dir__, "..", "src", "arabic", "%{chapter_num}.json")
+base_uri = "www.sacred-texts.com"
+path = "/isl/uq/%{htm_file}"
+dest_path = File.join(__dir__, "..", "src", "arabic", "%{chapter_num}.json")
 chapter_count = 114
-cool_off      = 5
+cool_off = 5
 
 ##
 # Share a single Net::HTTP instance.
-http          = Net::HTTP.new(base_uri, 443)
-http.use_ssl  = true
+http = Net::HTTP.new(base_uri, 443)
+http.use_ssl = true
 
 ##
 # Helper method.
@@ -35,22 +35,22 @@ end
 def get_request(path, htm_file)
   Net::HTTP::Get.new(
     format(path, htm_file: htm_file),
-    'Accept' => 'text/html'
+    "Accept" => "text/html"
   )
 end
 
 ##
 # Helper method.
 def extract_verses!(res, rows)
-  doc    = Nokogiri::HTML(res.body)
-  verses = doc.css('table tr td p[align=RIGHT]')
+  doc = Nokogiri::HTML(res.body)
+  verses = doc.css("table tr td p[align=RIGHT]")
 
   verses.each do |verse|
-    verse_num = Integer(verse.css('a').inner_text)
+    verse_num = Integer(verse.css("a").inner_text)
     verse_txt = verse.text.delete(verse_num.to_s)
     rows.push([
       verse_num,
-      verse_txt.gsub("\u200F", "").gsub("\u200E", "").strip
+      verse_txt.delete("\u200F").delete("\u200E").strip
     ])
   end
 end
@@ -58,7 +58,7 @@ end
 ##
 # main()
 1.upto(chapter_count) do |chapter_num|
-  htm_file   = get_htm_file(chapter_num)
+  htm_file = get_htm_file(chapter_num)
   final_dest = format(dest_path, chapter_num:)
   rows = []
 
@@ -74,5 +74,3 @@ end
   print Paint["Chill for #{cool_off} seconds", :blue, :bold], "\n", "\n"
   sleep cool_off
 end
-
-
