@@ -1,0 +1,78 @@
+#!/usr/bin/env ruby
+
+require "net/http"
+require "nokogiri"
+require "json"
+require "paint"
+
+##
+# Configuration variables.
+base_uri      = "www.sacred-texts.com"
+path          = "/isl/uq/%{htm_file}"
+dest_path     = File.join(__dir__, "..", "src", "arabic", "%{chapter_num}.json")
+chapter_count = 114
+cool_off      = 5
+
+##
+# Share a single Net::HTTP instance.
+http          = Net::HTTP.new(base_uri, 443)
+http.use_ssl  = true
+
+##
+# Helper method.
+def get_htm_file(chapter_num)
+  if chapter_num < 10
+    "00#{chapter_num}.htm"
+  elsif chapter_num < 100
+    "0#{chapter_num}.htm"
+  else
+    "#{chapter_num}.htm"
+  end
+end
+
+##
+# Helper method.
+def get_request(path, htm_file)
+  Net::HTTP::Get.new(
+    format(path, htm_file: htm_file),
+    'Accept' => 'text/html'
+  )
+end
+
+##
+# Helper method.
+def extract_verses!(res, rows)
+  doc    = Nokogiri::HTML(res.body)
+  verses = doc.css('table tr td p[align=RIGHT]')
+
+  verses.each do |verse|
+    verse_num = Integer(verse.css('a').inner_text)
+    verse_txt = verse.text.delete(verse_num.to_s)
+    rows.push([
+      verse_num,
+      verse_txt.gsub("\u200F", "").gsub("\u200E", "").strip
+    ])
+  end
+end
+
+##
+# main()
+1.upto(chapter_count) do |chapter_num|
+  htm_file   = get_htm_file(chapter_num)
+  final_dest = format(dest_path, chapter_num:)
+  rows = []
+
+  print "Fetch: ", chapter_num, "\n"
+  case res = http.request(get_request(path, htm_file))
+  when Net::HTTPOK
+    extract_verses!(res, rows)
+    File.write(final_dest, JSON.pretty_generate(rows))
+    print Paint["OK: ", :green, :bold], final_dest, "\n"
+  else
+    print Paint["ERROR (#{res.class}): ", :red, :bold], final_dest, "\n"
+  end
+  print Paint["Chill for #{cool_off} seconds", :blue, :bold], "\n", "\n"
+  sleep cool_off
+end
+
+

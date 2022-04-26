@@ -1,0 +1,56 @@
+#!/usr/bin/env ruby
+
+require "net/http"
+require "nokogiri"
+require "json"
+require "paint"
+
+##
+# Configuration variables.
+base_uri      = "quran.com"
+path          = "/%{chapter_num}/%{verse_num}"
+dest_path     = File.join(__dir__, "..", "src", "english", "%{chapter_num}.json")
+arab_path     = File.join(__dir__, "..", "src", "arabic", "%{chapter_num}.json")
+chapter_count = 114
+cool_off      = 5
+
+##
+# Share a single Net::HTTP instance.
+http          = Net::HTTP.new(base_uri, 443)
+http.use_ssl  = true
+
+##
+# Helper method.
+def get_request(path, chapter_num, verse_num)
+  Net::HTTP::Get.new(
+    format(path, chapter_num:, verse_num:),
+    'Accept' => 'text/html'
+  )
+end
+
+##
+# main()
+1.upto(chapter_count) do |chapter_num|
+  final_dest = format(dest_path, chapter_num:)
+  rows = []
+
+  verses = JSON.parse File.read(format(arab_path, chapter_num:))
+  verses.each do |verse_num, _|
+    case res = http.request(get_request(path, chapter_num, verse_num))
+    when Net::HTTPOK
+      doc  = Nokogiri::HTML(res.body)
+      el   = doc.css("div[class^='TranslationText']").last
+      text = el.text.gsub(/[0-9]/, '')
+      rows.push([verse_num, text])
+      print Paint["OK: ", :green, :bold], text, "\n"
+    else
+      print Paint["ERROR (#{res.class}): ", :red, :bold], final_dest, "\n"
+    end
+    print Paint["Chill for #{cool_off} seconds", :blue, :bold], "\n", "\n"
+    sleep cool_off
+  end
+  File.write(final_dest, JSON.pretty_generate(rows))
+  print Paint["OK: ", :green, :bold], final_dest, "\n"
+end
+
+
