@@ -1,9 +1,10 @@
 # The Qur'an
 
 This repository contains the holy book, The Qur'an, in both
-English and its original Arabic - described in the JSON format.
-It is hoped that through this repository - those working with The Qur'an
-in the context of software, or websites - will find a resource that's helpful to their work.
+English and its original Arabic - stored in the JSON format.
+It is hoped that through this repository those working with The Qur'an
+in the context of software will find a resource that's helpful to
+their work.
 
 ## Layout
 
