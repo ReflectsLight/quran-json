@@ -228,34 +228,10 @@ pragma FOREIGN_KEYS = on;
 
 ```
 
-**2. Execute `src/sql/schema.sql`**
+**2. Import / save the database to disk**
 
-Start SQLite3 from the command line, and then execute `.read src/sql/schema.sql`:
-
-```
-$ sqlite3
-SQLite version 3.39.0 2022-06-25 14:57:57
-Enter ".help" for usage hints.
-Connected to a transient in-memory database.
-Use ".open FILENAME" to reopen on a persistent database.
-sqlite> .read src/sql/schema.sql
-sqlite>
-```
-
-**3. Execute `src/sql/seed.sql`**
-
-Within the same sqlite session, execute `.read src/sql/seed.sql`:
-
-```
-sqlite> .read src/sql/seed.sql
-sqlite>
-```
-
-**4. Save the database to disk**
-
-The `.save` command can be used to save the database to disk permanently -
-after steps 2 and 3 have been completed. This will help avoid having to repeat
-the import process in the future. For example:
+The `.save` command can be used to save the database to disk permanently.
+This helps avoid continually importing the database into memory - which is done by steps 1 and 2 in this example:
 
 ```
 sqlite> .read src/sql/schema.sql
