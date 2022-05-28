@@ -287,9 +287,9 @@ locale (i.e: `en`):
 
 ```sql
 SELECT qurans.locale,
-       chapters.tr_name   AS "chapter (name)",
-       chapters.number AS chapter,
-       verses.number   AS verse,
+       chapters.tr_name  AS "chapter (name)",
+       chapters.number   AS chapter,
+       verses.number     AS verse,
        verses.content
 FROM   verses
        INNER JOIN qurans
@@ -336,12 +336,13 @@ The output should look like this:
 
 ```
 locale  chapter (name)  chapter  verse  content
-------  --------------  -------  -----  ------------------------------------------------------------
-en      Jonah           10       5      He is the One Who made the sun a radiant source and the moon
-                                        a reflected light, with precisely ordained phases, so that
-                                        you may know the number of years and calculation ˹of time˺.
-                                        Allah did not create all this except for a purpose. He makes
-                                        the signs clear for people of knowledge.
+------  --------------  -------  -----  ----------------------------------------------------
+en      Jonah           10       5      He is the One Who made the sun a radiant source and
+                                        the moon a reflected light, with precisely ordained
+                                        phases, so that you may know the number of years and
+                                        calculation ˹of time˺. Allah did not create all this
+                                        except for a purpose. He makes the signs clear for
+                                        people of knowledge.
 ```
 
 
