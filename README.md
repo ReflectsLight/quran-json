@@ -113,3 +113,9 @@ thanks to the following websites:
 
   * https://sacred-texts.com - for the original Arabic.
   * https://quran.com - for the English translation.
+
+## License
+
+This software is released under the Public Domain. That means
+this software may be used without any restrictions whatsoever.
+Credit is appreciated, but not neccessary.
