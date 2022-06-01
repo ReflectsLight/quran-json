@@ -1,7 +1,7 @@
 <% languages.each.with_index(1) do |language, quran_id| %>
   INSERT INTO qurans (locale) VALUES(<%= SQLUtils.escape(language.locale) %>);
   <% language.chapters.each do |chapter| %>
-    INSERT INTO chapters (id, number, quran_id) VALUES(<%= [chapter_id, chapter.number, quran_id].join(",") %>);
+    INSERT INTO chapters (id, number, name, tr_name, slug, quran_id) VALUES(<%= [chapter_id, chapter.number, chapter.name, chapter.tr_name, chapter.slug, quran_id].join(",") %>);
     <% chapter.verses.each do |verse| %>
       INSERT INTO verses (number, quran_id, chapter_id, content) VALUES(<%= [verse.number, quran_id, chapter_id, SQLUtils.escape(verse.content)].join(",") %>);
     <% end %>
