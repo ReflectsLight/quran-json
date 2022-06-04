@@ -221,9 +221,11 @@ For identical results, it is recommended that the `$HOME/.sqliterc` file has the
 contents:
 
 ```
+PRAGMA case_sensitive_like=ON;
 pragma FOREIGN_KEYS = on;
 .headers on
 .mode column
+
 ```
 
 **2. Execute `src/sql/schema.sql`**
