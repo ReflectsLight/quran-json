@@ -1,0 +1,63 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+##
+# This script requests information about the chapters of
+# The Qur'an from the website https://quran.com, and writes
+# the result to src/json/chapters-data.json.
+
+##
+# Set process name - primarily for the "ps" command
+Process.setproctitle("quran-pull (pull-chapters-data)")
+
+##
+# Dependencies
+require "bundler/setup"
+require "net/http"
+require "nokogiri"
+require "json"
+require "paint"
+
+##
+# Configuration variables.
+base_uri = "quran.com"
+dest = File.join('src', 'json', 'chapters-data.json')
+
+##
+# Share a single Net::HTTP instance.
+http = Net::HTTP.new(base_uri, 443)
+http.use_ssl = true
+
+##
+# Utils
+request_chapters = ->(path) do
+  res  = http.request_get(path)
+  json = Nokogiri.HTML(res.body)
+                 .css("script[type='application/json']")
+                 .inner_text
+  JSON.parse(json).dig('props', 'pageProps', 'chaptersData')
+end
+
+##
+# Chapter data
+en_chapters = request_chapters.call('/')
+ar_chapters = request_chapters.call('/ar')
+
+##
+# Parse chapter data
+parsed = en_chapters.map do
+  {
+    id: _1,
+    place_of_revelation: _2['revelationPlace'],
+    transliterated_name: _2['transliteratedName'],
+    translated_name: _2['translatedName'],
+    verse_count: _2['versesCount'],
+    slug: _2['slug'],
+    codepoints: ar_chapters[_1]['translatedName'].codepoints,
+  }
+end
+
+##
+# Write result
+File.write(dest, JSON.pretty_generate(parsed))
+print Paint["OK: ", :green, :bold], dest, "\n"

@@ -13,6 +13,9 @@ in English, Farsi, and Portuguese. The contents are made available in JSON, and 
 This section covers the JSON files. Click [here](#srcsql-directory) to jump to the SQL
 section.
 
+* The [src/json/chapters-data.json](src/json/chapters-data.json) file contains information
+  about each chapter in The Qur'an.
+
 * The [src/json/ar/](src/json/ar/) directory contains The Qur'an in its original Arabic.
 
 * The [src/json/en/](src/json/en/) directory contains an English translation of The Qur'an.
@@ -20,6 +23,38 @@ section.
 * The [src/json/fa/](src/json/fa/) directory contains a Farsi translation of The Qur'an.
 
 * The [src/json/pt/](src/json/pt/) directory contains a Portuguese translation of The Qur'an.
+
+#### Chapters
+
+* [src/json/chapters-data.json](/src/json/chapters-data.json)
+
+The [chapters-data.json](/src/json/chapters-data.json) file was obtained from https://quran.com,
+and modified slightly.
+
+The [chapters-data.json](/src/json/chapters-data.json) file contains information about each
+chapter in The Qur'an. It is structured as an array of objects, with each object describing
+a given chapter. The following example demonstrates how Al-Fatihah is described as an object.
+The "codepoints" property is a sequence of unicode codepoints can be mapped back to an Arabic word:
+
+```json
+  {
+    "id": "1",
+    "place_of_revelation": "makkah",
+    "transliterated_name": "Al-Fatihah",
+    "translated_name": "The Opener",
+    "verse_count": 7,
+    "slug": "al-fatihah",
+    "codepoints": [
+      1575,
+      1604,
+      1601,
+      1575,
+      1578,
+      1581,
+      1577
+    ]
+  },
+```
 
 #### Arabic
 
@@ -318,6 +353,9 @@ The [bin/](bin/) directory contains scripts that generate the
 contents of the [src/](src/) directory:
 
 * JSON scripts
+
+  * [bin/json/pull-chapters-data](bin/json/pull-chapters-data) <br>
+    The script is responsible for generating [src/json/chapters-data.json](src/json/chapters-data.json).
 
   * [bin/json/pull-arabic](bin/json/pull-arabic) <br>
     This script is responsible for populating [src/json/ar/](src/json/ar/).
