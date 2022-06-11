@@ -45,15 +45,15 @@ ar_chapters = request_chapters.call('/ar')
 
 ##
 # Parse chapter data
-parsed = en_chapters.map do
+parsed = en_chapters.map do |key, chapter|
   {
-    id: _1,
-    place_of_revelation: _2['revelationPlace'],
-    transliterated_name: _2['transliteratedName'],
-    translated_name: _2['translatedName'],
-    verse_count: _2['versesCount'],
-    slug: _2['slug'],
-    codepoints: ar_chapters[_1]['translatedName'].codepoints,
+    id: key,
+    place_of_revelation: chapter['revelationPlace'],
+    transliterated_name: chapter['transliteratedName'],
+    translated_name: chapter['translatedName'],
+    verse_count: chapter['versesCount'],
+    slug: chapter['slug'],
+    codepoints: ar_chapters[key]['translatedName'].codepoints
   }
 end
 
