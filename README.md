@@ -1,24 +1,27 @@
 # The Qur'an
 
-This repository contains the holy book, The Qur'an, in both
-English and its original Arabic - stored in the JSON format.
-It is hoped that through this repository those working with The Qur'an
-in the context of software will find a resource that's helpful to
-their work.
+This repository contains the holy book, The Qur'an, in its original Arabic and as translations
+in English, and Farsi - all of which are stored in the JSON format. It is hoped that through this
+repository those working with The Qur'an in the context of software will find a resource that's
+helpful to their work.
 
 ## Layout
 
 ### The `src/` directory
 
 The [src/arabic/](src/arabic/) directory contains The Qur'an in its original Arabic. <br>
-The [src/english/](src/english/) directory contains an English translation of The Qur'an.
+The [src/english/](src/english/) directory contains an English translation of The Qur'an. <br>
+The [src/farsi/](src/farsi/) directory contains a Farsi translation
+of The Qur'an.
 
 #### Arabic
 
 * [src/arabic/](src/arabic/)
 
 Each JSON file represents a chapter, or surah - in its original Arabic.
-For example, [src/arabic/1.json](src/arabic/1.json) contains Al-Fatihah. The structure of the file can be described as an array of arrays, with each array representing a verse, or ayah.
+For example, [src/arabic/1.json](src/arabic/1.json) contains Al-Fatihah.
+The structure of the file can be described as an array of arrays, with
+each array representing a verse, or ayah.
 For example:
 
 ```
@@ -81,9 +84,37 @@ the English translation of Al-Fatihah ([src/english/1.json](src/english/1.json))
 ]
 ```
 
+#### Farsi
+
+* [src/farsi/](src/farsi/)
+
+Each JSON file represents a chapter, or surah - as a Farsi translation.
+For example, [src/farsi/1.json](src/farsi/1.json) contains Al-Fatihah.
+The structure of the file can be described as an array of arrays, with
+each array representing a verse, or ayah.
+For example:
+
+```
+[
+  [
+    <verse number>,
+    <verse contents>
+  ],
+  [
+    <verse number>,
+    <verse contents>
+  ],
+  [
+    <verse number>,
+    <verse contents>
+  ],
+  /* etc... */
+]
+```
+
 ## The `bin/` directory
 
-The [bin/](bin/) directory contains two scripts that generate the
+The [bin/](bin/) directory contains three scripts that generate the
 contents of the [src/](src/) directory:
 
   * [bin/pull-arabic](bin/pull-arabic) <br>
@@ -92,14 +123,16 @@ contents of the [src/](src/) directory:
   * [bin/pull-english](bin/pull-english) <br>
     This script is responsible for populating [src/english/](src/english/).
 
+  * [bin/pull-farsi](bin/pull-farsi) <br>
+    This script is responsible for populating [src/farsi/](src/farsi/).
+
 **Notes**
 
 The scripts are written in [Ruby v3.1.0+](https://www.ruby-lang.org). <br>
-The ["pull-english"](bin/pull-english) script depends on the ["pull-arabic"](bin/pull-arabic) script being run first. <br>
-The script dependencies can be installed by  running
- `gem install -g gem.deps.rb` from the root of the
- repository.
-
+The ["pull-english"](bin/pull-english), ["pull-farsi"](bin/pull-farsi) scripts
+depend on the ["pull-arabic"](bin/pull-arabic) script being run first. <br>
+The script dependencies can be installed by  running `gem install -g gem.deps.rb`
+from the root of the repository.
 
 ## Download
 
@@ -113,9 +146,8 @@ thanks to the following websites:
 
   * https://sacred-texts.com - for the original Arabic.
   * https://quran.com - for the English translation.
+  * https://al-quran.cc - for the Farsi translation.
 
 ## License
 
-This software is released under the Public Domain. That means
-this software may be used without any restrictions whatsoever.
-Credit is appreciated, but not neccessary.
+This software is released into the Public Domain.
