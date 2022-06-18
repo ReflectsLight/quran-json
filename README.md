@@ -1,9 +1,9 @@
 # The Qur'an
 
 This repository contains the holy book, The Qur'an, in its original Arabic and as translations
-in English, and Farsi - all of which are stored in the JSON format. It is hoped that through this
-repository those working with The Qur'an in the context of software will find a resource that's
-helpful to their work.
+in English, Farsi, and Portuguese - all of which are stored in the JSON format. It is hoped that
+through this repository those working with The Qur'an in the context of software will find a resource
+that's helpful to their work.
 
 ## Layout
 
@@ -11,8 +11,8 @@ helpful to their work.
 
 The [src/arabic/](src/arabic/) directory contains The Qur'an in its original Arabic. <br>
 The [src/english/](src/english/) directory contains an English translation of The Qur'an. <br>
-The [src/farsi/](src/farsi/) directory contains a Farsi translation
-of The Qur'an.
+The [src/farsi/](src/farsi/) directory contains a Farsi translation of The Qur'an. <br>
+The [src/portuguese/](src/portuguese/) directory contains a Portuguese translation of The Qur'an.
 
 #### Arabic
 
@@ -112,6 +112,34 @@ For example:
 ]
 ```
 
+#### Portuguese
+
+* [src/portuguese/](src/portuguese/)
+
+Each JSON file represents a chapter, or surah - as a Portuguese translation.
+For example, [src/portuguese/1.json](src/portuguese/1.json) contains Al-Fatihah.
+The structure of the file can be described as an array of arrays, with each array
+representing a verse, or ayah.
+For example:
+
+```
+[
+  [
+    <verse number>,
+    <verse contents>
+  ],
+  [
+    <verse number>,
+    <verse contents>
+  ],
+  [
+    <verse number>,
+    <verse contents>
+  ],
+  /* etc... */
+]
+```
+
 ## The `bin/` directory
 
 The [bin/](bin/) directory contains three scripts that generate the
@@ -126,18 +154,21 @@ contents of the [src/](src/) directory:
   * [bin/pull-farsi](bin/pull-farsi) <br>
     This script is responsible for populating [src/farsi/](src/farsi/).
 
+  * [bin/pull-portuguese](bin/pull-portuguese) <br>
+    This script is responsible for populating [src/portuguese/](src/portuguese/)
+
 **Notes**
 
 The scripts are written in [Ruby v3.1.0+](https://www.ruby-lang.org). <br>
-The ["pull-english"](bin/pull-english), ["pull-farsi"](bin/pull-farsi) scripts
-depend on the ["pull-arabic"](bin/pull-arabic) script being run first. <br>
-The script dependencies can be installed by  running `gem install -g gem.deps.rb`
-from the root of the repository.
+The ["pull-english"](bin/pull-english), ["pull-farsi"](bin/pull-farsi) and
+["pull-portuguese"](bin/pull-portuguese) scripts depend on the ["pull-arabic"](bin/pull-arabic)
+script being run first. The script dependencies can be installed by
+running `gem install -g gem.deps.rb` from the root of the repository.
 
 ## Download
 
 For those of you who don't have access to, or know how to use "git",
-a zip file of the repository is provided for download: [download zip file](https://github.com/0x1eef/The-Qur-an/archive/refs/tags/v0.1.0.zip).
+a zip file of the repository is provided for download: [download zip file](https://github.com/0x1eef/The-Qur-an/archive/refs/tags/v0.3.0.zip).
 
 ## Credit, and thanks
 
@@ -146,7 +177,7 @@ thanks to the following websites:
 
   * https://sacred-texts.com - for the original Arabic.
   * https://quran.com - for the English translation.
-  * https://al-quran.cc - for the Farsi translation.
+  * https://al-quran.cc - for the Farsi, and Portuguese translations.
 
 ## License
 
