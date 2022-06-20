@@ -158,9 +158,9 @@ contents of the [src/](src/) directory:
     This script is responsible for populating [src/farsi/](src/farsi/).
 
   * [bin/pull-portuguese](bin/pull-portuguese) <br>
-    This script is responsible for populating [src/portuguese/](src/portuguese/)
+    This script is responsible for populating [src/portuguese/](src/portuguese/).
 
-**Notes**
+**Note**
 
 The scripts are written in [Ruby v3.1.0+](https://www.ruby-lang.org). <br>
 The ["pull-english"](bin/pull-english), ["pull-farsi"](bin/pull-farsi) and
