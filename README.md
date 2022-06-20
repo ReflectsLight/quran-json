@@ -9,10 +9,13 @@ that's helpful to their work.
 
 ### The `src/` directory
 
-The [src/arabic/](src/arabic/) directory contains The Qur'an in its original Arabic. <br>
-The [src/english/](src/english/) directory contains an English translation of The Qur'an. <br>
-The [src/farsi/](src/farsi/) directory contains a Farsi translation of The Qur'an. <br>
-The [src/portuguese/](src/portuguese/) directory contains a Portuguese translation of The Qur'an.
+* The [src/arabic/](src/arabic/) directory contains The Qur'an in its original Arabic.
+
+* The [src/english/](src/english/) directory contains an English translation of The Qur'an.
+
+* The [src/farsi/](src/farsi/) directory contains a Farsi translation of The Qur'an.
+
+* The [src/portuguese/](src/portuguese/) directory contains a Portuguese translation of The Qur'an.
 
 #### Arabic
 
