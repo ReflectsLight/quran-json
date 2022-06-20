@@ -142,7 +142,7 @@ For example:
 
 ## The `bin/` directory
 
-The [bin/](bin/) directory contains three scripts that generate the
+The [bin/](bin/) directory contains four scripts that generate the
 contents of the [src/](src/) directory:
 
   * [bin/pull-arabic](bin/pull-arabic) <br>
