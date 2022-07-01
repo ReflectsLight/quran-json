@@ -336,12 +336,12 @@ contents of the [src/](src/) directory:
   * [bin/sql/create-sql-seed-file](bin/sql/create-sql-seed-file) <br>
     This script creates [src/sql/seed.sql](src/sql/seed.sql) - using the contents of [src/json/](src/json/).
 
-**Note #1**
+**Note**
 
 By default it is not neccessary to run the scripts mentioned above because the contents of
 `src/` is included in the repository already.
 
-**Note #2**
+**Note**
 
 The scripts are written in [Ruby v3.1.0+](https://www.ruby-lang.org). <br>
 The script dependencies can be installed by running the following from
