@@ -1,28 +1,26 @@
 # The Qur'an
 
 This repository contains the holy book, The Qur'an, in its original Arabic and as translations
-in English, Farsi, and Portuguese - all of which are stored in the JSON format. It is hoped that
-through this repository those working with The Qur'an in the context of software will find a resource
-that's helpful to their work.
+in English, Farsi, and Portuguese. The contents are made available in JSON, and SQL files.
 
-## Layout
+## `src/json/` directory
 
-### The `src/` directory
+This section covers the JSON files. Keep scrolling for the SQL section.
 
-* The [src/arabic/](src/arabic/) directory contains The Qur'an in its original Arabic.
+* The [src/json/ar/](src/json/ar/) directory contains The Qur'an in its original Arabic.
 
-* The [src/english/](src/english/) directory contains an English translation of The Qur'an.
+* The [src/json/en/](src/json/en/) directory contains an English translation of The Qur'an.
 
-* The [src/farsi/](src/farsi/) directory contains a Farsi translation of The Qur'an.
+* The [src/json/fa/](src/json/fa/) directory contains a Farsi translation of The Qur'an.
 
-* The [src/portuguese/](src/portuguese/) directory contains a Portuguese translation of The Qur'an.
+* The [src/json/pt/](src/json/pt/) directory contains a Portuguese translation of The Qur'an.
 
-#### Arabic
+### Arabic
 
-* [src/arabic/](src/arabic/)
+* [src/json/ar/](src/json/ar/)
 
 Each JSON file represents a chapter, or surah - in its original Arabic.
-For example, [src/arabic/1.json](src/arabic/1.json) contains Al-Fatihah.
+For example, [src/json/ar/1.json](src/json/ar/1.json) contains Al-Fatihah.
 The structure of the file can be described as an array of arrays, with
 each array representing a verse, or ayah.
 For example:
@@ -45,14 +43,14 @@ For example:
 ]
 ```
 
-#### English
+### English
 
-* [src/english/](src/english)
+* [src/json/en/](src/json/en/)
 
 Each JSON file represents a chapter, or surah - as an English translation.
 The structure of the file can be described as an array of arrays,
 with each array representing a verse, or ayah. For example, consider
-the English translation of Al-Fatihah ([src/english/1.json](src/english/1.json)):
+the English translation of Al-Fatihah ([src/json/en/1.json](src/json/en/1.json)):
 
 ```
 [
@@ -87,12 +85,12 @@ the English translation of Al-Fatihah ([src/english/1.json](src/english/1.json))
 ]
 ```
 
-#### Farsi
+### Farsi
 
-* [src/farsi/](src/farsi/)
+* [src/json/fa/](src/json/fa/)
 
 Each JSON file represents a chapter, or surah - as a Farsi translation.
-For example, [src/farsi/1.json](src/farsi/1.json) contains Al-Fatihah.
+For example, [src/json/fa/1.json](src/json/fa/1.json) contains Al-Fatihah.
 The structure of the file can be described as an array of arrays, with
 each array representing a verse, or ayah.
 For example:
@@ -115,12 +113,12 @@ For example:
 ]
 ```
 
-#### Portuguese
+### Portuguese
 
-* [src/portuguese/](src/portuguese/)
+* [src/json/pt/](src/json/pt/)
 
 Each JSON file represents a chapter, or surah - as a Portuguese translation.
-For example, [src/portuguese/1.json](src/portuguese/1.json) contains Al-Fatihah.
+For example, [src/pt/1.json](src/json/pt/1.json) contains Al-Fatihah.
 The structure of the file can be described as an array of arrays, with each array
 representing a verse, or ayah.
 For example:
@@ -143,31 +141,125 @@ For example:
 ]
 ```
 
+## `src/sql/` directory
+
+This section covers the SQL files.
+
+* The [src/sql/schema.sql](src/sql/schema.sql) defines the schema of the database. <br>
+  The schema is composed of three tables: `qurans`, `chapters`, and `verses`.
+
+* The [src/sql/seed.sql](src/sql/seed.sql) populates the contents of the database. <br>
+  The languages included are Arabic, English, Farsi, and Portuguese.
+
+### SQLite3 example
+
+The example demonstrates how the SQL files mentioned above can be used to create a
+fully populated database, and then how to query the database. It is assumed that the
+repository has been cloned or downloaded (see below), and that "sqlite3" is started
+from the root of the repository.
+
+**1. $HOME/.sqliterc**
+
+For identical results, it is recommended that the `$HOME/.sqlitrc` file has the following
+contents:
+
+```
+pragma FOREIGN_KEYS = on;
+.headers on
+.mode column
+```
+
+**2. Execute `src/sql/schema.sql`**
+
+Start SQLite3 from the command line, and then execute `.read src/sql/schema.sql`:
+
+```
+$ sqlite3
+SQLite version 3.39.0 2022-06-25 14:57:57
+Enter ".help" for usage hints.
+Connected to a transient in-memory database.
+Use ".open FILENAME" to reopen on a persistent database.
+sqlite> .read src/sql/schema.sql
+sqlite>
+```
+
+**3. Execute `src/sql/seed.sql`**
+
+Within the same sqlite session, execute `.read src/sql/seed.sql`:
+
+```
+sqlite> .read src/sql/seed.sql
+sqlite>
+```
+
+**4. Query the database**
+
+After steps two and three, the database is fully populated and exists in memory / RAM. <br>
+We can now query the database and its contents. The SQL query we will execute fetches the
+contents of chapter 112 in the English locale (i.e: `en`):
+
+```sql
+SELECT qurans.locale,
+       chapters.number as chapter_number,
+       verses.number as verse_number,
+       verses.content from verses
+INNER JOIN qurans ON qurans.id = verses.quran_id
+INNER JOIN chapters ON chapters.id = verses.chapter_id
+WHERE qurans.locale = "en" AND chapters.number = 112;
+```
+
+The output should look like this:
+
+```
+sqlite> SELECT qurans.locale,
+   ...>        chapters.number as chapter_number,
+   ...>        verses.number as verse_number,
+   ...>        verses.content from verses
+   ...> INNER JOIN qurans ON qurans.id = verses.quran_id
+   ...> INNER JOIN chapters ON chapters.id = verses.chapter_id
+   ...> WHERE qurans.locale = "en" AND chapters.number = 112;
+locale  chapter_number  verse_number  content
+------  --------------  ------------  -----------------------------------------------------
+en      112             1             Say, ˹O Prophet,˺ “He is Allah—One ˹and Indivisible˺;
+en      112             2             Allah—the Sustainer ˹needed by all˺.
+en      112             3             He has never had offspring, nor was He born.
+en      112             4             And there is none comparable to Him.”
+```
+
 ## The `bin/` directory
 
-The [bin/](bin/) directory contains four scripts that generate the
+The [bin/](bin/) directory contains scripts that generate the
 contents of the [src/](src/) directory:
 
   * [bin/pull-arabic](bin/pull-arabic) <br>
-    This script is responsible for populating [src/arabic/](src/arabic/).
+    This script is responsible for populating [src/json/ar/](src/json/ar/).
 
   * [bin/pull-english](bin/pull-english) <br>
-    This script is responsible for populating [src/english/](src/english/).
+    This script is responsible for populating [src/json/en/](src/json/en/).
 
   * [bin/pull-farsi](bin/pull-farsi) <br>
-    This script is responsible for populating [src/farsi/](src/farsi/).
+    This script is responsible for populating [src/json/fa/](src/json/fa/).
 
   * [bin/pull-portuguese](bin/pull-portuguese) <br>
-    This script is responsible for populating [src/portuguese/](src/portuguese/).
+    This script is responsible for populating [src/json/pt/](src/json/pt/).
 
-**Note**
+  * [bin/create-sql-seed-file](bin/create-sql-seed-file) <br>
+    This script creates [src/sql/seed.sql](src/sql/seed.sql), and uses the contents of
+    [src/json/](src/json/) to do so.
+
+**Note #1**
+
+By default it is not neccessary to run these scripts because the contents of `src/` is included in
+the repository already.
+
+
+**Note #2**
 
 The scripts are written in [Ruby v3.1.0+](https://www.ruby-lang.org). <br>
 The ["pull-english"](bin/pull-english), ["pull-farsi"](bin/pull-farsi) and
 ["pull-portuguese"](bin/pull-portuguese) scripts depend on the ["pull-arabic"](bin/pull-arabic)
 script being run first. The script dependencies can be installed by
 running `gem install -g gem.deps.rb` from the root of the repository.
-
 ## Download
 
 For those of you who don't have access to, or know how to use "git",

@@ -6,7 +6,7 @@
 # is requested from the https://al-quran.cc website.
 #
 # Each chapter is then saved in a JSON file, for example:
-# "src/farsi/<chapter_num>.json"
+# "src/fa/<chapter_num>.json"
 
 ##
 # Dependencies
@@ -54,19 +54,11 @@ ch_names = %w[
 base_uri = "al-quran.cc"
 path = "/quran-translation/farsi/%{ch_name}/%{verse_num}.html"
 cool_off = 5
-arab_path = File.expand_path File.join(
-  __dir__,
-  "..",
-  "src",
-  "arabic",
-  "%{chapter_num}.json"
+arab_path = File.join(
+  __dir__, "..", "src", "json", "ar", "%{chapter_num}.json"
 )
-dest_path = File.expand_path File.join(
-  __dir__,
-  "..",
-  "src",
-  "farsi",
-  "%{chapter_num}.json"
+dest_path = File.join(
+  __dir__, "..", "src", "json", "fa", "%{chapter_num}.json"
 )
 
 ##

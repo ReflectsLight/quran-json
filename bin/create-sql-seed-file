@@ -1,0 +1,60 @@
+#!/usr/bin/env ruby
+
+require "json"
+require "erb"
+
+module SQLUtils
+  module_function
+  def escape(str)
+    char = "'"
+    char + str.gsub(char, char * 2) + char
+  end
+end
+
+class Language
+  attr_reader :locale
+
+  def initialize(locale)
+    @locale = locale
+  end
+
+  def chapters
+    Dir.glob(File.join(
+      __dir__,  "..",  "src",
+      "json",  @locale,  "*.json"
+    )).map { Chapter.new(_1) }.sort_by(&:number)
+  end
+end
+
+class Chapter
+  def initialize(path)
+    @path = path
+  end
+
+  def number
+    File.basename(@path, '.json').to_i
+  end
+
+  def verses
+    JSON.parse(File.read(@path)).map { Verse.new(*_1) }
+  end
+end
+
+class Verse
+  attr_reader :number, :content
+
+  def initialize(number, content)
+    @number = number
+    @content = content
+  end
+end
+
+
+base_dir  = File.join(__dir__, "..", "src", "sql")
+template  = File.read File.join(base_dir, "seed.sql.erb")
+languages = %w(ar en pt fa).map { Language.new(_1) }
+result = ERB.new(template)
+            .result_with_hash(chapter_id: 1, languages:)
+            .each_line.map(&:strip)
+            .reject(&:empty?).join($/)
+File.write File.join(base_dir, "seed.sql"), result

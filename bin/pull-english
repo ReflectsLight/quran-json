@@ -6,7 +6,7 @@
 # is requested from the https://quran.com website.
 #
 # Each chapter is then saved in a JSON file, for example:
-# "src/english/<chapter_num>.json"
+# "src/en/<chapter_num>.json"
 
 ##
 # Dependencies
@@ -19,8 +19,12 @@ require "paint"
 # Configuration variables.
 base_uri = "quran.com"
 path = "/%{chapter_num}/%{verse_num}"
-dest_path = File.expand_path File.join(__dir__, "..", "src", "english", "%{chapter_num}.json")
-arab_path = File.expand_path File.join(__dir__, "..", "src", "arabic", "%{chapter_num}.json")
+dest_path = File.join(
+  __dir__, "..", "src", "json", "en", "%{chapter_num}.json"
+)
+arab_path = File.join(
+  __dir__, "..", "src", "json", "ar", "%{chapter_num}.json"
+)
 chapter_count = 114
 cool_off = 5
 

@@ -6,7 +6,7 @@
 # is requested from the https://sacred-texts.com website.
 #
 # Each chapter is then saved in a JSON file, for example:
-# "src/arabic/<chapter_num>.json".
+# "src/ar/<chapter_num>.json".
 
 ##
 # Dependencies
@@ -19,7 +19,9 @@ require "paint"
 # Configuration variables.
 base_uri = "www.sacred-texts.com"
 path = "/isl/uq/%{htm_file}"
-dest_path = File.expand_path File.join(__dir__, "..", "src", "arabic", "%{chapter_num}.json")
+dest_path = File.join(
+  __dir__, "..", "src", "json", "ar", "%{chapter_num}.json"
+)
 chapter_count = 114
 cool_off = 5
 
