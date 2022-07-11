@@ -236,7 +236,7 @@ en      112      4      And there is none comparable to Him.”
 4.2
 
 The next query we will execute demonstrates how to find a particular word or
-phrse in the english translation of The Qur'an, using the LIKE operator:
+phrase in the English translation of The Qur'an, using the LIKE operator:
 
 ```sql
 SELECT qurans.locale,
