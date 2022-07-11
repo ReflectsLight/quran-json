@@ -216,12 +216,20 @@ WHERE qurans.locale = "en" AND chapters.number = 112;
 The output should look like this:
 
 ```
+sqlite> SELECT qurans.locale,
+   ...>        chapters.number as chapter,
+   ...>        verses.number as verse,
+   ...>        verses.content from verses
+   ...> INNER JOIN qurans ON qurans.id = verses.quran_id
+   ...> INNER JOIN chapters ON chapters.id = verses.chapter_id
+   ...> WHERE qurans.locale = "en" AND chapters.number = 112;
 locale  chapter  verse  content
 ------  -------  -----  -----------------------------------------------------
 en      112      1      Say, ˹O Prophet,˺ “He is Allah—One ˹and Indivisible˺;
 en      112      2      Allah—the Sustainer ˹needed by all˺.
 en      112      3      He has never had offspring, nor was He born.
 en      112      4      And there is none comparable to Him.”
+```
 
 
 ### <a id='bin-directory'>`bin/` directory</a>
