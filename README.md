@@ -200,6 +200,8 @@ sqlite>
 
 **4. Query the database**
 
+4.1
+
 After steps two and three, the database is fully populated and exists in memory / RAM. We can now query the database and its contents. The SQL query we will execute fetches the
 contents of chapter 112 in the English locale (i.e: `en`):
 
@@ -231,6 +233,41 @@ en      112      3      He has never had offspring, nor was He born.
 en      112      4      And there is none comparable to Him.”
 ```
 
+4.2
+
+The next query we will execute demonstrates how to find a particular word or
+phrse in the english translation of The Qur'an, using the LIKE operator:
+
+```sql
+SELECT qurans.locale,
+       chapters.number as chapter,
+       verses.number as verse,
+       verses.content from verses
+INNER JOIN qurans ON qurans.id = verses.quran_id
+INNER JOIN chapters ON chapters.id = verses.chapter_id
+WHERE qurans.locale = "en" AND
+      verses.content LIKE '%reflected light%';
+```
+
+The output should look like this:
+
+```
+sqlite> SELECT qurans.locale,
+   ...>        chapters.number as chapter,
+   ...>        verses.number as verse,
+   ...>        verses.content from verses
+   ...> INNER JOIN qurans ON qurans.id = verses.quran_id
+   ...> INNER JOIN chapters ON chapters.id = verses.chapter_id
+   ...> WHERE qurans.locale = "en" AND
+   ...>       verses.content LIKE '%reflected light%';
+locale  chapter  verse  content
+------  -------  -----  ------------------------------------------------------------
+en      10       5      He is the One Who made the sun a radiant source and the moon
+                        a reflected light, with precisely ordained phases, so that
+                        you may know the number of years and calculation ˹of time˺.
+                        Allah did not create all this except for a purpose. He makes
+                        the signs clear for people of knowledge.
+```
 
 ### <a id='bin-directory'>`bin/` directory</a>
 
