@@ -1,9 +1,9 @@
-# The Qur'an
+## quran-pull
 
 This repository contains the holy book, The Qur'an, in its original Arabic and as translations
 in English, Farsi, and Portuguese. The contents are made available in JSON, and SQL files.
 
-## `src/json/` directory
+### `src/json/` directory
 
 This section covers the JSON files. Keep scrolling for the SQL section.
 
@@ -15,7 +15,7 @@ This section covers the JSON files. Keep scrolling for the SQL section.
 
 * The [src/json/pt/](src/json/pt/) directory contains a Portuguese translation of The Qur'an.
 
-### Arabic
+#### Arabic
 
 * [src/json/ar/](src/json/ar/)
 
@@ -43,7 +43,7 @@ For example:
 ]
 ```
 
-### English
+#### English
 
 * [src/json/en/](src/json/en/)
 
@@ -85,7 +85,7 @@ the English translation of Al-Fatihah ([src/json/en/1.json](src/json/en/1.json))
 ]
 ```
 
-### Farsi
+#### Farsi
 
 * [src/json/fa/](src/json/fa/)
 
@@ -113,7 +113,7 @@ For example:
 ]
 ```
 
-### Portuguese
+#### Portuguese
 
 * [src/json/pt/](src/json/pt/)
 
@@ -141,7 +141,7 @@ For example:
 ]
 ```
 
-## `src/sql/` directory
+### `src/sql/` directory
 
 This section covers the SQL files.
 
@@ -151,7 +151,7 @@ This section covers the SQL files.
 * The [src/sql/seed.sql](src/sql/seed.sql) populates the contents of the database. <br>
   The languages included are Arabic, English, Farsi, and Portuguese.
 
-### SQLite3 example
+#### SQLite3 example
 
 The example demonstrates how the SQL files mentioned above can be used to create a
 fully populated database, and then how to query the database. It is assumed that the
@@ -226,7 +226,7 @@ en      112             3             He has never had offspring, nor was He bor
 en      112             4             And there is none comparable to Him.”
 ```
 
-## The `bin/` directory
+### The `bin/` directory
 
 The [bin/](bin/) directory contains scripts that generate the
 contents of the [src/](src/) directory:
@@ -265,7 +265,7 @@ running `gem install -g gem.deps.rb` from the root of the repository.
 For those of you who don't have access to, or know how to use "git",
 a zip file of the repository is provided for download: [download zip file](https://github.com/ReflectedLight/The-Qur-an/archive/refs/tags/v0.3.0.zip).
 
-## Credit, and thanks
+### Credit, and thanks
 
 The content of the [src/](src/) directory was automatically generated
 thanks to the following websites:
@@ -274,6 +274,6 @@ thanks to the following websites:
   * https://quran.com - for the English translation.
   * https://al-quran.cc - for the Farsi, and Portuguese translations.
 
-## License
+### License
 
 This software is released into the Public Domain.
