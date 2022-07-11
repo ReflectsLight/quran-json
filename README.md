@@ -3,7 +3,12 @@
 This repository contains the holy book, The Qur'an, in its original Arabic and as translations
 in English, Farsi, and Portuguese. The contents are made available in JSON, and SQL files.
 
-### `src/json/` directory
+**Navigation**
+1. [`src/json`directory](#srcjson-directory)
+2. [`src/sql` directory](#srcsql-directory)
+3. [`bin/` directory](#bin-directory)
+
+### <a id='srcjson-directory'>`src/json/` directory</a>
 
 This section covers the JSON files. Keep scrolling for the SQL section.
 
@@ -141,7 +146,7 @@ For example:
 ]
 ```
 
-### `src/sql/` directory
+### <a id='srcsql-directory'>`src/sql/` directory</a>
 
 This section covers the SQL files.
 
@@ -226,7 +231,7 @@ en      112             3             He has never had offspring, nor was He bor
 en      112             4             And there is none comparable to Him.”
 ```
 
-### The `bin/` directory
+### <a id='bin-directory'>`bin/` directory</a>
 
 The [bin/](bin/) directory contains scripts that generate the
 contents of the [src/](src/) directory:
