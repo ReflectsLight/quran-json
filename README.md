@@ -10,7 +10,8 @@ in English, Farsi, and Portuguese. The contents are made available in JSON, and 
 
 ### <a id='srcjson-directory'>`src/json/` directory</a>
 
-This section covers the JSON files. Keep scrolling for the SQL section.
+This section covers the JSON files. Click [here](#srcsql-directory) to jump to the SQL
+section.
 
 * The [src/json/ar/](src/json/ar/) directory contains The Qur'an in its original Arabic.
 
@@ -199,14 +200,13 @@ sqlite>
 
 **4. Query the database**
 
-After steps two and three, the database is fully populated and exists in memory / RAM. <br>
-We can now query the database and its contents. The SQL query we will execute fetches the
+After steps two and three, the database is fully populated and exists in memory / RAM. We can now query the database and its contents. The SQL query we will execute fetches the
 contents of chapter 112 in the English locale (i.e: `en`):
 
 ```sql
 SELECT qurans.locale,
-       chapters.number as chapter_number,
-       verses.number as verse_number,
+       chapters.number as chapter,
+       verses.number as verse,
        verses.content from verses
 INNER JOIN qurans ON qurans.id = verses.quran_id
 INNER JOIN chapters ON chapters.id = verses.chapter_id
@@ -216,20 +216,13 @@ WHERE qurans.locale = "en" AND chapters.number = 112;
 The output should look like this:
 
 ```
-sqlite> SELECT qurans.locale,
-   ...>        chapters.number as chapter_number,
-   ...>        verses.number as verse_number,
-   ...>        verses.content from verses
-   ...> INNER JOIN qurans ON qurans.id = verses.quran_id
-   ...> INNER JOIN chapters ON chapters.id = verses.chapter_id
-   ...> WHERE qurans.locale = "en" AND chapters.number = 112;
-locale  chapter_number  verse_number  content
-------  --------------  ------------  -----------------------------------------------------
-en      112             1             Say, ˹O Prophet,˺ “He is Allah—One ˹and Indivisible˺;
-en      112             2             Allah—the Sustainer ˹needed by all˺.
-en      112             3             He has never had offspring, nor was He born.
-en      112             4             And there is none comparable to Him.”
-```
+locale  chapter  verse  content
+------  -------  -----  -----------------------------------------------------
+en      112      1      Say, ˹O Prophet,˺ “He is Allah—One ˹and Indivisible˺;
+en      112      2      Allah—the Sustainer ˹needed by all˺.
+en      112      3      He has never had offspring, nor was He born.
+en      112      4      And there is none comparable to Him.”
+
 
 ### <a id='bin-directory'>`bin/` directory</a>
 
