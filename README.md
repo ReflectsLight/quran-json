@@ -4,8 +4,8 @@ This repository contains the holy book, The Qur'an, in its original Arabic and a
 in English, Farsi, and Portuguese. The contents are made available in JSON, and SQL files.
 
 **Navigation**
-1. [`src/json`directory](#srcjson-directory)
-2. [`src/sql` directory](#srcsql-directory)
+1. [`src/json/`directory](#srcjson-directory)
+2. [`src/sql/` directory](#srcsql-directory)
 3. [`bin/` directory](#bin-directory)
 
 ### <a id='srcjson-directory'>`src/json/` directory</a>
@@ -240,12 +240,12 @@ phrase in the English translation of The Qur'an, using the LIKE operator:
 
 ```sql
 SELECT qurans.locale,
-       chapters.number as chapter,
-       verses.number as verse,
+       chapters.number AS chapter,
+       verses.number AS verse,
        verses.content from verses
 INNER JOIN qurans ON qurans.id = verses.quran_id
 INNER JOIN chapters ON chapters.id = verses.chapter_id
-WHERE qurans.locale = "en" AND
+WHERE qurans.locale = 'en' AND
       verses.content LIKE '%reflected light%';
 ```
 
@@ -253,12 +253,12 @@ The output should look like this:
 
 ```
 sqlite> SELECT qurans.locale,
-   ...>        chapters.number as chapter,
-   ...>        verses.number as verse,
-   ...>        verses.content from verses
+   ...>        chapters.number AS chapter,
+   ...>        verses.number AS verse,
+   ...>        verses.content FROM verses
    ...> INNER JOIN qurans ON qurans.id = verses.quran_id
    ...> INNER JOIN chapters ON chapters.id = verses.chapter_id
-   ...> WHERE qurans.locale = "en" AND
+   ...> WHERE qurans.locale = 'en' AND
    ...>       verses.content LIKE '%reflected light%';
 locale  chapter  verse  content
 ------  -------  -----  ------------------------------------------------------------
