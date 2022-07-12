@@ -54,7 +54,7 @@ ch_names = %w[
 base_uri = "al-quran.cc"
 path = "/quran-translation/portuguese/%{ch_name}/%{verse_num}.html"
 cool_off = 5
-arab_path = File.join(
+src_path = File.join(
   __dir__, "..", "src", "json", "ar", "%{chapter_num}.json"
 )
 dest_path = File.join(
@@ -86,7 +86,7 @@ end
 ##
 # main()
 1.upto(114) do |chapter_num|
-  verses = JSON.parse File.read(format(arab_path, chapter_num:))
+  verses = JSON.parse File.read(format(src_path, chapter_num:))
   rows = []
   ch_name = ch_names[chapter_num - 1]
   final_dest = format(dest_path, chapter_num:)

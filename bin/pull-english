@@ -22,7 +22,7 @@ path = "/%{chapter_num}/%{verse_num}"
 dest_path = File.join(
   __dir__, "..", "src", "json", "en", "%{chapter_num}.json"
 )
-arab_path = File.join(
+src_path = File.join(
   __dir__, "..", "src", "json", "ar", "%{chapter_num}.json"
 )
 chapter_count = 114
@@ -48,7 +48,7 @@ end
   final_dest = format(dest_path, chapter_num:)
   rows = []
 
-  verses = JSON.parse File.read(format(arab_path, chapter_num:))
+  verses = JSON.parse File.read(format(src_path, chapter_num:))
   verses.each do |verse_num, _|
     case res = http.request(get_request(path, chapter_num, verse_num))
     when Net::HTTPOK
