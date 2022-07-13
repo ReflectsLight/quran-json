@@ -274,19 +274,23 @@ en      10       5      He is the One Who made the sun a radiant source and the 
 The [bin/](bin/) directory contains scripts that generate the
 contents of the [src/](src/) directory:
 
-  * [bin/pull-arabic](bin/pull-arabic) <br>
+* JSON scripts
+
+  * [bin/json/pull-arabic](bin/json/pull-arabic) <br>
     This script is responsible for populating [src/json/ar/](src/json/ar/).
 
-  * [bin/pull-english](bin/pull-english) <br>
+  * [bin/json/pull-english](bin/json/pull-english) <br>
     This script is responsible for populating [src/json/en/](src/json/en/).
 
-  * [bin/pull-farsi](bin/pull-farsi) <br>
+  * [bin/json/pull-farsi](bin/json/pull-farsi) <br>
     This script is responsible for populating [src/json/fa/](src/json/fa/).
 
-  * [bin/pull-portuguese](bin/pull-portuguese) <br>
+  * [bin/json/pull-portuguese](bin/json/pull-portuguese) <br>
     This script is responsible for populating [src/json/pt/](src/json/pt/).
 
-  * [bin/create-sql-seed-file](bin/create-sql-seed-file) <br>
+* SQL scripts
+
+  * [bin/sql/create-sql-seed-file](bin/sql/create-sql-seed-file) <br>
     This script creates [src/sql/seed.sql](src/sql/seed.sql), and uses the contents of
     [src/json/](src/json/) to do so.
 
@@ -299,8 +303,8 @@ the repository already.
 **Note #2**
 
 The scripts are written in [Ruby v3.1.0+](https://www.ruby-lang.org). <br>
-The ["pull-english"](bin/pull-english), ["pull-farsi"](bin/pull-farsi) and
-["pull-portuguese"](bin/pull-portuguese) scripts depend on the ["pull-arabic"](bin/pull-arabic)
+The ["pull-english"](bin/json/pull-english), ["pull-farsi"](bin/json/pull-farsi) and
+["pull-portuguese"](bin/json/pull-portuguese) scripts depend on the ["pull-arabic"](bin/json/pull-arabic)
 script being run first. The script dependencies can be installed by
 running `gem install -g gem.deps.rb` from the root of the repository.
 ## Download
