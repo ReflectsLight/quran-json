@@ -312,7 +312,7 @@ running `gem install -g gem.deps.rb` from the root of the repository.
 For those of you who don't have access to, or know how to use "git",
 a zip file of the repository is provided for download: [download zip file](https://github.com/ReflectedLight/The-Qur-an/archive/refs/tags/v0.4.0.zip).
 
-### Credit, and thanks
+## Credit, and thanks
 
 The content of the [src/](src/) directory was automatically generated
 thanks to the following websites:
@@ -321,6 +321,6 @@ thanks to the following websites:
   * https://quran.com - for the English translation.
   * https://al-quran.cc - for the Farsi, and Portuguese translations.
 
-### License
+## License
 
 This software is released into the Public Domain.
