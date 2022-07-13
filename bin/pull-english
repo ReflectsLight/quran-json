@@ -5,8 +5,8 @@
 # of The Qur'an - in the English language. The content
 # is requested from the https://quran.com website.
 #
-# Each chapter is then saved in a JSON file, for example:
-# "src/en/<chapter_num>.json"
+# Each chapter is then saved to a JSON file - for example:
+# "src/en/1.json", "src/en/2.json", etc.
 
 ##
 # Dependencies
