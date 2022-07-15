@@ -6,14 +6,10 @@ class IO::Line
     @size = 0
   end
 
-  def puts(str)
-    print(str).end
-  end
-
-  def print(str)
+  def print(*strs)
     tap do
-      str = str.gsub(/\n*/, "")
-      @size = str.size
+      str = strs.join
+      @size = str.gsub(/\n*/, "").size
       @io.print(str)
     end
   end

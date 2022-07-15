@@ -1,12 +1,12 @@
 #!/usr/bin/env ruby
-
-##
+#
 # This script requests each verse, in each chapter
 # of The Qur'an - in the Arabic language. The content
 # is requested from the https://sacred-texts.com website.
 #
 # Each chapter is then saved in a JSON file, for example:
-# "src/ar/<chapter_num>.json".
+# "src/json/ar/1.json", "src/json/ar/2.json", etc.
+$0 = "pull-arabic"
 
 ##
 # Dependencies
@@ -14,16 +14,13 @@ require "net/http"
 require "nokogiri"
 require "json"
 require "paint"
+require_relative "../../binlib/io/line"
 
 ##
 # Configuration variables.
 base_uri = "www.sacred-texts.com"
-path = "/isl/uq/%{htm_file}"
-dest_path = File.join(
-  __dir__, "..", "src", "json", "ar", "%{chapter_num}.json"
-)
-chapter_count = 114
-cool_off = 5
+dest = File.join("src", "json", "ar", "%{chapter}.json")
+delay = 1.5
 
 ##
 # Share a single Net::HTTP instance.
@@ -31,58 +28,31 @@ http = Net::HTTP.new(base_uri, 443)
 http.use_ssl = true
 
 ##
-# Helper method.
-def get_htm_file(chapter_num)
-  if chapter_num < 10
-    "00#{chapter_num}.htm"
-  elsif chapter_num < 100
-    "0#{chapter_num}.htm"
-  else
-    "#{chapter_num}.htm"
+# Utils
+line = IO::Line.new($stdout)
+find_content = ->(res) do
+  html = Nokogiri::HTML(res.body)
+  html.css("table tr td p[align=RIGHT]").map do
+    _1.text.gsub(/[0-9]+/, '')
+      .delete("\u200F")
+      .delete("\u200E")
+      .strip
   end
 end
 
-##
-# Helper method.
-def get_request(path, htm_file)
-  Net::HTTP::Get.new(
-    format(path, htm_file: htm_file),
-    "Accept" => "text/html"
-  )
-end
-
-##
-# Helper method.
-def extract_verses!(res, rows)
-  doc = Nokogiri::HTML(res.body)
-  verses = doc.css("table tr td p[align=RIGHT]")
-
-  verses.each do |verse|
-    verse_num = Integer(verse.css("a").inner_text)
-    verse_txt = verse.text.delete(verse_num.to_s)
-    rows.push([
-      verse_num,
-      verse_txt.delete("\u200F").delete("\u200E").strip
-    ])
-  end
-end
-
-##
-# main()
-1.upto(chapter_count) do |chapter_num|
-  htm_file = get_htm_file(chapter_num)
-  final_dest = format(dest_path, chapter_num:)
+1.upto(114) do |chapter|
   rows = []
-
-  print "Fetch: ", chapter_num, "\n"
-  case res = http.request(get_request(path, htm_file))
-  when Net::HTTPOK
-    extract_verses!(res, rows)
-    File.write(final_dest, JSON.pretty_generate(rows))
-    print Paint["OK: ", :green, :bold], final_dest, "\n"
+  res = http.request_get("/isl/uq/#{chapter.to_s.rjust(3, "0")}.htm")
+  if Net::HTTPOK === res
+    rows.concat(find_content.(res).map.with_index(1) { [_2, _1] })
+    File.write(format(dest, chapter:), JSON.pretty_generate(rows))
   else
-    print Paint["ERROR (#{res.class}): ", :red, :bold], final_dest, "\n"
+    line.end.print(Paint["ABORT", :red, :bold])
+        .end.print("Bad response: ", res.class)
+        .end
+    exit(1)
   end
-  print Paint["Chill for #{cool_off} seconds", :blue, :bold], "\n", "\n"
-  sleep cool_off
+  line.rewind.print "#{chapter} of 114 chapters saved. "
+  sleep(delay)
 end
+line.end.print(Paint["Done.", :bold]).end
