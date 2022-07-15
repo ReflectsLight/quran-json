@@ -52,7 +52,7 @@ end
         .end
     exit(1)
   end
-  line.rewind.print "#{chapter} of 114 chapters saved. "
+  line.rewind.print("#{chapter} of 114 chapters saved. ")
   sleep(delay)
 end
 line.end.print(Paint["Done.", :bold]).end

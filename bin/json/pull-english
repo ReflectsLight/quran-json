@@ -5,7 +5,7 @@
 # is requested from the https://quran.com website.
 #
 # Each chapter is then saved to a JSON file - for example:
-# "src/en/1.json", "src/en/2.json", etc.
+# "src/json/en/1.json", "src/json/en/2.json", etc.
 
 ##
 # Dependencies
