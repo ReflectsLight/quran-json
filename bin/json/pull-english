@@ -14,55 +14,49 @@ require "net/http"
 require "nokogiri"
 require "json"
 require "paint"
+require_relative "../../binlib/line"
 
 ##
 # Configuration variables.
 base_uri = "quran.com"
-path = "/%{chapter_num}/%{verse_num}"
-dest_path = File.join(
-  __dir__, "..", "src", "json", "en", "%{chapter_num}.json"
-)
-src_path = File.join(
-  __dir__, "..", "src", "json", "ar", "%{chapter_num}.json"
-)
-chapter_count = 114
-cool_off = 5
+dest = File.join("src", "json", "en", "%{chapter}.json")
+delay = 1.5
+
+##
+# Utils
+line = Line.new($stdout)
+find_content = ->(res) do
+  html = Nokogiri::HTML(res.body)
+  el = html.css("div[class^='TranslationText']").last
+  el.text.gsub(/[0-9]/, "")
+end
+
+##
+# Map chapters to their verse count.
+vmap_path = File.join("bindata", "chapters-length.json")
+vmap = JSON.parse(File.read(vmap_path))
 
 ##
 # Share a single Net::HTTP instance.
 http = Net::HTTP.new(base_uri, 443)
 http.use_ssl = true
 
-##
-# Helper method.
-def get_request(path, chapter_num, verse_num)
-  Net::HTTP::Get.new(
-    format(path, chapter_num:, verse_num:),
-    "Accept" => "text/html"
-  )
-end
-
-##
-# main()
-1.upto(chapter_count) do |chapter_num|
-  final_dest = format(dest_path, chapter_num:)
+1.upto(114) do |chapter|
+  path = format(dest, chapter:)
   rows = []
+  vcount = vmap[chapter.to_s]
 
-  verses = JSON.parse File.read(format(src_path, chapter_num:))
-  verses.each do |verse_num, _|
-    case res = http.request(get_request(path, chapter_num, verse_num))
-    when Net::HTTPOK
-      doc = Nokogiri::HTML(res.body)
-      el = doc.css("div[class^='TranslationText']").last
-      text = el.text.gsub(/[0-9]/, "")
-      rows.push([verse_num, text])
-      print Paint["OK: ", :green, :bold], text, "\n"
+  1.upto(vcount) do |verse|
+    line.rewind.print "Download: #{verse}/#{vcount}"
+    res = http.request_get("/#{chapter}/#{verse}")
+    if Net::HTTPOK === res
+      rows.push([verse, find_content.(res)])
     else
-      print Paint["ERROR (#{res.class}): ", :red, :bold], final_dest, "\n"
+      print "\n", Paint["Error: ", :red, :bold], res.class, "\n"
+      exit(1)
     end
-    print Paint["Chill for #{cool_off} seconds", :blue, :bold], "\n", "\n"
-    sleep cool_off
+    sleep delay
   end
-  File.write(final_dest, JSON.pretty_generate(rows))
-  print Paint["OK: ", :green, :bold], final_dest, "\n"
+  File.write(path, JSON.pretty_generate(rows))
+  print "\n", Paint["OK: ", :green, :bold], path, "\n"
 end
