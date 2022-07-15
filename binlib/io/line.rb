@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class Line
+class IO::Line
   def initialize(io)
     @io = io
     @size = 0
@@ -11,19 +11,18 @@ class Line
   end
 
   def print(str)
-    str = str.gsub(/\n*/, "")
-    @size = str.size
-    @io.print str
-    self
+    tap do
+      str = str.gsub(/\n*/, "")
+      @size = str.size
+      @io.print(str)
+    end
   end
 
   def end
-    @io.print "\n"
-    self
+    tap { @io.print "\n" }
   end
 
   def rewind
-    @io.print "\b \b" * @size
-    self
+    tap { @io.print "\b \b" * @size }
   end
 end

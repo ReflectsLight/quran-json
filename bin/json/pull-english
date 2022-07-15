@@ -14,7 +14,7 @@ require "net/http"
 require "nokogiri"
 require "json"
 require "paint"
-require_relative "../../binlib/line"
+require_relative "../../binlib/io/line"
 
 ##
 # Configuration variables.
@@ -24,7 +24,7 @@ delay = 1.5
 
 ##
 # Utils
-line = Line.new($stdout)
+line = IO::Line.new($stdout)
 find_content = ->(res) do
   html = Nokogiri::HTML(res.body)
   el = html.css("div[class^='TranslationText']").last
