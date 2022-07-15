@@ -1,6 +1,5 @@
 #!/usr/bin/env ruby
-
-##
+#
 # This script requests each verse, in each chapter
 # of The Qur'an - in the English language. The content
 # is requested from the https://quran.com website.
