@@ -43,17 +43,21 @@ http.use_ssl = true
 1.upto(114) do |chapter|
   rows = []
   vcount = vmap[chapter.to_s]
+  line.rewind.print("Download chapter #{chapter}:").end
   1.upto(vcount) do |verse|
-    line.rewind.print("Download: #{verse}/#{vcount}")
+    line.rewind.print("#{verse} of #{vcount} verses downloaded. ")
     res = http.request_get("/#{chapter}/#{verse}")
     if Net::HTTPOK === res
       rows.push([verse, find_content.(res)])
     else
-      line.end.print(Paint["Error: ", :red, :bold], res.class).end
+      line.end.print(Paint["ABORT", :red, :bold])
+          .end.print("Bad response: ", res.class)
+          .end
       exit(1)
     end
-    sleep delay
+    sleep(delay)
   end
   File.write(format(dest, chapter:), JSON.pretty_generate(rows))
-  line.end.print(Paint["OK", :green, :bold]).end
+  line.end.print(Paint["Done.", :bold])
+      .end.end
 end
