@@ -1,7 +1,7 @@
 # frozen_string_literal: true
-
 class IO::Line
   require "io/console"
+  attr_reader :io
 
   def initialize(io)
     @io = io
@@ -12,7 +12,7 @@ class IO::Line
   end
 
   def end
-    tap { @io.print("\n") }
+    tap { @io.print($/) }
   end
 
   def rewind
