@@ -42,21 +42,19 @@ http = Net::HTTP.new(base_uri, 443)
 http.use_ssl = true
 
 1.upto(114) do |chapter|
-  path = format(dest, chapter:)
   rows = []
   vcount = vmap[chapter.to_s]
-
   1.upto(vcount) do |verse|
-    line.rewind.print "Download: #{verse}/#{vcount}"
+    line.rewind.print("Download: #{verse}/#{vcount}")
     res = http.request_get("/#{chapter}/#{verse}")
     if Net::HTTPOK === res
       rows.push([verse, find_content.(res)])
     else
-      print "\n", Paint["Error: ", :red, :bold], res.class, "\n"
+      line.end.print(Paint["Error: ", :red, :bold], res.class).end
       exit(1)
     end
     sleep delay
   end
-  File.write(path, JSON.pretty_generate(rows))
-  print "\n", Paint["OK: ", :green, :bold], path, "\n"
+  File.write(format(dest, chapter:), JSON.pretty_generate(rows))
+  line.end.print(Paint["OK", :green, :bold]).end
 end
