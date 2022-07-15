@@ -1,24 +1,24 @@
 # frozen_string_literal: true
 
 class IO::Line
+  require "io/console"
+
   def initialize(io)
     @io = io
-    @size = 0
   end
 
   def print(*strs)
-    tap do
-      str = strs.join
-      @size = str.gsub(/\n*/, "").size
-      @io.print(str)
-    end
+    tap { @io.print(strs.join.gsub($/, "")) }
   end
 
   def end
-    tap { @io.print "\n" }
+    tap { @io.print("\n") }
   end
 
   def rewind
-    tap { @io.print "\b \b" * @size }
+    tap do
+      @io.erase_line(2)
+      @io.goto_column(0)
+    end
   end
 end
