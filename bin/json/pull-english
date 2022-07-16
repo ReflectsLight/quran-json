@@ -22,15 +22,6 @@ dest = File.join("src", "json", "en", "%{chapter}.json")
 delay = 1.5
 
 ##
-# Utils
-line = IO::Line.new($stdout)
-find_content = ->(res) do
-  html = Nokogiri::HTML(res.body)
-  el = html.css("div[class^='TranslationText']").last
-  el.text.gsub(/[0-9]/, "")
-end
-
-##
 # Map chapters to their verse count.
 vmap_path = File.join("bindata", "chapters-length.json")
 vmap = JSON.parse(File.read(vmap_path))
@@ -39,6 +30,15 @@ vmap = JSON.parse(File.read(vmap_path))
 # Share a single Net::HTTP instance.
 http = Net::HTTP.new(base_uri, 443)
 http.use_ssl = true
+
+##
+# Utils
+line = IO::Line.new($stdout)
+find_content = ->(res) do
+  html = Nokogiri::HTML(res.body)
+  el = html.css("div[class^='TranslationText']").last
+  el.text.gsub(/[0-9]/, "")
+end
 
 1.upto(114) do |chapter|
   rows = []
