@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 class IO::Line
   require "io/console"
   attr_reader :io

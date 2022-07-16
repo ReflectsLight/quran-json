@@ -1,10 +1,12 @@
 #!/usr/bin/env ruby
+# frozen_string_literal: true
 
 require "json"
 require "erb"
 
 module SQLUtils
   module_function
+
   def escape(str)
     char = "'"
     char + str.gsub(char, char * 2) + char
@@ -20,8 +22,8 @@ class Language
 
   def chapters
     Dir.glob(File.join(
-      __dir__,  "..",  "src",
-      "json",  @locale,  "*.json"
+      __dir__, "..", "src",
+      "json", @locale, "*.json"
     )).map { Chapter.new(_1) }.sort_by(&:number)
   end
 end
@@ -32,7 +34,7 @@ class Chapter
   end
 
   def number
-    File.basename(@path, '.json').to_i
+    File.basename(@path, ".json").to_i
   end
 
   def verses
@@ -49,10 +51,9 @@ class Verse
   end
 end
 
-
-base_dir  = File.join(__dir__, "..", "src", "sql")
-template  = File.read File.join(base_dir, "seed.sql.erb")
-languages = %w(ar en pt fa).map { Language.new(_1) }
+base_dir = File.join(__dir__, "..", "src", "sql")
+template = File.read File.join(base_dir, "seed.sql.erb")
+languages = %w[ar en pt fa].map { Language.new(_1) }
 result = ERB.new(template)
             .result_with_hash(chapter_id: 1, languages:)
             .each_line.map(&:strip)

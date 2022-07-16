@@ -1,5 +1,7 @@
 #!/usr/bin/env ruby
-#
+# frozen_string_literal: true
+
+##
 # This script requests each verse, in each chapter
 # of The Qur'an - in the English language. The content
 # is requested from the https://quran.com website.

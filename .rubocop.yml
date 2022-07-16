@@ -1,0 +1,26 @@
+##
+# Plugins
+require:
+  - standard
+
+##
+# Defaults: standard-rb
+inherit_gem:
+  standard: config/base.yml
+
+AllCops:
+  TargetRubyVersion: 3.1
+
+##
+# Enabled cops
+Style/FrozenStringLiteralComment:
+   Enabled: true
+
+##
+# Disabled cops
+Layout/MultilineMethodCallIndentation:
+  Enabled: false
+Layout/ArgumentAlignment:
+  Enabled: false
+Style/LambdaCall:
+  Enabled: false

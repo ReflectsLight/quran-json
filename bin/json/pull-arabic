@@ -1,11 +1,16 @@
 #!/usr/bin/env ruby
-#
+# frozen_string_literal: true
+
+##
 # This script requests each verse, in each chapter
 # of The Qur'an - in the Arabic language. The content
 # is requested from the https://sacred-texts.com website.
 #
 # Each chapter is then saved in a JSON file, for example:
 # "src/json/ar/1.json", "src/json/ar/2.json", etc.
+
+##
+# Set process name
 $0 = "pull-arabic"
 
 ##
@@ -33,7 +38,7 @@ line = IO::Line.new($stdout)
 find_content = ->(res) do
   html = Nokogiri::HTML(res.body)
   html.css("table tr td p[align=RIGHT]").map do
-    _1.text.gsub(/[0-9]+/, '')
+    _1.text.gsub(/[0-9]+/, "")
       .delete("\u200F")
       .delete("\u200E")
       .strip
