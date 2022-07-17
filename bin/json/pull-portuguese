@@ -7,104 +7,14 @@
 # is requested from the https://al-quran.cc website.
 #
 # Each chapter is then saved in a JSON file, for example:
-# "src/pt/<chapter_num>.json"
+# "src/json/pt/1/.json", "src/json/pt/2.json", etc.
 
 ##
-# Dependencies
-require "net/http"
-require "nokogiri"
-require "json"
-require "paint"
+# Set process title - primarily for the "ps" command.
+Process.setproctitle("quran-pull/json/pull-portuguese")
 
 ##
-# Chapter names
-ch_names = %w[
-  al-fatiha al-baqara aal-e-imran an-nisa
-  al-maeda al-anaam al-araf al-anfal
-  at-tawba yunus hud yusuf
-  ar-rad ibrahim al-hijr an-nahl
-  al-isra al-kahf maryam ta-ha
-  al-anbiya al-hajj al-mumenoon an-nur
-  al-furqan ash-shuara an-naml al-qasas
-  al-ankabut ar-rum luqman as-sajda
-  al-ahzab saba fatir ya-seen
-  as-saaffat sad az-zamar ghafir
-  fussilat ash-shura az-zukhruf ad-dukhan
-  al-jathiya al-ahqaf muhammad al-fath
-  al-hujraat qaf adh-dhariyat at-tur
-  an-najm al-qamar ar-rahman al-waqia
-  al-hadid al-mujadala al-hashr al-mumtahana
-  as-saff al-jumua al-munafiqoon at-taghabun
-  at-talaq at-tahrim al-mulk al-qalam
-  al-haaqqa al-maarij nooh al-jinn
-  al-muzzammil al-muddaththir al-qiyama al-insan
-  al-mursalat an-naba an-naziat abasa
-  at-takwir al-infitar al-mutaffifin al-inshiqaq
-  al-burooj at-tariq al-ala al-ghashiya
-  al-fajr al-balad ash-shams al-lail
-  ad-dhuha al-sharh at-tin al-alaq
-  al-qadr al-bayyina az-zalzala al-adiyat
-  al-qaria at-takathur al-asr al-humaza
-  al-fil quraish al-maun al-kauther
-  al-kafiroon an-nasr al-masadd al-ikhlas
-  al-falaq an-nas
-]
-
-##
-# Configuration variables.
-base_uri = "al-quran.cc"
-path = "/quran-translation/portuguese/%{ch_name}/%{verse_num}.html"
-cool_off = 5
-src_path = File.join(
-  __dir__, "..", "src", "json", "ar", "%{chapter_num}.json"
+# Spawn bin/json/private/al-quran
+Process.wait Process.spawn(
+  "./bin/json/private/al-quran", "pt", "portuguese"
 )
-dest_path = File.join(
-  __dir__, "..", "src", "json", "pt", "%{chapter_num}.json"
-)
-
-##
-# Share a single Net::HTTP instance.
-http = Net::HTTP.new(base_uri, 443)
-http.use_ssl = true
-
-##
-# Helper method.
-def get_request(path)
-  Net::HTTP::Get.new(
-    path,
-    "Accept" => "text/html"
-  )
-end
-
-##
-# Helper method.
-def extract_verse!(res, remove_suratu)
-  doc = Nokogiri::HTML(res.body)
-  verse = doc.css(".ayah .translate").first
-  (remove_suratu ? verse.text.sub(/^Suratu [\w\-.]+/, "") : verse.text).strip
-end
-
-##
-# main()
-1.upto(114) do |chapter_num|
-  verses = JSON.parse File.read(format(src_path, chapter_num:))
-  rows = []
-  ch_name = ch_names[chapter_num - 1]
-  final_dest = format(dest_path, chapter_num:)
-
-  print "Fetch: ", ch_name, "\n"
-  verses.each.with_index(1) do |_, verse_num|
-    htm_file = format(path, ch_name:, verse_num:)
-    case res = http.request(get_request(htm_file))
-    when Net::HTTPOK
-      rows.push([verse_num, extract_verse!(res, verse_num == 1)])
-    else
-      print Paint["ERROR (#{res.class}): ", :red, :bold], final_dest, "\n"
-      break
-    end
-  end
-  File.write(final_dest, JSON.pretty_generate(rows))
-  print Paint["OK: ", :green, :bold], final_dest.sub(ENV["HOME"], ""), "\n"
-  sleep cool_off
-  print Paint["Chill for #{cool_off} seconds", :blue, :bold], "\n", "\n"
-end
