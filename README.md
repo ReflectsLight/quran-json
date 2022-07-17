@@ -296,17 +296,20 @@ contents of the [src/](src/) directory:
 
 **Note #1**
 
-By default it is not neccessary to run these scripts because the contents of `src/` is included in
-the repository already.
-
+By default it is not neccessary to run the scripts mentioned above because the contents of
+`src/` is included in the repository already.
 
 **Note #2**
 
 The scripts are written in [Ruby v3.1.0+](https://www.ruby-lang.org). <br>
-The ["pull-english"](bin/json/pull-english), ["pull-farsi"](bin/json/pull-farsi) and
-["pull-portuguese"](bin/json/pull-portuguese) scripts depend on the ["pull-arabic"](bin/json/pull-arabic)
-script being run first. The script dependencies can be installed by
-running `gem install -g gem.deps.rb` from the root of the repository.
+The script dependencies can be installed by running the following from
+the root of the repository:
+
+```
+gem install bundler --no-rdoc --no-ri
+bundle install
+```
+
 ## Download
 
 For those of you who don't have access to, or know how to use "git",

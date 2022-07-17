@@ -12,10 +12,11 @@
 
 ##
 # Set process title - primarily for the "ps" command
-Process.setproctitle("quran-pull (al-quran) (#{ARGV[1])")
+Process.setproctitle("quran-pull (al-quran) (#{ARGV[1]})")
 
 ##
 # Dependencies
+require "bundler/setup"
 require "net/http"
 require "nokogiri"
 require "json"
@@ -33,7 +34,7 @@ delay = 0.5
 # Chapter names
 names = JSON.parse(
   File.read(
-    File.join('bindata', 'al-quran.cc', 'chapter-names.json')
+    File.join("bindata", "al-quran.cc", "chapter-names.json")
   )
 )
 

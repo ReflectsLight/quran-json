@@ -15,6 +15,7 @@ Process.setproctitle("quran-pull (pull-arabic)")
 
 ##
 # Dependencies
+require "bundler/setup"
 require "net/http"
 require "nokogiri"
 require "json"

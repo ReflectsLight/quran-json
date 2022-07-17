@@ -18,5 +18,3 @@ Process.setproctitle("quran-pull (pull-farsi)")
 Process.wait Process.spawn(
   "./bin/json/private/al-quran", "fa", "farsi"
 )
-
-
