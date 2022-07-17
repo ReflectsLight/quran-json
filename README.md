@@ -169,7 +169,7 @@ and PostgreSQL should be able to import the SQL files as well, but have not been
 
 **1. $HOME/.sqliterc**
 
-For identical results, it is recommended that the `$HOME/.sqlitrc` file has the following
+For identical results, it is recommended that the `$HOME/.sqliterc` file has the following
 contents:
 
 ```
