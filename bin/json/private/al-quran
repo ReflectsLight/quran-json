@@ -21,6 +21,7 @@ require "net/http"
 require "nokogiri"
 require "json"
 require "paint"
+require "fileutils"
 require_relative "../../../binlib/io/line"
 
 ##
@@ -73,6 +74,7 @@ end
     end
     sleep(delay)
   end
+  FileUtils.mkdir_p(File.dirname(dest))
   File.binwrite(format(dest, chapter:), JSON.pretty_generate(rows))
   line.end.print(Paint["Done.", :bold])
       .end.end
