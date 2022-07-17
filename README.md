@@ -313,7 +313,7 @@ bundle install
 ## Download
 
 For those of you who don't have access to, or know how to use "git",
-a zip file of the repository is provided for download: [download zip file](https://github.com/ReflectedLight/The-Qur-an/archive/refs/tags/v0.4.0.zip).
+a zip file of the repository is provided for download: [download zip file](https://github.com/ReflectedLight/The-Qur-an/archive/refs/tags/v0.5.1.zip).
 
 ## Credit, and thanks
 
