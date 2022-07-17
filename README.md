@@ -159,11 +159,13 @@ This section covers the SQL files.
 
 #### SQLite3
 
-The example demonstrates how the SQL files mentioned above can be used to create a
-fully populated database, and then how to query the database. It is assumed that the
-repository has been cloned or downloaded (see below), and that "sqlite3" is started
-from the root of the repository. Other SQL databases, such as MySQL, and PostgreSQL
-should be able to import the SQL files as well, but have not been tested.
+This section of the README demonstrates how the SQL files mentioned above can be used
+to create a fully populated database in memory, how to query the database, and how to
+save the database to disk for future use.
+
+It is assumed that the repository has been cloned or downloaded (see below), and that
+"sqlite3" is started from the root of the repository. Other SQL databases, such as MySQL,
+and PostgreSQL should be able to import the SQL files as well, but have not been tested.
 
 **1. $HOME/.sqliterc**
 
@@ -203,8 +205,10 @@ sqlite>
 
 4.1
 
-After steps two and three, the database is fully populated and exists in memory / RAM. We can now query the database and its contents. The SQL query we will execute fetches the
-contents of chapter 112 in the English locale (i.e: `en`):
+After steps two and three, the database is fully populated and exists
+in memory / RAM. We can now query the database and its contents. The SQL
+query we will execute fetches the contents of chapter 112 in the English
+locale (i.e: `en`):
 
 ```sql
 SELECT qurans.locale,
@@ -268,6 +272,31 @@ en      10       5      He is the One Who made the sun a radiant source and the 
                         you may know the number of years and calculation ˹of time˺.
                         Allah did not create all this except for a purpose. He makes
                         the signs clear for people of knowledge.
+```
+
+**5. Save the database to disk**
+
+The `.save` command can be used to save the database to disk permanently -
+after steps 2 and 3 have been completed. This will help avoid having to repeat
+the import process in the future. For example:
+
+```
+sqlite> .read src/sql/schema.sql
+sqlite> .read src/sql/seed.sql
+sqlite> .save src/sql/quran.db
+sqlite> .exit
+```
+
+From that moment on, sqlite3 can be started with the path to the database
+saved to disk instead:
+
+```
+$ sqlite3 src/sql/quran.db
+sqlite> SELECT qurans.id FROM qurans WHERE qurans.locale = 'ar';
+id
+--
+1
+sqlite>
 ```
 
 ### <a id='bin-directory'>`bin/` directory</a>
