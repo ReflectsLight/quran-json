@@ -10,6 +10,10 @@
 # "src/json/en/1.json", "src/json/en/2.json", etc.
 
 ##
+# Set process name - primarily for the "ps" command
+Process.setproctitle("quran-pull (pull-english)")
+
+##
 # Dependencies
 require "net/http"
 require "nokogiri"
@@ -47,10 +51,10 @@ end
   vcount = vmap[chapter.to_s]
   line.rewind.print("Download chapter #{chapter}:").end
   1.upto(vcount) do |verse|
-    line.rewind.print("#{verse} of #{vcount} verses downloaded. ")
     res = http.request_get("/#{chapter}/#{verse}")
     if Net::HTTPOK === res
       rows.push([verse, find_content.(res)])
+      line.rewind.print("#{verse} of #{vcount} verses downloaded. ")
     else
       line.end.print(Paint["ABORT", :red, :bold])
           .end.print("Bad response: ", res.class)

@@ -11,7 +11,7 @@
 
 ##
 # Set process title - primarily for the "ps" command.
-Process.setproctitle("quran-pull/json/pull-portuguese")
+Process.setproctitle("quran-pull (pull-portuguese)")
 
 ##
 # Spawn bin/json/private/al-quran

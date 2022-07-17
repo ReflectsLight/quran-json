@@ -12,7 +12,7 @@
 
 ##
 # Set process title - primarily for the "ps" command
-Process.setproctitle("quran-pull/json/private/al-quran (#{ARGV[1]})")
+Process.setproctitle("quran-pull (al-quran) (#{ARGV[1])")
 
 ##
 # Dependencies

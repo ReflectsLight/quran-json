@@ -10,8 +10,8 @@
 # "src/json/ar/1.json", "src/json/ar/2.json", etc.
 
 ##
-# Set process name
-$0 = "pull-arabic"
+# Set process name - primarily for the "ps" command
+Process.setproctitle("quran-pull (pull-arabic)")
 
 ##
 # Dependencies
