@@ -157,12 +157,13 @@ This section covers the SQL files.
 * The [src/sql/seed.sql](src/sql/seed.sql) populates the contents of the database. <br>
   The languages included are Arabic, English, Farsi, and Portuguese.
 
-#### SQLite3 example
+#### SQLite3
 
 The example demonstrates how the SQL files mentioned above can be used to create a
 fully populated database, and then how to query the database. It is assumed that the
 repository has been cloned or downloaded (see below), and that "sqlite3" is started
-from the root of the repository.
+from the root of the repository. Other SQL databases, such as MySQL, and PostgreSQL
+should be able to import the SQL files as well, but have not been tested.
 
 **1. $HOME/.sqliterc**
 
@@ -291,8 +292,7 @@ contents of the [src/](src/) directory:
 * SQL scripts
 
   * [bin/sql/create-sql-seed-file](bin/sql/create-sql-seed-file) <br>
-    This script creates [src/sql/seed.sql](src/sql/seed.sql), and uses the contents of
-    [src/json/](src/json/) to do so.
+    This script creates [src/sql/seed.sql](src/sql/seed.sql) - using the contents of [src/json/](src/json/).
 
 **Note #1**
 
