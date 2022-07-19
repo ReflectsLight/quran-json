@@ -250,8 +250,8 @@ SELECT qurans.locale,
        verses.content from verses
 INNER JOIN qurans ON qurans.id = verses.quran_id
 INNER JOIN chapters ON chapters.id = verses.chapter_id
-WHERE qurans.locale = 'en' AND
-      verses.content LIKE '%reflected light%';
+WHERE qurans.locale = "en" AND
+      verses.content LIKE "%reflected light%";
 ```
 
 The output should look like this:
@@ -263,8 +263,8 @@ sqlite> SELECT qurans.locale,
    ...>        verses.content FROM verses
    ...> INNER JOIN qurans ON qurans.id = verses.quran_id
    ...> INNER JOIN chapters ON chapters.id = verses.chapter_id
-   ...> WHERE qurans.locale = 'en' AND
-   ...>       verses.content LIKE '%reflected light%';
+   ...> WHERE qurans.locale = "en" AND
+   ...>       verses.content LIKE "%reflected light%";
 locale  chapter  verse  content
 ------  -------  -----  ------------------------------------------------------------
 en      10       5      He is the One Who made the sun a radiant source and the moon
@@ -335,7 +335,7 @@ The script dependencies can be installed by running the following from
 the root of the repository:
 
 ```
-gem install bundler --no-rdoc --no-ri
+gem install bundler --no-document
 bundle install
 ```
 
@@ -356,3 +356,4 @@ thanks to the following websites:
 ## License
 
 This software is released into the Public Domain.
+
