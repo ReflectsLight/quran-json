@@ -25,6 +25,8 @@ section.
 
 * [src/json/ar/](src/json/ar/)
 
+The Arabic translation was obtained from the website https://sacred-texts.com.
+
 Each JSON file represents a chapter, or surah - in its original Arabic.
 For example, [src/json/ar/1.json](src/json/ar/1.json) contains Al-Fatihah.
 The structure of the file can be described as an array of arrays, with
@@ -53,10 +55,14 @@ For example:
 
 * [src/json/en/](src/json/en/)
 
+The English translation is a copy of "The Clear Quran" - by Dr. Mustafa Khattab,
+and it was obtained from the website https://quran.com.
+
 Each JSON file represents a chapter, or surah - as an English translation.
 The structure of the file can be described as an array of arrays,
 with each array representing a verse, or ayah. For example, consider
 the English translation of Al-Fatihah ([src/json/en/1.json](src/json/en/1.json)):
+
 
 ```
 [
@@ -95,6 +101,8 @@ the English translation of Al-Fatihah ([src/json/en/1.json](src/json/en/1.json))
 
 * [src/json/fa/](src/json/fa/)
 
+The Farsi translation was obtained from the website https://al-quran.cc.
+
 Each JSON file represents a chapter, or surah - as a Farsi translation.
 For example, [src/json/fa/1.json](src/json/fa/1.json) contains Al-Fatihah.
 The structure of the file can be described as an array of arrays, with
@@ -122,6 +130,8 @@ For example:
 #### Portuguese
 
 * [src/json/pt/](src/json/pt/)
+
+The Portuguese translation was obtained from the website https://al-quran.cc.
 
 Each JSON file represents a chapter, or surah - as a Portuguese translation.
 For example, [src/pt/1.json](src/json/pt/1.json) contains Al-Fatihah.
