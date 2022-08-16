@@ -167,6 +167,9 @@ This section covers the SQL files.
 * The [src/sql/seed.sql](src/sql/seed.sql) populates the contents of the database. <br>
   The languages included are Arabic, English, Farsi, and Portuguese.
 
+* The [src/sql/queries/](src/sql/queries) directory contains `.sql` files that contain SQL queries. <br>
+  They serve as examples, and as inspiration for writing new queries.
+
 #### SQLite3
 
 This section of the README demonstrates how the SQL files mentioned above can be used
