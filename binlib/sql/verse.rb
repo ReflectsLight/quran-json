@@ -7,4 +7,8 @@ class Verse
     @number = number
     @content = content
   end
+
+  def content
+    SQLUtils.escape(@content)
+  end
 end

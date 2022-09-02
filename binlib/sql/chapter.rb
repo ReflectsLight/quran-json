@@ -18,9 +18,9 @@ class Chapter
 
   def name
     if @locale == "ar"
-      SQLUtils.escape "".dup.concat(*CHAPTERS[number - 1]['codepoints'])
+      SQLUtils.escape(CHAPTERS[number - 1]['codepoints'].pack('U*'))
     else
-      SQLUtils.escape CHAPTERS[number - 1]['translated_name']
+      SQLUtils.escape(CHAPTERS[number - 1]['translated_name'])
     end
   end
 
@@ -28,12 +28,16 @@ class Chapter
     if @locale == "ar"
       name
     else
-      SQLUtils.escape CHAPTERS[number - 1]['transliterated_name']
+      SQLUtils.escape(CHAPTERS[number - 1]['transliterated_name'])
     end
   end
 
   def slug
-    SQLUtils.escape CHAPTERS[number - 1]['slug']
+    SQLUtils.escape(CHAPTERS[number - 1]['slug'])
+  end
+
+  def city
+    SQLUtils.escape(CHAPTERS[number - 1]['place_of_revelation'].capitalize)
   end
 
   def verses
