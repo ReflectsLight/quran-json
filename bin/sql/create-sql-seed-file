@@ -15,7 +15,9 @@ require_relative "../../binlib/sql/language"
 require_relative "../../binlib/sql/chapter"
 require_relative "../../binlib/sql/verse"
 require_relative "../../binlib/sql/sql_utils"
+require_relative "../../binlib/sql/row_mapper"
 
+extend RowMapper
 base_dir = File.join("src", "sql")
 template = File.read File.join(base_dir, "seed.sql.erb")
 languages = %w[ar en pt fa].map { Language.new(_1) }
