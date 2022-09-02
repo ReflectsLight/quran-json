@@ -9,6 +9,7 @@ CREATE TABLE chapters(
   name char(50) NOT NULL,
   tr_name char(50) NOT NULL,
   slug char(50) NOT NULL,
+  city char(6) NOT NULL,
   quran_id tinyint NOT NULL,
   CONSTRAINT chapters_quran_fk FOREIGN KEY (quran_id) REFERENCES qurans (id)
 );
