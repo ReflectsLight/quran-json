@@ -1,0 +1,44 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+##
+# This script requests information about the chapters of
+# The Qur'an from the website https://quran.com, and writes
+# the result to src/json/chapters-data.json.
+
+##
+# Set process name - primarily for the "ps" command
+Process.setproctitle("quran-pull (pull-chapters-data)")
+
+##
+# Dependencies
+require "bundler/setup"
+require "json"
+require "paint"
+require_relative "../../binlib/io/line"
+
+##
+# Utils
+def parse_json(path)= JSON.parse(File.read(path))
+
+##
+# Configuration variables
+base_dir = File.join("src", "json")
+chapters = parse_json(File.join(base_dir, "chapters-data.json"))
+dirs     = Dir.glob(File.join(base_dir, "*")).select { File.directory?(_1) }
+line     = IO::Line.new($stdout)
+
+print "\n", " " * 4, Paint["Add chapter / surah metadata", :bold], "\n\n"
+print " " * 8, "Locale"
+print " " * 3, "Location", "\n"
+dirs.each do |dir|
+  1.upto(114) do |number|
+    ch = chapters[number - 1]
+    lc = File.basename(dir)
+    line.rewind.print " " * 8, File.basename(dir), " " * 7, File.join(lc, "#{number}.json").center(9)
+    contents = parse_json(File.join(dir, "#{number}.json"))
+    contents.unshift(ch)
+    sleep 0.01
+  end
+  puts
+end
