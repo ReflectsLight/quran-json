@@ -1,4 +1,16 @@
 [
+  {
+    "id": "20",
+    "place_of_revelation": "makkah",
+    "transliterated_name": "Taha",
+    "translated_name": "Ta-Ha",
+    "verse_count": 135,
+    "slug": "taha",
+    "codepoints": [
+      1591,
+      1607
+    ]
+  },
   [
     1,
     "Ṭâ-Hâ."

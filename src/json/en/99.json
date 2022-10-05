@@ -1,4 +1,21 @@
 [
+  {
+    "id": "99",
+    "place_of_revelation": "madinah",
+    "transliterated_name": "Az-Zalzalah",
+    "translated_name": "The Earthquake",
+    "verse_count": 8,
+    "slug": "az-zalzalah",
+    "codepoints": [
+      1575,
+      1604,
+      1586,
+      1604,
+      1586,
+      1604,
+      1577
+    ]
+  },
   [
     1,
     "When the earth is shaken ˹in˺ its ultimate quaking,"

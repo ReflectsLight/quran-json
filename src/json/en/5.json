@@ -1,4 +1,21 @@
 [
+  {
+    "id": "5",
+    "place_of_revelation": "madinah",
+    "transliterated_name": "Al-Ma'idah",
+    "translated_name": "The Table Spread",
+    "verse_count": 120,
+    "slug": "al-maidah",
+    "codepoints": [
+      1575,
+      1604,
+      1605,
+      1575,
+      1574,
+      1583,
+      1577
+    ]
+  },
   [
     1,
     "O believers! Honour your obligations. All grazing livestock has been made lawful to you—except what is hereby announced to you and hunting while on pilgrimage. Indeed, Allah commands what He wills."

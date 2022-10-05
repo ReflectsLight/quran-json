@@ -1,4 +1,19 @@
 [
+  {
+    "id": "89",
+    "place_of_revelation": "makkah",
+    "transliterated_name": "Al-Fajr",
+    "translated_name": "The Dawn",
+    "verse_count": 30,
+    "slug": "al-fajr",
+    "codepoints": [
+      1575,
+      1604,
+      1601,
+      1580,
+      1585
+    ]
+  },
   [
     1,
     " وَٱلْفَجْرِ"

@@ -1,4 +1,20 @@
 [
+  {
+    "id": "32",
+    "place_of_revelation": "makkah",
+    "transliterated_name": "As-Sajdah",
+    "translated_name": "The Prostration",
+    "verse_count": 30,
+    "slug": "as-sajdah",
+    "codepoints": [
+      1575,
+      1604,
+      1587,
+      1580,
+      1583,
+      1577
+    ]
+  },
   [
     1,
     "الم‌"

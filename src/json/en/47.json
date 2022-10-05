@@ -1,4 +1,18 @@
 [
+  {
+    "id": "47",
+    "place_of_revelation": "madinah",
+    "transliterated_name": "Muhammad",
+    "translated_name": "Muhammad",
+    "verse_count": 38,
+    "slug": "muhammad",
+    "codepoints": [
+      1605,
+      1581,
+      1605,
+      1583
+    ]
+  },
   [
     1,
     "Those who disbelieve and hinder ˹others˺ from the Way of Allah, He will render their deeds void."

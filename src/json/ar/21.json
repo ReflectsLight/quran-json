@@ -1,4 +1,22 @@
 [
+  {
+    "id": "21",
+    "place_of_revelation": "makkah",
+    "transliterated_name": "Al-Anbya",
+    "translated_name": "The Prophets",
+    "verse_count": 112,
+    "slug": "al-anbya",
+    "codepoints": [
+      1575,
+      1604,
+      1571,
+      1606,
+      1576,
+      1610,
+      1575,
+      1569
+    ]
+  },
   [
     1,
     " ٱقْتَرَبَ لِلنَّاسِ حِسَابُهُمْ وَهُمْ فِى غَفْلَةٍۢ مُّعْرِضُونَ"

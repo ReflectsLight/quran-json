@@ -1,4 +1,16 @@
 [
+  {
+    "id": "36",
+    "place_of_revelation": "makkah",
+    "transliterated_name": "Ya-Sin",
+    "translated_name": "Ya Sin",
+    "verse_count": 83,
+    "slug": "ya-sin",
+    "codepoints": [
+      1610,
+      1587
+    ]
+  },
   [
     1,
     "suratu ya-sin. Ya-Sin."

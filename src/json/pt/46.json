@@ -1,4 +1,21 @@
 [
+  {
+    "id": "46",
+    "place_of_revelation": "makkah",
+    "transliterated_name": "Al-Ahqaf",
+    "translated_name": "The Wind-Curved Sandhills",
+    "verse_count": 35,
+    "slug": "al-ahqaf",
+    "codepoints": [
+      1575,
+      1604,
+      1571,
+      1581,
+      1602,
+      1575,
+      1601
+    ]
+  },
   [
     1,
     "Ha, Mim."

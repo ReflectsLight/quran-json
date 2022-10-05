@@ -1,4 +1,19 @@
 [
+  {
+    "id": "59",
+    "place_of_revelation": "madinah",
+    "transliterated_name": "Al-Hashr",
+    "translated_name": "The Exile",
+    "verse_count": 24,
+    "slug": "al-hashr",
+    "codepoints": [
+      1575,
+      1604,
+      1581,
+      1588,
+      1585
+    ]
+  },
   [
     1,
     " سَبَّحَ لِلَّهِ مَا فِى ٱلسَّمَوَتِ وَمَا فِى ٱلْأَرْضِ ۖ وَهُوَ ٱلْعَزِيزُ ٱلْحَكِيمُ"

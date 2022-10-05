@@ -1,4 +1,19 @@
 [
+  {
+    "id": "39",
+    "place_of_revelation": "makkah",
+    "transliterated_name": "Az-Zumar",
+    "translated_name": "The Troops",
+    "verse_count": 75,
+    "slug": "az-zumar",
+    "codepoints": [
+      1575,
+      1604,
+      1586,
+      1605,
+      1585
+    ]
+  },
   [
     1,
     "The revelation of this Book is from Allah—the Almighty, All-Wise."

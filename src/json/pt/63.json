@@ -1,4 +1,23 @@
 [
+  {
+    "id": "63",
+    "place_of_revelation": "madinah",
+    "transliterated_name": "Al-Munafiqun",
+    "translated_name": "The Hypocrites",
+    "verse_count": 11,
+    "slug": "al-munafiqun",
+    "codepoints": [
+      1575,
+      1604,
+      1605,
+      1606,
+      1575,
+      1601,
+      1602,
+      1608,
+      1606
+    ]
+  },
   [
     1,
     "Quando os hipócritas te chegam, dizem: \"Testemunhamos que, por certo, tu és O Mensageiro de Allah.\" E Allah sabe que, por certo, tu és Seu Mensageiro, e Allah testemunha que, por certo, os hipócritas são mentirosos."

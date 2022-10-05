@@ -1,4 +1,19 @@
 [
+  {
+    "id": "92",
+    "place_of_revelation": "makkah",
+    "transliterated_name": "Al-Layl",
+    "translated_name": "The Night",
+    "verse_count": 21,
+    "slug": "al-layl",
+    "codepoints": [
+      1575,
+      1604,
+      1604,
+      1610,
+      1604
+    ]
+  },
   [
     1,
     "Pela noite, quando tudo encobre!"

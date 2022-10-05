@@ -1,4 +1,19 @@
 [
+  {
+    "id": "30",
+    "place_of_revelation": "makkah",
+    "transliterated_name": "Ar-Rum",
+    "translated_name": "The Romans",
+    "verse_count": 60,
+    "slug": "ar-rum",
+    "codepoints": [
+      1575,
+      1604,
+      1585,
+      1608,
+      1605
+    ]
+  },
   [
     1,
     "الم‌"

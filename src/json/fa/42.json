@@ -1,4 +1,20 @@
 [
+  {
+    "id": "42",
+    "place_of_revelation": "makkah",
+    "transliterated_name": "Ash-Shuraa",
+    "translated_name": "The Consultation",
+    "verse_count": 53,
+    "slug": "ash-shuraa",
+    "codepoints": [
+      1575,
+      1604,
+      1588,
+      1608,
+      1585,
+      1609
+    ]
+  },
   [
     1,
     "حم."

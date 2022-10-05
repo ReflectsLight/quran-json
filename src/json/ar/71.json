@@ -1,4 +1,17 @@
 [
+  {
+    "id": "71",
+    "place_of_revelation": "makkah",
+    "transliterated_name": "Nuh",
+    "translated_name": "Noah",
+    "verse_count": 28,
+    "slug": "nuh",
+    "codepoints": [
+      1606,
+      1608,
+      1581
+    ]
+  },
   [
     1,
     " إِنَّآ أَرْسَلْنَا نُوحًا إِلَىٰ قَوْمِهِۦٓ أَنْ أَنذِرْ قَوْمَكَ مِن قَبْلِ أَن يَأْتِيَهُمْ عَذَابٌ أَلِيمٌۭ"

@@ -1,4 +1,19 @@
 [
+  {
+    "id": "52",
+    "place_of_revelation": "makkah",
+    "transliterated_name": "At-Tur",
+    "translated_name": "The Mount",
+    "verse_count": 49,
+    "slug": "at-tur",
+    "codepoints": [
+      1575,
+      1604,
+      1591,
+      1608,
+      1585
+    ]
+  },
   [
     1,
     "سوگند به کوه طور،"

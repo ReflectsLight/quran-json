@@ -1,4 +1,20 @@
 [
+  {
+    "id": "73",
+    "place_of_revelation": "makkah",
+    "transliterated_name": "Al-Muzzammil",
+    "translated_name": "The Enshrouded One",
+    "verse_count": 20,
+    "slug": "al-muzzammil",
+    "codepoints": [
+      1575,
+      1604,
+      1605,
+      1586,
+      1605,
+      1604
+    ]
+  },
   [
     1,
     " يَٓأَيُّهَا ٱلْمُزَّمِّلُ"

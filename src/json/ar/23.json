@@ -1,4 +1,22 @@
 [
+  {
+    "id": "23",
+    "place_of_revelation": "makkah",
+    "transliterated_name": "Al-Mu'minun",
+    "translated_name": "The Believers",
+    "verse_count": 118,
+    "slug": "al-muminun",
+    "codepoints": [
+      1575,
+      1604,
+      1605,
+      1572,
+      1605,
+      1606,
+      1608,
+      1606
+    ]
+  },
   [
     1,
     " قَدْ أَفْلَحَ ٱلْمُؤْمِنُونَ"

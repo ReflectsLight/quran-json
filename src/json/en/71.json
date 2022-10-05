@@ -1,4 +1,17 @@
 [
+  {
+    "id": "71",
+    "place_of_revelation": "makkah",
+    "transliterated_name": "Nuh",
+    "translated_name": "Noah",
+    "verse_count": 28,
+    "slug": "nuh",
+    "codepoints": [
+      1606,
+      1608,
+      1581
+    ]
+  },
   [
     1,
     "Indeed, We sent Noah to his people ˹saying to him˺, “Warn your people before a painful punishment comes to them.”"

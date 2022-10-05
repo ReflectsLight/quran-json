@@ -1,4 +1,21 @@
 [
+  {
+    "id": "64",
+    "place_of_revelation": "madinah",
+    "transliterated_name": "At-Taghabun",
+    "translated_name": "The Mutual Disillusion",
+    "verse_count": 18,
+    "slug": "at-taghabun",
+    "codepoints": [
+      1575,
+      1604,
+      1578,
+      1594,
+      1575,
+      1576,
+      1606
+    ]
+  },
   [
     1,
     "آنچه در آسمانها و آنچه در زمین است برای خدا تسبیح می‌گویند؛ مالکیت و حکومت از آن اوست و ستایش از آن او؛ و او بر همه چیز تواناست!"

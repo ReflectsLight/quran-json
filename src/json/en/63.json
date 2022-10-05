@@ -1,4 +1,23 @@
 [
+  {
+    "id": "63",
+    "place_of_revelation": "madinah",
+    "transliterated_name": "Al-Munafiqun",
+    "translated_name": "The Hypocrites",
+    "verse_count": 11,
+    "slug": "al-munafiqun",
+    "codepoints": [
+      1575,
+      1604,
+      1605,
+      1606,
+      1575,
+      1601,
+      1602,
+      1608,
+      1606
+    ]
+  },
   [
     1,
     "When the hypocrites come to you ˹O Prophet˺, they say, “We bear witness that you are certainly the Messenger of Allah”—and surely Allah knows that you are His Messenger—but Allah bears witness that the hypocrites are truly liars."

@@ -1,4 +1,21 @@
 [
+  {
+    "id": "8",
+    "place_of_revelation": "madinah",
+    "transliterated_name": "Al-Anfal",
+    "translated_name": "The Spoils of War",
+    "verse_count": 75,
+    "slug": "al-anfal",
+    "codepoints": [
+      1575,
+      1604,
+      1571,
+      1606,
+      1601,
+      1575,
+      1604
+    ]
+  },
   [
     1,
     "Perguntam-te, Muhammad, pelos espólios. Dize: \"Os espólios são de Allah e do Mensageiro. Então, temei a Allah e reconciliai-vos. E obedecei a Allah e a Seu Mensageiro, se sois crentes\""

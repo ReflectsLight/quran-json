@@ -1,4 +1,19 @@
 [
+  {
+    "id": "13",
+    "place_of_revelation": "madinah",
+    "transliterated_name": "Ar-Ra'd",
+    "translated_name": "The Thunder",
+    "verse_count": 43,
+    "slug": "ar-rad",
+    "codepoints": [
+      1575,
+      1604,
+      1585,
+      1593,
+      1583
+    ]
+  },
   [
     1,
     " الٓمٓر ۚ تِلْكَ ءَايَتُ ٱلْكِتَبِ ۗ وَٱلَّذِىٓ أُنزِلَ إِلَيْكَ مِن رَّبِّكَ ٱلْحَقُّ وَلَكِنَّ أَكْثَرَ ٱلنَّاسِ لَا يُؤْمِنُونَ"

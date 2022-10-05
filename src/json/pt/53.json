@@ -1,4 +1,19 @@
 [
+  {
+    "id": "53",
+    "place_of_revelation": "makkah",
+    "transliterated_name": "An-Najm",
+    "translated_name": "The Star",
+    "verse_count": 62,
+    "slug": "an-najm",
+    "codepoints": [
+      1575,
+      1604,
+      1606,
+      1580,
+      1605
+    ]
+  },
   [
     1,
     "Pela estrela, quando declina!"
