@@ -1,4 +1,18 @@
 [
+  {
+    "id": "12",
+    "place_of_revelation": "makkah",
+    "transliterated_name": "Yusuf",
+    "translated_name": "Joseph",
+    "verse_count": 111,
+    "slug": "yusuf",
+    "codepoints": [
+      1610,
+      1608,
+      1587,
+      1601
+    ]
+  },
   [
     1,
     " الٓر ۚ تِلْكَ ءَايَتُ ٱلْكِتَبِ ٱلْمُبِينِ"

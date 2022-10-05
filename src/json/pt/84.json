@@ -1,4 +1,22 @@
 [
+  {
+    "id": "84",
+    "place_of_revelation": "makkah",
+    "transliterated_name": "Al-Inshiqaq",
+    "translated_name": "The Sundering",
+    "verse_count": 25,
+    "slug": "al-inshiqaq",
+    "codepoints": [
+      1575,
+      1604,
+      1573,
+      1606,
+      1588,
+      1602,
+      1575,
+      1602
+    ]
+  },
   [
     1,
     "Quando o céu se fender,"

@@ -1,4 +1,19 @@
 [
+  {
+    "id": "90",
+    "place_of_revelation": "makkah",
+    "transliterated_name": "Al-Balad",
+    "translated_name": "The City",
+    "verse_count": 20,
+    "slug": "al-balad",
+    "codepoints": [
+      1575,
+      1604,
+      1576,
+      1604,
+      1583
+    ]
+  },
   [
     1,
     " لَآ أُقْسِمُ بِهَذَا ٱلْبَلَدِ"

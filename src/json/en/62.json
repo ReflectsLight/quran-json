@@ -1,4 +1,20 @@
 [
+  {
+    "id": "62",
+    "place_of_revelation": "madinah",
+    "transliterated_name": "Al-Jumu'ah",
+    "translated_name": "The Congregation, Friday",
+    "verse_count": 11,
+    "slug": "al-jumuah",
+    "codepoints": [
+      1575,
+      1604,
+      1580,
+      1605,
+      1593,
+      1577
+    ]
+  },
   [
     1,
     "Whatever is in the heavens and whatever is on the earth ˹constantly˺ glorifies Allah—the King, the Most Holy, the Almighty, the All-Wise."

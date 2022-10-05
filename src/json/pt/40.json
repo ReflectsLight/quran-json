@@ -1,4 +1,18 @@
 [
+  {
+    "id": "40",
+    "place_of_revelation": "makkah",
+    "transliterated_name": "Ghafir",
+    "translated_name": "The Forgiver",
+    "verse_count": 85,
+    "slug": "ghafir",
+    "codepoints": [
+      1594,
+      1575,
+      1601,
+      1585
+    ]
+  },
   [
     1,
     "Ha, Mim."

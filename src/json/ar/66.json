@@ -1,4 +1,21 @@
 [
+  {
+    "id": "66",
+    "place_of_revelation": "madinah",
+    "transliterated_name": "At-Tahrim",
+    "translated_name": "The Prohibition",
+    "verse_count": 12,
+    "slug": "at-tahrim",
+    "codepoints": [
+      1575,
+      1604,
+      1578,
+      1581,
+      1585,
+      1610,
+      1605
+    ]
+  },
   [
     1,
     " يَٓأَيُّهَا ٱلنَّبِىُّ لِمَ تُحَرِّمُ مَآ أَحَلَّ ٱللَّهُ لَكَ ۖ تَبْتَغِى مَرْضَاتَ أَزْوَجِكَ ۚ وَٱللَّهُ غَفُورٌۭ رَّحِيمٌۭ"

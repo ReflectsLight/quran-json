@@ -1,4 +1,19 @@
 [
+  {
+    "id": "114",
+    "place_of_revelation": "makkah",
+    "transliterated_name": "An-Nas",
+    "translated_name": "Mankind",
+    "verse_count": 6,
+    "slug": "an-nas",
+    "codepoints": [
+      1575,
+      1604,
+      1606,
+      1575,
+      1587
+    ]
+  },
   [
     1,
     "Say, ˹O Prophet,˺ “I seek refuge in the Lord of humankind,"

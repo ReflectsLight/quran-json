@@ -1,4 +1,21 @@
 [
+  {
+    "id": "81",
+    "place_of_revelation": "makkah",
+    "transliterated_name": "At-Takwir",
+    "translated_name": "The Overthrowing",
+    "verse_count": 29,
+    "slug": "at-takwir",
+    "codepoints": [
+      1575,
+      1604,
+      1578,
+      1603,
+      1608,
+      1610,
+      1585
+    ]
+  },
   [
     1,
     "Quando o sol for enrolado,"

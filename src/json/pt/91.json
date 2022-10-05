@@ -1,4 +1,19 @@
 [
+  {
+    "id": "91",
+    "place_of_revelation": "makkah",
+    "transliterated_name": "Ash-Shams",
+    "translated_name": "The Sun",
+    "verse_count": 15,
+    "slug": "ash-shams",
+    "codepoints": [
+      1575,
+      1604,
+      1588,
+      1605,
+      1587
+    ]
+  },
   [
     1,
     "Pelo sol e por sua plena luz matinal!"

@@ -1,4 +1,22 @@
 [
+  {
+    "id": "77",
+    "place_of_revelation": "makkah",
+    "transliterated_name": "Al-Mursalat",
+    "translated_name": "The Emissaries",
+    "verse_count": 50,
+    "slug": "al-mursalat",
+    "codepoints": [
+      1575,
+      1604,
+      1605,
+      1585,
+      1587,
+      1604,
+      1575,
+      1578
+    ]
+  },
   [
     1,
     " وَٱلْمُرْسَلَتِ عُرْفًۭا"

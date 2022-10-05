@@ -1,4 +1,21 @@
 [
+  {
+    "id": "5",
+    "place_of_revelation": "madinah",
+    "transliterated_name": "Al-Ma'idah",
+    "translated_name": "The Table Spread",
+    "verse_count": 120,
+    "slug": "al-maidah",
+    "codepoints": [
+      1575,
+      1604,
+      1605,
+      1575,
+      1574,
+      1583,
+      1577
+    ]
+  },
   [
     1,
     "Ó vós que credes! Sede fiéis aos compromissos. É-vos lícito o animal dos rebanhos, exceto o que se recita para vós, e não torneis lícita a caça, enquanto estais hurum (na umra ou peregrinação). Por certo, Allah decide o que deseja."

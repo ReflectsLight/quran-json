@@ -1,4 +1,21 @@
 [
+  {
+    "id": "25",
+    "place_of_revelation": "makkah",
+    "transliterated_name": "Al-Furqan",
+    "translated_name": "The Criterion",
+    "verse_count": 77,
+    "slug": "al-furqan",
+    "codepoints": [
+      1575,
+      1604,
+      1601,
+      1585,
+      1602,
+      1575,
+      1606
+    ]
+  },
   [
     1,
     " تَبَارَكَ ٱلَّذِى نَزَّلَ ٱلْفُرْقَانَ عَلَىٰ عَبْدِهِۦ لِيَكُونَ لِلْعَلَمِينَ نَذِيرًا"

@@ -1,4 +1,21 @@
 [
+  {
+    "id": "33",
+    "place_of_revelation": "madinah",
+    "transliterated_name": "Al-Ahzab",
+    "translated_name": "The Combined Forces",
+    "verse_count": 73,
+    "slug": "al-ahzab",
+    "codepoints": [
+      1575,
+      1604,
+      1571,
+      1581,
+      1586,
+      1575,
+      1576
+    ]
+  },
   [
     1,
     "O Prophet! ˹Always˺ be mindful of Allah, and do not yield to the disbelievers and the hypocrites. Indeed, Allah is All-Knowing, All-Wise."

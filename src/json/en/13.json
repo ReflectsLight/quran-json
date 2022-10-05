@@ -1,4 +1,19 @@
 [
+  {
+    "id": "13",
+    "place_of_revelation": "madinah",
+    "transliterated_name": "Ar-Ra'd",
+    "translated_name": "The Thunder",
+    "verse_count": 43,
+    "slug": "ar-rad",
+    "codepoints": [
+      1575,
+      1604,
+      1585,
+      1593,
+      1583
+    ]
+  },
   [
     1,
     "Alif-Lãm-Mĩm-Ra. These are the verses of the Book. What has been revealed to you ˹O Prophet˺ from your Lord is the truth, but most people do not believe."

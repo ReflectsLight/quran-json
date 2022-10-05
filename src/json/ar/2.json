@@ -1,4 +1,20 @@
 [
+  {
+    "id": "2",
+    "place_of_revelation": "madinah",
+    "transliterated_name": "Al-Baqarah",
+    "translated_name": "The Cow",
+    "verse_count": 286,
+    "slug": "al-baqarah",
+    "codepoints": [
+      1575,
+      1604,
+      1576,
+      1602,
+      1585,
+      1577
+    ]
+  },
   [
     1,
     " الٓمٓ"

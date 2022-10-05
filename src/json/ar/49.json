@@ -1,4 +1,21 @@
 [
+  {
+    "id": "49",
+    "place_of_revelation": "madinah",
+    "transliterated_name": "Al-Hujurat",
+    "translated_name": "The Rooms",
+    "verse_count": 18,
+    "slug": "al-hujurat",
+    "codepoints": [
+      1575,
+      1604,
+      1581,
+      1580,
+      1585,
+      1575,
+      1578
+    ]
+  },
   [
     1,
     " يَٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ لَا تُقَدِّمُوا۟ بَيْنَ يَدَىِ ٱللَّهِ وَرَسُولِهِۦ ۖ وَٱتَّقُوا۟ ٱللَّهَ ۚ إِنَّ ٱللَّهَ سَمِيعٌ عَلِيمٌۭ"

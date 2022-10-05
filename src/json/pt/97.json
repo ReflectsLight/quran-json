@@ -1,4 +1,19 @@
 [
+  {
+    "id": "97",
+    "place_of_revelation": "makkah",
+    "transliterated_name": "Al-Qadr",
+    "translated_name": "The Power",
+    "verse_count": 5,
+    "slug": "al-qadr",
+    "codepoints": [
+      1575,
+      1604,
+      1602,
+      1583,
+      1585
+    ]
+  },
   [
     1,
     "Por certo, fizemo-lo descer, na noite de al-Qadr."

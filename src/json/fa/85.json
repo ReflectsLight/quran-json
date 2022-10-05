@@ -1,4 +1,20 @@
 [
+  {
+    "id": "85",
+    "place_of_revelation": "makkah",
+    "transliterated_name": "Al-Buruj",
+    "translated_name": "The Mansions of the Stars",
+    "verse_count": 22,
+    "slug": "al-buruj",
+    "codepoints": [
+      1575,
+      1604,
+      1576,
+      1585,
+      1608,
+      1580
+    ]
+  },
   [
     1,
     "سوگند به آسمان که دارای برجهای بسیار است،"

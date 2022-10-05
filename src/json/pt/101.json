@@ -1,4 +1,21 @@
 [
+  {
+    "id": "101",
+    "place_of_revelation": "makkah",
+    "transliterated_name": "Al-Qari'ah",
+    "translated_name": "The Calamity",
+    "verse_count": 11,
+    "slug": "al-qariah",
+    "codepoints": [
+      1575,
+      1604,
+      1602,
+      1575,
+      1585,
+      1593,
+      1577
+    ]
+  },
   [
     1,
     "O estrondo!"

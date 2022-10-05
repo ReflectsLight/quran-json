@@ -1,4 +1,20 @@
 [
+  {
+    "id": "43",
+    "place_of_revelation": "makkah",
+    "transliterated_name": "Az-Zukhruf",
+    "translated_name": "The Ornaments of Gold",
+    "verse_count": 89,
+    "slug": "az-zukhruf",
+    "codepoints": [
+      1575,
+      1604,
+      1586,
+      1582,
+      1585,
+      1601
+    ]
+  },
   [
     1,
     "Ha, Mim."

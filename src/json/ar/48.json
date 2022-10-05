@@ -1,4 +1,19 @@
 [
+  {
+    "id": "48",
+    "place_of_revelation": "madinah",
+    "transliterated_name": "Al-Fath",
+    "translated_name": "The Victory",
+    "verse_count": 29,
+    "slug": "al-fath",
+    "codepoints": [
+      1575,
+      1604,
+      1601,
+      1578,
+      1581
+    ]
+  },
   [
     1,
     " إِنَّا فَتَحْنَا لَكَ فَتْحًۭا مُّبِينًۭا"

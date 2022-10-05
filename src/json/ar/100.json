@@ -1,4 +1,22 @@
 [
+  {
+    "id": "100",
+    "place_of_revelation": "makkah",
+    "transliterated_name": "Al-'Adiyat",
+    "translated_name": "The Courser",
+    "verse_count": 11,
+    "slug": "al-adiyat",
+    "codepoints": [
+      1575,
+      1604,
+      1593,
+      1575,
+      1583,
+      1610,
+      1575,
+      1578
+    ]
+  },
   [
     1,
     " وَٱلْعَدِيَتِ ضَبْحًۭا"

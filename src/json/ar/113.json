@@ -1,4 +1,19 @@
 [
+  {
+    "id": "113",
+    "place_of_revelation": "makkah",
+    "transliterated_name": "Al-Falaq",
+    "translated_name": "The Daybreak",
+    "verse_count": 5,
+    "slug": "al-falaq",
+    "codepoints": [
+      1575,
+      1604,
+      1601,
+      1604,
+      1602
+    ]
+  },
   [
     1,
     " قُلْ أَعُوذُ بِرَبِّ ٱلْفَلَقِ"

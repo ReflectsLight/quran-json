@@ -1,4 +1,21 @@
 [
+  {
+    "id": "88",
+    "place_of_revelation": "makkah",
+    "transliterated_name": "Al-Ghashiyah",
+    "translated_name": "The Overwhelming",
+    "verse_count": 26,
+    "slug": "al-ghashiyah",
+    "codepoints": [
+      1575,
+      1604,
+      1594,
+      1575,
+      1588,
+      1610,
+      1577
+    ]
+  },
   [
     1,
     " هَلْ أَتَىٰكَ حَدِيثُ ٱلْغَشِيَةِ"

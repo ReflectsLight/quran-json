@@ -1,4 +1,19 @@
 [
+  {
+    "id": "18",
+    "place_of_revelation": "makkah",
+    "transliterated_name": "Al-Kahf",
+    "translated_name": "The Cave",
+    "verse_count": 110,
+    "slug": "al-kahf",
+    "codepoints": [
+      1575,
+      1604,
+      1603,
+      1607,
+      1601
+    ]
+  },
   [
     1,
     "All praise is for Allah Who has revealed the Book to His servant, allowing no crookedness in it,"

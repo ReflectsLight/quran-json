@@ -1,4 +1,20 @@
 [
+  {
+    "id": "44",
+    "place_of_revelation": "makkah",
+    "transliterated_name": "Ad-Dukhan",
+    "translated_name": "The Smoke",
+    "verse_count": 59,
+    "slug": "ad-dukhan",
+    "codepoints": [
+      1575,
+      1604,
+      1583,
+      1582,
+      1575,
+      1606
+    ]
+  },
   [
     1,
     "Ḥâ-Mĩm."

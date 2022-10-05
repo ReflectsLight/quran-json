@@ -1,4 +1,21 @@
 [
+  {
+    "id": "45",
+    "place_of_revelation": "makkah",
+    "transliterated_name": "Al-Jathiyah",
+    "translated_name": "The Crouching",
+    "verse_count": 37,
+    "slug": "al-jathiyah",
+    "codepoints": [
+      1575,
+      1604,
+      1580,
+      1575,
+      1579,
+      1610,
+      1577
+    ]
+  },
   [
     1,
     "Ha, Mim."

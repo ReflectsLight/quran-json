@@ -1,4 +1,22 @@
 [
+  {
+    "id": "109",
+    "place_of_revelation": "makkah",
+    "transliterated_name": "Al-Kafirun",
+    "translated_name": "The Disbelievers",
+    "verse_count": 6,
+    "slug": "al-kafirun",
+    "codepoints": [
+      1575,
+      1604,
+      1603,
+      1575,
+      1601,
+      1585,
+      1608,
+      1606
+    ]
+  },
   [
     1,
     "بگو: ای کافران!"

@@ -1,4 +1,19 @@
 [
+  {
+    "id": "54",
+    "place_of_revelation": "makkah",
+    "transliterated_name": "Al-Qamar",
+    "translated_name": "The Moon",
+    "verse_count": 55,
+    "slug": "al-qamar",
+    "codepoints": [
+      1575,
+      1604,
+      1602,
+      1605,
+      1585
+    ]
+  },
   [
     1,
     "قیامت نزدیک شد و ماه از هم شکافت!"

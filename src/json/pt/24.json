@@ -1,4 +1,19 @@
 [
+  {
+    "id": "24",
+    "place_of_revelation": "madinah",
+    "transliterated_name": "An-Nur",
+    "translated_name": "The Light",
+    "verse_count": 64,
+    "slug": "an-nur",
+    "codepoints": [
+      1575,
+      1604,
+      1606,
+      1608,
+      1585
+    ]
+  },
   [
     1,
     "Esta é uma Sura: fizemo-la descer e preceituamo-la, e, nela, fizemos descer evidentes versículos, para meditardes."

@@ -1,4 +1,21 @@
 [
+  {
+    "id": "8",
+    "place_of_revelation": "madinah",
+    "transliterated_name": "Al-Anfal",
+    "translated_name": "The Spoils of War",
+    "verse_count": 75,
+    "slug": "al-anfal",
+    "codepoints": [
+      1575,
+      1604,
+      1571,
+      1606,
+      1601,
+      1575,
+      1604
+    ]
+  },
   [
     1,
     "They ask you ˹O Prophet˺ regarding the spoils of war. Say, “Their distribution is decided by Allah and His Messenger. So be mindful of Allah, settle your affairs, and obey Allah and His Messenger if you are ˹true˺ believers.”"

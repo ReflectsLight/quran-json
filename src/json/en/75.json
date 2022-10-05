@@ -1,4 +1,21 @@
 [
+  {
+    "id": "75",
+    "place_of_revelation": "makkah",
+    "transliterated_name": "Al-Qiyamah",
+    "translated_name": "The Resurrection",
+    "verse_count": 40,
+    "slug": "al-qiyamah",
+    "codepoints": [
+      1575,
+      1604,
+      1602,
+      1610,
+      1575,
+      1605,
+      1577
+    ]
+  },
   [
     1,
     "I do swear by the Day of Judgment!"
