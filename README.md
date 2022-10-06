@@ -34,7 +34,8 @@ and modified slightly.
 The [chapter-metadata.json](/src/json/chapter-metadata.json) file contains information about each
 chapter in The Qur'an. It is structured as an array of objects, with each object describing
 a given chapter. The following example demonstrates how Al-Fatihah is described as an object.
-The "codepoints" property is a sequence of unicode codepoints can be mapped back to an Arabic word:
+The "codepoints" property is a sequence of unicode codepoints that can be mapped back
+to Arabic - for example by using JavaScript's `String.fromCodePoint(...codepoints)`.
 
 ```json
   {
@@ -64,12 +65,15 @@ The Arabic translation was obtained from the website https://sacred-texts.com.
 
 Each JSON file represents a chapter, or surah - in its original Arabic.
 For example, [src/json/ar/1.json](src/json/ar/1.json) contains Al-Fatihah.
-The structure of the file can be described as an array of arrays, with
-each array representing a verse, or ayah.
-For example:
+
+The structure of the file can be described as an array whose first element is an
+object that contains information aboout the chapter, and the rest of the array is composed
+of two-element arrays - the first element being the verse number, and the second element
+being the contents of the verse. For example:
 
 ```
 [
+  { <chapter metadata> },
   [
     <verse number>,
     <verse contents>
@@ -94,13 +98,16 @@ The English translation is a copy of "The Clear Quran" - by Dr. Mustafa Khattab,
 and it was obtained from the website https://quran.com.
 
 Each JSON file represents a chapter, or surah - as an English translation.
-The structure of the file can be described as an array of arrays,
-with each array representing a verse, or ayah. For example, consider
-the English translation of Al-Fatihah ([src/json/en/1.json](src/json/en/1.json)):
+For example, [src/json/en/1.json](src/json/en/1.json) contains Al-Fatihah.
 
+The structure of the file can be described as an array whose first element is an
+object that contains information aboout the chapter, and the rest of the array is composed
+of two-element arrays - the first element being the verse number, and the second element
+being the contents of the verse. For example:
 
 ```
 [
+  { <chapter metadata> },
   [
     1,
     "In the Name of Allah—the Most Compassionate, Most Merciful."
@@ -140,12 +147,15 @@ The Farsi translation was obtained from the website https://al-quran.cc.
 
 Each JSON file represents a chapter, or surah - as a Farsi translation.
 For example, [src/json/fa/1.json](src/json/fa/1.json) contains Al-Fatihah.
-The structure of the file can be described as an array of arrays, with
-each array representing a verse, or ayah.
-For example:
+
+The structure of the file can be described as an array whose first element is an
+object that contains information aboout the chapter, and the rest of the array is composed
+of two-element arrays - the first element being the verse number, and the second element
+being the contents of the verse. For example:
 
 ```
 [
+  { <chapter metadata> },
   [
     <verse number>,
     <verse contents>
@@ -170,12 +180,15 @@ The Portuguese translation was obtained from the website https://al-quran.cc.
 
 Each JSON file represents a chapter, or surah - as a Portuguese translation.
 For example, [src/pt/1.json](src/json/pt/1.json) contains Al-Fatihah.
-The structure of the file can be described as an array of arrays, with each array
-representing a verse, or ayah.
-For example:
+
+The structure of the file can be described as an array whose first element is an
+object that contains information aboout the chapter, and the rest of the array is composed
+of two-element arrays - the first element being the verse number, and the second element
+being the contents of the verse. For example:
 
 ```
 [
+  { <chapter metadata> },
   [
     <verse number>,
     <verse contents>
@@ -217,8 +230,7 @@ and PostgreSQL should be able to import the SQL files as well, but have not been
 
 **1. $HOME/.sqliterc**
 
-For identical results, it is recommended that the `$HOME/.sqliterc` file has the following
-contents:
+For identical results - it is recommended that `$HOME/.sqliterc` has the following contents:
 
 ```
 PRAGMA case_sensitive_like=ON;
@@ -230,8 +242,8 @@ pragma FOREIGN_KEYS = on;
 
 **2. Import / save the database to disk**
 
-The `.save` command can be used to save the database to disk permanently.
-This helps avoid continually importing the database into memory - which is done by steps 1 and 2 in this example:
+The `.save` command can be used to save the database to disk permanently, and
+avoid repeatedly importing the database into memory:
 
 ```
 sqlite> .read src/sql/schema.sql
@@ -240,8 +252,7 @@ sqlite> .save src/sql/quran.db
 sqlite> .exit
 ```
 
-From now on, sqlite3 can be started with the path to the database
-saved to disk instead loading into memory each time:
+SQLite3 can now be started with the path to the database saved to disk:
 
 ```
 $ sqlite3 src/sql/quran.db
@@ -252,9 +263,9 @@ id
 sqlite>
 ```
 
-**5. Query the database**
+**3. Query the database**
 
-5.1
+3.1
 
 After the previous steps, the database is fully populated and exists
 on disk. We can now query the database and its contents. The SQL
@@ -287,7 +298,7 @@ en      Al-Ikhlas       112      3      He has never had offspring, nor was He b
 en      Al-Ikhlas       112      4      And there is none comparable to Him.”
 ```
 
-5.2
+3.2
 
 The next query we will execute demonstrates how to find a particular word or
 phrase in the English translation of The Qur'an - using the LIKE operator:
@@ -343,6 +354,11 @@ contents of the [src/](src/) directory:
 
   * [bin/json/pull-chapter-metadata](bin/json/pull-chapter-metadata) <br>
     The script is responsible for generating [src/json/chapter-metadata.json](src/json/chapter-metadata.json).
+
+  * [bin/json/insert-chapter-metadata](bin/json/insert-chapter-data) <br>
+    This script is responsible for inserting chapter metadata as the first element
+    of a JSON array that otherwise contains the contents of a chapter
+    (eg [src/json/ar/1.json](src/json/ar/1.json), ...).
 
 * SQL scripts
 
