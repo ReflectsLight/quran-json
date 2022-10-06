@@ -13,7 +13,7 @@ in English, Farsi, and Portuguese. The contents are made available in JSON, and 
 This section covers the JSON files. Click [here](#srcsql-directory) to jump to the SQL
 section.
 
-* The [src/json/chapters-data.json](src/json/chapters-data.json) file contains information
+* The [src/json/chapter-metadata.json](src/json/chapter-metadata.json) file contains information
   about each chapter in The Qur'an.
 
 * The [src/json/ar/](src/json/ar/) directory contains The Qur'an in its original Arabic.
@@ -26,12 +26,12 @@ section.
 
 #### Chapters
 
-* [src/json/chapters-data.json](/src/json/chapters-data.json)
+* [src/json/chapter-metadata.json](/src/json/chapter-metadata.json)
 
-The [chapters-data.json](/src/json/chapters-data.json) file was obtained from https://quran.com,
+The [chapter-metadata.json](/src/json/chapter-metadata.json) file was obtained from https://quran.com,
 and modified slightly.
 
-The [chapters-data.json](/src/json/chapters-data.json) file contains information about each
+The [chapter-metadata.json](/src/json/chapter-metadata.json) file contains information about each
 chapter in The Qur'an. It is structured as an array of objects, with each object describing
 a given chapter. The following example demonstrates how Al-Fatihah is described as an object.
 The "codepoints" property is a sequence of unicode codepoints can be mapped back to an Arabic word:
@@ -329,9 +329,6 @@ contents of the [src/](src/) directory:
 
 * JSON scripts
 
-  * [bin/json/pull-chapters-data](bin/json/pull-chapters-data) <br>
-    The script is responsible for generating [src/json/chapters-data.json](src/json/chapters-data.json).
-
   * [bin/json/pull-arabic](bin/json/pull-arabic) <br>
     This script is responsible for populating [src/json/ar/](src/json/ar/).
 
@@ -343,6 +340,9 @@ contents of the [src/](src/) directory:
 
   * [bin/json/pull-portuguese](bin/json/pull-portuguese) <br>
     This script is responsible for populating [src/json/pt/](src/json/pt/).
+
+  * [bin/json/pull-chapter-metadata](bin/json/pull-chapter-metadata) <br>
+    The script is responsible for generating [src/json/chapter-metadata.json](src/json/chapter-metadata.json).
 
 * SQL scripts
 

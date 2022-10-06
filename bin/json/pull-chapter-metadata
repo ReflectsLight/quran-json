@@ -4,11 +4,11 @@
 ##
 # This script requests information about the chapters of
 # The Qur'an from the website https://quran.com, and writes
-# the result to src/json/chapters-data.json.
+# the result to src/json/chapter-metadata.json.
 
 ##
 # Set process name - primarily for the "ps" command
-Process.setproctitle("quran-pull (pull-chapters-data)")
+Process.setproctitle("quran-pull (pull-chapter-metadata)")
 
 ##
 # Dependencies
@@ -21,7 +21,7 @@ require "paint"
 ##
 # Configuration variables.
 base_uri = "quran.com"
-dest = File.join('src', 'json', 'chapters-data.json')
+dest = File.join('src', 'json', 'chapter-metadata.json')
 
 ##
 # Share a single Net::HTTP instance.
@@ -60,4 +60,4 @@ end
 ##
 # Write result
 File.write(dest, JSON.pretty_generate(parsed))
-print Paint["OK: ", :green, :bold], dest, "\n"
+print Paint["OK ", :green, :bold], dest, "\n"
