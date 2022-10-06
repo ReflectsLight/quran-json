@@ -18,3 +18,9 @@ Process.setproctitle("quran-pull (pull-farsi)")
 Process.wait Process.spawn(
   "./bin/json/private/al-quran", "fa", "farsi"
 )
+
+##
+# Spawn bin/json/insert-chapter-metadata
+Process.wait Process.spawn(
+  "./bin/json/insert-chapter-metadata", "fa"
+)

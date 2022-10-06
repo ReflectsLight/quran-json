@@ -62,3 +62,9 @@ end
   sleep(delay)
 end
 line.end.print(Paint["Done.", :bold]).end
+
+##
+# Spawn bin/json/insert-chapter-metadata
+Process.wait Process.spawn(
+  "./bin/json/insert-chapter-metadata", "ar"
+)
