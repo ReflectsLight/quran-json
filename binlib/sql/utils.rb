@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module SQLUtils
+module SQL::Utils
   module_function
 
   def escape(str)
