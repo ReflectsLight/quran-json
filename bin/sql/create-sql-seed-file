@@ -13,12 +13,10 @@ require "json"
 require "erb"
 require_relative "../../binlib/sql"
 
-extend SQL::JoinRow
 base_dir = File.join("src", "sql")
 template = File.read File.join(base_dir, "seed.sql.erb")
-languages = %w[ar en pt fa].map { SQL::Language.new(_1) }
 result = ERB.new(template)
-            .result_with_hash(chapter_id: 1, languages:)
+            .result(SQL::Template.context)
             .each_line.map(&:strip)
             .reject(&:empty?).join($/)
 File.write File.join(base_dir, "seed.sql"), result
