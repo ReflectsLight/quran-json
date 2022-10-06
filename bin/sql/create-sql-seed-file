@@ -11,16 +11,12 @@
 # Dependencies
 require "json"
 require "erb"
-require_relative "../../binlib/sql/language"
-require_relative "../../binlib/sql/chapter"
-require_relative "../../binlib/sql/verse"
-require_relative "../../binlib/sql/sql_utils"
-require_relative "../../binlib/sql/row_mapper"
+require_relative "../../binlib/sql"
 
-extend RowMapper
+extend SQL::JoinRow
 base_dir = File.join("src", "sql")
 template = File.read File.join(base_dir, "seed.sql.erb")
-languages = %w[ar en pt fa].map { Language.new(_1) }
+languages = %w[ar en pt fa].map { SQL::Language.new(_1) }
 result = ERB.new(template)
             .result_with_hash(chapter_id: 1, languages:)
             .each_line.map(&:strip)

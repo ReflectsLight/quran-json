@@ -1,5 +1,5 @@
 <% languages.each.with_index(1) do |language, quran_id| %>
-  INSERT INTO qurans (locale) VALUES (<%= SQLUtils.escape(language.locale) %>);
+  INSERT INTO qurans (locale) VALUES (<%= SQL::Utils.escape(language.locale) %>);
   <% language.chapters.each do |chapter| %>
     INSERT INTO chapters (
       id, number, name, tr_name, slug, city, quran_id
