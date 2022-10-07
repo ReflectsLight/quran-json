@@ -5,5 +5,5 @@ module SQL
   require_relative "sql/chapter"
   require_relative "sql/verse"
   require_relative "sql/utils"
-  require_relative "sql/join_row"
+  require_relative "sql/template"
 end
