@@ -139,7 +139,7 @@ the verse. For example:
   [Source: https://al-quran.cc](https://al-quran.cc)
 
 Each JSON file represents a chapter, or surah. For example -
-[src/pt/1.json](src/json/pt/1.json) contains Al-Fatihah. The structure of the JSON
+[src/json/pt/1.json](src/json/pt/1.json) contains Al-Fatihah. The structure of the JSON
 files can be described as an array where the first element is an object that contains
 information aboout the chapter, and the rest of the array is composed of two-element
 arrays - the first element being the verse number, and the second element being the
@@ -174,8 +174,8 @@ information about each chapter in The Qur'an. The JSON file is structured as an 
 of objects, where each object describes a given chapter.
 
 The following example demonstrates how Al-Fatihah is described. The "codepoints"
-property is a sequence of unicode codepoints that can be mapped back to Arabic
-- for example by using JavaScript's `String.fromCodePoint(...codepoints)`.
+property is a sequence of unicode codepoints that can be mapped back to Arabic - 
+for example by using JavaScript's `String.fromCodePoint(...codepoints)`.
 
 ```json
   {
