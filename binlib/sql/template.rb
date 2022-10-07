@@ -7,8 +7,7 @@ class SQL::Template
 
   def context
     context = binding
-    context.local_variable_set(:languages, %w[ar en pt fa].map { SQL::Language.new(_1) })
-    context.local_variable_set(:chapter_id, 1)
+    locals.each { context.local_variable_set(_1, _2) }
     context
   end
 
@@ -25,5 +24,14 @@ class SQL::Template
       verse.number, quran_id,
       chapter_id, verse.content
     ].map { Integer === _1 ? _1 : SQL::Utils.escape(_1) }.join(",")
+  end
+
+  private
+
+  def locals
+    {
+      languages: %w(ar en pt fa).map { SQL::Language.new(_1) },
+      chapter_id: 1
+    }
   end
 end
