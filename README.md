@@ -1,14 +1,16 @@
-## quran-pull
+## About
 
 This repository contains the holy book, The Qur'an, in its original Arabic and as translations
-in English, Farsi, and Portuguese. The contents are made available in JSON, and SQL files.
+in English, Farsi, and Portuguese. The contents are made available in JSON, and SQL. The SQL 
+can be imported to create a database that contains The Quran.
 
-**Navigation**
+**Contents**
+
 1. [`src/json/`directory](#srcjson-directory)
 2. [`src/sql/` directory](#srcsql-directory)
 3. [`bin/` directory](#bin-directory)
 
-### <a id='srcjson-directory'>`src/json/` directory</a>
+## <a id='srcjson-directory'>`src/json/` directory</a>
 
 This section covers the JSON files. Click [here](#srcsql-directory) to jump to the SQL
 section.
@@ -24,10 +26,7 @@ section.
 * The [src/json/chapter-metadata.json](src/json/chapter-metadata.json) file
   contains information about each chapter in The Qur'an.
 
-#### Arabic
-
-* [src/json/ar/](src/json/ar/) <br>
-  [Source: https://sacred-texts.com](https://sacred-texts.com)
+### File structure
 
 Each JSON file represents a chapter, or surah. For example -
 [src/json/ar/1.json](src/json/ar/1.json) contains Al-Fatihah. The structure of the JSON
@@ -55,116 +54,7 @@ the verse. For example:
 ]
 ```
 
-#### English
-
-* [src/json/en/](src/json/en/) <br>
-  [Source: https://quran.com](https://quran.com)
-
-The English translation is a copy of "The Clear Quran" - by Dr. Mustafa Khattab.
-Each JSON file represents a chapter, or surah. For example -
-[src/json/en/1.json](src/json/en/1.json) contains Al-Fatihah. The structure of the JSON
-files can be described as an array where the first element is an object that contains
-information aboout the chapter, and the rest of the array is composed of two-element
-arrays - the first element being the verse number, and the second element being the
-contents of the verse. For example:
-
-```
-[
-  { <chapter metadata> },
-  [
-    1,
-    "In the Name of Allah—the Most Compassionate, Most Merciful."
-  ],
-  [
-    2,
-    "All praise is for Allah—Lord of all worlds,"
-  ],
-  [
-    3,
-    "the Most Compassionate, Most Merciful,"
-  ],
-  [
-    4,
-    "Master of the Day of Judgment."
-  ],
-  [
-    5,
-    "You ˹alone˺ we worship and You ˹alone˺ we ask for help."
-  ],
-  [
-    6,
-    "Guide us along the Straight Path,"
-  ],
-  [
-    7,
-    "the Path of those You have blessed—not those You are displeased with, or those who are astray. "
-  ]
-]
-```
-
-#### Farsi
-
-* [src/json/fa/](src/json/fa/) <br>
-  [Source: https://al-quran.cc](https://al-quran.cc)
-
-Each JSON file represents a chapter, or surah. For example -
-[src/json/fa/1.json](src/json/fa/1.json) contains Al-Fatihah. The structure of the JSON
-files can be described as an array where the first element is an object that contains
-information aboout the chapter, and the rest of the array is composed of two-element arrays -
-the first element being the verse number, and the second element being the contents of
-the verse. For example:
-
-```
-[
-  { <chapter metadata> },
-  [
-    <verse number>,
-    <verse contents>
-  ],
-  [
-    <verse number>,
-    <verse contents>
-  ],
-  [
-    <verse number>,
-    <verse contents>
-  ],
-  /* etc... */
-]
-```
-
-#### Portuguese
-
-* [src/json/pt/](src/json/pt/) <br>
-  [Source: https://al-quran.cc](https://al-quran.cc)
-
-Each JSON file represents a chapter, or surah. For example -
-[src/json/pt/1.json](src/json/pt/1.json) contains Al-Fatihah. The structure of the JSON
-files can be described as an array where the first element is an object that contains
-information aboout the chapter, and the rest of the array is composed of two-element
-arrays - the first element being the verse number, and the second element being the
-contents of the verse. For example:
-
-```
-[
-  { <chapter metadata> },
-  [
-    <verse number>,
-    <verse contents>
-  ],
-  [
-    <verse number>,
-    <verse contents>
-  ],
-  [
-    <verse number>,
-    <verse contents>
-  ],
-  /* etc... */
-]
-```
-
-#### Chapter metadata
+### Chapter metadata
 
 * [src/json/chapter-metadata.json](/src/json/chapter-metadata.json) <br>
   [Source: https://quran.com](https://quran.com)
@@ -174,7 +64,7 @@ information about each chapter in The Qur'an. The JSON file is structured as an 
 of objects, where each object describes a given chapter.
 
 The following example demonstrates how Al-Fatihah is described. The "codepoints"
-property is a sequence of unicode codepoints that can be mapped back to Arabic - 
+property is a sequence of unicode codepoints that can be mapped back to Arabic -
 for example by using JavaScript's `String.fromCodePoint(...codepoints)`.
 
 ```json
@@ -197,7 +87,7 @@ for example by using JavaScript's `String.fromCodePoint(...codepoints)`.
   },
 ```
 
-### <a id='srcsql-directory'>`src/sql/` directory</a>
+## <a id='srcsql-directory'>`src/sql/` directory</a>
 
 This section covers the SQL files.
 
@@ -210,7 +100,7 @@ This section covers the SQL files.
 * The [src/sql/queries/](src/sql/queries) directory contains `.sql` files that contain SQL queries. <br>
   They serve as examples, and as inspiration for writing new queries.
 
-#### SQLite3
+### SQLite3
 
 This section of the README demonstrates how the SQL files mentioned above can be used
 to create a fully populated database in memory, how to query the database, and how to
@@ -325,7 +215,7 @@ en      Jonah           10       5      He is the One Who made the sun a radiant
 ```
 
 
-### <a id='bin-directory'>`bin/` directory</a>
+## <a id='bin-directory'>`bin/` directory</a>
 
 The [bin/](bin/) directory contains scripts that generate the
 contents of the [src/](src/) directory:
@@ -357,16 +247,14 @@ contents of the [src/](src/) directory:
   * [bin/sql/create-sql-seed-file](bin/sql/create-sql-seed-file) <br>
     This script creates [src/sql/seed.sql](src/sql/seed.sql) - using the contents of [src/json/](src/json/).
 
-**Note**
+**Notes**
 
-By default it is not neccessary to run the scripts mentioned above because the contents of
-`src/` is included in the repository already.
+* It is not neccessary to run the scripts mentioned above. <br>
+  The content they create is included in `src/` already.
 
-**Note**
-
-The scripts are written in [Ruby v3.1.0+](https://www.ruby-lang.org). <br>
-The script dependencies can be installed by running the following from
-the root of the repository:
+* The scripts are written in [Ruby v3.1.0+](https://www.ruby-lang.org). <br>
+  The script dependencies can be installed by running the following from
+  the root of the repository:
 
 ```
 gem install bundler --no-document
@@ -383,7 +271,7 @@ a zip file of the repository is provided for download: [download zip file](https
 The content of the [src/](src/) directory was automatically generated
 thanks to the following websites:
 
-  * https://sacred-texts.com - for the original Arabic.
+  * https://searchtruth.com - for the original Arabic.
   * https://quran.com - for the English translation.
   * https://al-quran.cc - for the Farsi, and Portuguese translations.
 
