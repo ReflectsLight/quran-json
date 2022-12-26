@@ -15,16 +15,16 @@ can be imported to create a database that contains The Quran.
 This section covers the JSON files. Click [here](#srcsql-directory) to jump to the SQL
 section.
 
-* The [src/json/ar/](src/json/ar/) directory contains The Qur'an in its original Arabic.
+* The [src/json/ar/](src/json/ar/) directory contains The Quran in its original Arabic.
 
-* The [src/json/en/](src/json/en/) directory contains an English translation of The Qur'an.
+* The [src/json/en/](src/json/en/) directory contains an English translation of The Quran.
 
-* The [src/json/fa/](src/json/fa/) directory contains a Farsi translation of The Qur'an.
+* The [src/json/fa/](src/json/fa/) directory contains a Farsi translation of The Quran.
 
-* The [src/json/pt/](src/json/pt/) directory contains a Portuguese translation of The Qur'an.
+* The [src/json/pt/](src/json/pt/) directory contains a Portuguese translation of The Quran.
 
 * The [src/json/chapter-metadata.json](src/json/chapter-metadata.json) file
-  contains information about each chapter in The Qur'an.
+  contains information about each chapter in The Quran.
 
 ### File structure
 
@@ -60,7 +60,7 @@ the verse. For example:
   [Source: https://quran.com](https://quran.com)
 
 The [src/json/chapter-metadata.json](/src/json/chapter-metadata.json) file contains
-information about each chapter in The Qur'an. The JSON file is structured as an array
+information about each chapter in The Quran. The JSON file is structured as an array
 of objects, where each object describes a given chapter.
 
 The following example demonstrates how Al-Fatihah is described. The "codepoints"
@@ -183,7 +183,7 @@ en      Al-Ikhlas       112      4      And there is none comparable to Him.”
 3.2
 
 The next query we will execute demonstrates how to find a particular word or
-phrase in the English translation of The Qur'an - using the LIKE operator:
+phrase in the English translation of The Quran - using the LIKE operator:
 
 ```sql
 SELECT qurans.locale,
