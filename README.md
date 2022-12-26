@@ -1,6 +1,6 @@
 ## About
 
-This repository contains the holy book, The Qur'an, in its original Arabic and as translations
+This repository contains the holy book, The Quran, in its original Arabic and as translations
 in English, Farsi, and Portuguese. The contents are made available in JSON, and SQL. The SQL 
 can be imported to create a database that contains The Quran.
 
