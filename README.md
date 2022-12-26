@@ -1,7 +1,7 @@
 ## About
 
 This repository contains the holy book, The Quran, in its original Arabic and as translations
-in English, Farsi, and Portuguese. The contents are made available in JSON, and SQL. The SQL 
+in English, Farsi, and Portuguese. The contents are made available in JSON, and SQL. The SQL
 can be imported to create a database that contains The Quran.
 
 **Contents**
@@ -64,8 +64,9 @@ information about each chapter in The Quran. The JSON file is structured as an a
 of objects, where each object describes a given chapter.
 
 The following example demonstrates how Al-Fatihah is described. The "codepoints"
-property is a sequence of unicode codepoints that can be mapped back to Arabic -
-for example by using JavaScript's `String.fromCodePoint(...codepoints)`.
+property is a sequence of unicode codepoints representing a surah's name in Arabic.
+The codepoints can be mapped to Arabic using JavaScript's
+`String.fromCodePoint(...codepoints)` function.
 
 ```json
   {
