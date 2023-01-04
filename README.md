@@ -173,8 +173,8 @@ en      Al-Ikhlas       112      4      And there is none comparable to Him.”
 
 3.2
 
-The next query we will find a particular phrase in the English translation of The Quran
-by using the LIKE operator:
+The next query we will execute finds a particular phrase in the English 
+translation of The Quran by using the LIKE operator:
 
 ```sql
 SELECT qurans.locale,
