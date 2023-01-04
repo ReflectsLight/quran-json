@@ -173,7 +173,7 @@ en      Al-Ikhlas       112      4      And there is none comparable to Him.”
 
 3.2
 
-The next query we will execute finds a particular phrase in the English 
+The next query we will execute finds a particular phrase in the English
 translation of The Quran by using the LIKE operator:
 
 ```sql
@@ -238,25 +238,20 @@ contents of the [src/](src/) directory:
   * [bin/sql/create-sql-seed-file](bin/sql/create-sql-seed-file) <br>
     This script creates [src/sql/seed.sql](src/sql/seed.sql) - using the contents of [src/json/](src/json/).
 
-**Notes**
-
-* It is not neccessary to run the scripts mentioned above. <br>
-  The content they create is included in `src/` already.
-
-* The scripts are written in [Ruby v3.1.0+](https://www.ruby-lang.org). <br>
-  The script dependencies can be installed by running the following from
-  the root of the repository:
+The scripts are written in [Ruby v3.1.0+](https://www.ruby-lang.org). <br>
+The script dependencies can be installed by running:
 
 ```
 gem install bundler --no-document
 bundle install
 ```
 
+from the root of the repository.
+
 ## Download
 
-The contents of the repository is provided as a zip file.
-<br>
-[Download zip file](https://github.com/ReflectedLight/The-Qur-an/archive/refs/tags/v0.11.1.zip).
+The contents of the repository are available as
+[a zip file]((https://github.com/ReflectedLight/The-Qur-an/archive/refs/tags/v0.11.1.zip).
 
 ## Credit, and thanks
 
