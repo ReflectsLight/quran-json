@@ -1,7 +1,7 @@
 ## About
 
 This repository contains the holy book, The Quran, in its original Arabic and as translations
-in English, Farsi, and Portuguese. The contents are made available in JSON, and SQL. The SQL
+in English, Farsi, and Portuguese. The contents are made available as JSON, and SQL. The SQL
 can be imported to create a database that contains The Quran.
 
 **Contents**
@@ -12,8 +12,7 @@ can be imported to create a database that contains The Quran.
 
 ## <a id='srcjson-directory'>`src/json/` directory</a>
 
-This section covers the JSON files. Click [here](#srcsql-directory) to jump to the SQL
-section.
+This section covers the JSON files.
 
 * The [src/json/ar/](src/json/ar/) directory contains The Quran in its original Arabic.
 
