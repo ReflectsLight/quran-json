@@ -99,7 +99,7 @@ The codepoints can be mapped to Arabic using JavaScript's
 ### SQLite3
 
 The SQL files mentioned above can be used to create a fully populated database
-in-memory and on disk using SQLite3. Other SQL databases might work as well but
+in-memory and on disk using SQLite3. Other SQL databases might work but
 have not been tested.
 
 **1. $HOME/.sqliterc**
