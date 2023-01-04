@@ -251,7 +251,7 @@ from the root of the repository.
 ## Download
 
 The contents of the repository are available as
-[a zip file]((https://github.com/ReflectedLight/The-Qur-an/archive/refs/tags/v0.11.1.zip).
+[a zip file](https://github.com/ReflectedLight/The-Qur-an/archive/refs/tags/v0.11.1.zip).
 
 ## Credit, and thanks
 
