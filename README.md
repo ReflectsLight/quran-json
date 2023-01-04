@@ -1,8 +1,8 @@
 ## About
 
-This repository contains the holy book, The Quran, in its original Arabic and as translations
-in English, Farsi, and Portuguese. The contents are made available as JSON, and SQL. The SQL
-can be imported to create a database that contains The Quran.
+This repository contains the holy book, The Quran, in its original Arabic
+and as translations in English, Farsi, and Portuguese. The contents are made
+available in the JSON, and SQL formats.
 
 **Contents**
 
@@ -11,8 +11,6 @@ can be imported to create a database that contains The Quran.
 3. [`bin/` directory](#bin-directory)
 
 ## <a id='srcjson-directory'>`src/json/` directory</a>
-
-This section covers the JSON files.
 
 * The [src/json/ar/](src/json/ar/) directory contains The Quran in its original Arabic.
 
@@ -89,30 +87,25 @@ The codepoints can be mapped to Arabic using JavaScript's
 
 ## <a id='srcsql-directory'>`src/sql/` directory</a>
 
-This section covers the SQL files.
-
 * The [src/sql/schema.sql](src/sql/schema.sql) defines the schema of the database. <br>
   The schema is composed of three tables: `qurans`, `chapters`, and `verses`.
 
 * The [src/sql/seed.sql](src/sql/seed.sql) populates the contents of the database. <br>
   The languages included are Arabic, English, Farsi, and Portuguese.
 
-* The [src/sql/queries/](src/sql/queries) directory contains `.sql` files that contain SQL queries. <br>
-  They serve as examples, and as inspiration for writing new queries.
+* The [src/sql/queries/](src/sql/queries) directory contains `.sql` files that
+  contain example SQL queries.
 
 ### SQLite3
 
-This section of the README demonstrates how the SQL files mentioned above can be used
-to create a fully populated database in memory, how to query the database, and how to
-save the database to disk for future use.
-
-It is assumed that the repository has been cloned or downloaded (see below), and that
-"sqlite3" is started from the root of the repository. Other SQL databases, such as MySQL,
-and PostgreSQL should be able to import the SQL files as well, but have not been tested.
+The SQL files mentioned above can be used to create a fully populated database
+in-memory and on disk using SQLite3. Other SQL databases might work as well but
+have not been tested.
 
 **1. $HOME/.sqliterc**
 
-For identical results - it is recommended that `$HOME/.sqliterc` has the following contents:
+For identical results - it is recommended that `$HOME/.sqliterc` has the
+following contents:
 
 ```
 PRAGMA case_sensitive_like=ON;
@@ -122,10 +115,9 @@ pragma FOREIGN_KEYS = on;
 
 ```
 
-**2. Import / save the database to disk**
+**2. Save the database to disk**
 
-The `.save` command can be used to save the database to disk permanently, and
-avoid repeatedly importing the database into memory:
+The `.save` command can be used to save the database to disk:
 
 ```
 sqlite> .read src/sql/schema.sql
@@ -134,7 +126,8 @@ sqlite> .save src/sql/quran.db
 sqlite> .exit
 ```
 
-SQLite3 can now be started with the path to the database saved to disk:
+SQLite3 can then be started with the path to the database that's been saved
+to disk:
 
 ```
 $ sqlite3 src/sql/quran.db
@@ -149,10 +142,8 @@ sqlite>
 
 3.1
 
-After the previous steps, the database is fully populated and exists
-on disk. We can now query the database and its contents. The SQL
-query we will execute fetches the contents of chapter 112 in the English
-locale (i.e: `en`):
+The SQL query we will execute fetches the contents of chapter 112 in
+the English locale (i.e: `en`):
 
 ```sql
 SELECT qurans.locale,
@@ -169,7 +160,7 @@ WHERE  qurans.locale = "en"
        AND chapters.number = 112;
 ```
 
-The output should look like this:
+The output should look similar to this:
 
 ```
 locale  chapter (name)  chapter  verse  content
@@ -182,8 +173,8 @@ en      Al-Ikhlas       112      4      And there is none comparable to Him.”
 
 3.2
 
-The next query we will execute demonstrates how to find a particular word or
-phrase in the English translation of The Quran - using the LIKE operator:
+The next query we will find a particular phrase in the English translation of The Quran
+by using the LIKE operator:
 
 ```sql
 SELECT qurans.locale,
@@ -201,7 +192,7 @@ WHERE  qurans.locale = "en"
 
 ```
 
-The output should look like this:
+The output should look similar to this:
 
 ```
 locale  chapter (name)  chapter  verse  content
@@ -263,8 +254,9 @@ bundle install
 
 ## Download
 
-For those who don't have access to, or know how to use "git",
-a zip file of the repository is provided for download: [download zip file](https://github.com/ReflectedLight/The-Qur-an/archive/refs/tags/v0.11.1.zip).
+The contents of the repository is provided as a zip file.
+<br>
+[Download zip file](https://github.com/ReflectedLight/The-Qur-an/archive/refs/tags/v0.11.1.zip).
 
 ## Credit, and thanks
 
