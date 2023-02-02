@@ -25,7 +25,7 @@ information about a surah, and the rest of the array is made up of two-element a
 The first element is the ayah number (also known as a verse number), and the second
 element is the contents of the ayah. See Surah [Al-Fatihah](src/json/en/1.json) as
 an example.
-```
+
 ## <a id='srcsql-directory'>src/sql/</a>
 
 * [src/sql/schema.sql](src/sql/schema.sql) defines the schema of the database.
