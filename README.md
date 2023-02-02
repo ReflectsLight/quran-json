@@ -17,7 +17,7 @@ are available in the JSON, and SQL formats.
 * [src/json/fa/](src/json/fa/) contains a Farsi translation of The Quran.
 * [src/json/pt/](src/json/pt/) contains a Portuguese translation of The Quran.
 
-### JSON schema
+#### JSON schema
 
 Each JSON file represents a surah (also known as a chapter). The format of the JSON
 files can be described as an array where the first element is an object that contains
