@@ -22,7 +22,7 @@ require "nokogiri"
 require "json"
 require "paint"
 require "fileutils"
-require_relative "../../../binlib/io/line"
+require "io/line"
 
 ##
 # Configuration variables

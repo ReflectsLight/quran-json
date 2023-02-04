@@ -19,7 +19,7 @@ Process.setproctitle("quran-pull (insert-chapter-metadata)")
 require "bundler/setup"
 require "json"
 require "paint"
-require_relative "../../binlib/io/line"
+require "io/line"
 
 ##
 # Utils
