@@ -9,7 +9,7 @@ inherit_gem:
   standard: config/base.yml
 
 AllCops:
-  TargetRubyVersion: 3.1
+  TargetRubyVersion: 3.2
 
 ##
 # Enabled cops
@@ -23,4 +23,6 @@ Layout/MultilineMethodCallIndentation:
 Layout/ArgumentAlignment:
   Enabled: false
 Style/LambdaCall:
+  Enabled: false
+Style/FrozenStringLiteralComment:
   Enabled: false
