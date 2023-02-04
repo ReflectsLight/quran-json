@@ -20,7 +20,7 @@ require "net/http"
 require "nokogiri"
 require "json"
 require "paint"
-require_relative "io/line"
+require "io/line"
 
 ##
 # Configuration variables.
