@@ -6,6 +6,13 @@ GIT
     io-line.rb (0.1.0)
       io-console (~> 0.5)
 
+GIT
+  remote: https://github.com/0x1eef/ryo.rb.git
+  revision: 1fc0e7a2187d8020aadfb71b6b066dbc3af2fc2e
+  tag: v0.3.0
+  specs:
+    ryo.rb (0.3.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -55,6 +62,7 @@ DEPENDENCIES
   json (~> 2.6)
   nokogiri (~> 1.13)
   paint (~> 2.2)
+  ryo.rb (~> 0.3)!
   standard (~> 1.12)
 
 BUNDLED WITH

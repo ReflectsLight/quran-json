@@ -1,0 +1,42 @@
+{
+  "ar": {
+    "http": {
+      "hostname": "www.searchtruth.com",
+      "path": "/chapter_display.php?chapter=%{surah_no}&translator=7",
+      "vars": ["surah_no"]
+    },
+    "dest": {
+      "dir": "%{share_dir}/TheQuran/ar"
+    }
+  },
+  "en": {
+    "http": {
+      "hostname": "quran.com",
+      "path": "/en/%{surah_no}/%{ayah_no}",
+      "vars": ["surah_no", "ayah_no"]
+    },
+    "dest": {
+      "dir": "%{share_dir}/TheQuran/en"
+    }
+  },
+  "pt": {
+    "http": {
+      "hostname": "quran.com",
+      "path": "/pt/%{surah_no}/%{ayah_no}",
+      "vars": ["surah_no", "ayah_no"]
+    },
+    "dest": {
+      "dir": "%{share_dir}/TheQuran/pt"
+    }
+  },
+  "fa": {
+    "http": {
+      "hostname": "quran.com",
+      "path": "/fa/%{surah_no}/%{ayah_no}",
+      "vars": ["surah_no", "ayah_no"]
+    },
+    "dest": {
+      "dir": "%{share_dir}/TheQuran/fa"
+    }
+  }
+}

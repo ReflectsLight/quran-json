@@ -51,15 +51,16 @@ The [bin/](bin/) directory contains scripts that generate the contents of the
   * [bin/sql/create-sql-seed-file](bin/sql/create-sql-seed-file) <br>
     This script creates [src/sql/seed.sql](src/sql/seed.sql).
 
-## Credit
+## Thanks
 
-Thanks to the following websites:
+First and foremost, Alhamdulillah.
 
-  * https://searchtruth.com - for the original Arabic.
-  * https://quran.com - for the English translation.
-  * https://al-quran.cc - for the Farsi, and Portuguese translations.
+I'd also like to extend thanks to the following websites for providing
+the content that quran-pull downloads:
+
+  * https://searchtruth.com for the original Arabic.
+  * https://quran.com for the English, Portuguese, and Farsi translations.
 
 ## License
 
-This software is released into the Public Domain.
-
+Public domain.
