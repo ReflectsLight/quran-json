@@ -1,0 +1,33 @@
+[
+  {
+    "id": "1",
+    "place_of_revelation": "makkah",
+    "transliterated_name": "Al-Fatihah",
+    "translated_name": "The Opener",
+    "verse_count": 7,
+    "slug": "al-fatihah",
+    "codepoints": [
+      1575,
+      1604,
+      1601,
+      1575,
+      1578,
+      1581,
+      1577
+    ]
+  },
+  1,
+  "Em nome de Deus, o Clemente, o Misericordioso.",
+  2,
+  "Louvado seja Deus, Senhor do Universo,",
+  3,
+  "Clemente, o Misericordioso,",
+  4,
+  "Soberano do Dia do Juízo.",
+  5,
+  "Só a Ti adoramos e só de Ti imploramos ajuda!",
+  6,
+  "Guia-nos à senda reta,",
+  7,
+  "À senda dos que agraciaste, não à dos abominados, nem à dos extraviados."
+]
