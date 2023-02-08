@@ -46,6 +46,13 @@ class Pull
     File.binwrite File.join(dir, "#{surah_no}.json"), JSON.pretty_generate(rows)
   end
 
+  def keepalive
+    http.start
+    yield
+  ensure
+    http.finish
+  end
+
   private
 
   def req_path(vars)
