@@ -16,8 +16,8 @@ end
 # main
 def main(argv)
   root_dir = File.realpath(File.join(__dir__, ".."))
-  lib_dir = File.join(root_dir, "lib", "quran-pull")
-  libexec_dir = File.join(root_dir, "libexec", "quran-pull")
+  lib_dir = File.join(root_dir, "lib", "quran-json")
+  libexec_dir = File.join(root_dir, "libexec", "quran-json")
   require File.join(lib_dir, "pull")
 
   case ARGV[0]
@@ -29,7 +29,7 @@ def main(argv)
       wait spawn(libexec_dir, "searchtruth.com", *argv[1..])
     end
   else
-    warn "Usage: quran-pull pull|help [OPTIONS]"
+    warn "Usage: quran-json pull [OPTIONS]"
   end
 end
 main(ARGV)
