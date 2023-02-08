@@ -14,19 +14,18 @@ end
 # main
 def main(argv)
   cmd = Pull.new(Pull.cli(argv))
-  cmd.http.start
-  1.upto(114) do |surah_no|
-    rows = []
-    1.upto(cmd.count[surah_no]) do |ayah_no|
-      cmd.pull_ayah(surah_no, ayah_no) do |res|
-        rows.concat([ayah_no, grep(res)])
+  cmd.keepalive do
+    1.upto(114) do |surah_no|
+      rows = []
+      1.upto(cmd.count[surah_no]) do |ayah_no|
+        cmd.pull_ayah(surah_no, ayah_no) do |res|
+          rows.concat([ayah_no, grep(res)])
+        end
+        cmd.line.rewind.print "Surah #{surah_no} [#{ayah_no}/#{cmd.count[surah_no]}]"
       end
-      cmd.line.rewind.print "Surah #{surah_no} [#{ayah_no}/#{cmd.count[surah_no]}]"
+      cmd.write(surah_no, rows)
+      cmd.line.end
     end
-    cmd.write(surah_no, rows)
-    cmd.line.end
   end
-ensure
-  cmd.http.finish
 end
 main(ARGV)

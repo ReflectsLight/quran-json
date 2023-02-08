@@ -13,17 +13,16 @@ end
 # main
 def main(argv)
   cmd = Pull.new(Pull.cli(argv))
-  cmd.http.start
-  1.upto(114) do |surah_no|
-    rows = []
-    cmd.pull_surah(surah_no) do |res|
-      rows.concat(grep(res).map.with_index(1) { [_2, _1] })
+  cmd.keepalive do
+    1.upto(114) do |surah_no|
+      rows = []
+      cmd.pull_surah(surah_no) do |res|
+        rows.concat(grep(res).map.with_index(1) { [_2, _1] })
+      end
+      cmd.line.rewind.print "Surah #{surah_no} [#{surah_no}/114]"
+      cmd.write(surah_no, rows)
     end
-    cmd.line.rewind.print "Surah #{surah_no} [#{surah_no}/114]"
-    cmd.write(surah_no, rows)
+    cmd.line.end
   end
-  cmd.line.end
-ensure
-  cmd.http.finish
 end
 main(ARGV)
