@@ -16,7 +16,7 @@ def main(argv)
   cmd = Pull.new(Pull.cli(argv))
   cmd.keepalive do
     1.upto(114) do |surah_no|
-      next if cmd.exist?(surah_no)
+      next if cmd.skip?(surah_no)
       rows = []
       1.upto(cmd.count[surah_no]) do |ayah_no|
         res = cmd.pull_ayah(surah_no, ayah_no)

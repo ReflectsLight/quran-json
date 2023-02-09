@@ -14,11 +14,12 @@ class Pull
 
   def self.cli(argv)
     op = nil
-    options = Ryo({locale: "en"})
+    options = Ryo({locale: "en", overwrite: false})
     OptionParser.new(nil, 26, " " * 2) do |o|
       o.banner = "Usage: quran-json pull [OPTIONS]"
       op = o
       o.on("-l", "--locale LOCALE", "ar, en, pt, or fa (default: en)")
+      o.on("-o", "--overwrite", "Overwrite existing JSON files that might exist (default: no)")
     end.parse(argv, into: options)
     options
   rescue
@@ -52,6 +53,10 @@ class Pull
     yield
   ensure
     http.finish
+  end
+
+  def skip?(surah_no)
+    exist?(surah_no) && !options.overwrite
   end
 
   def exist?(surah_no)
