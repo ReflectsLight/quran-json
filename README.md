@@ -5,7 +5,7 @@ for downloading the content of The Quran in multiple languages, and on the other
 it provides a copy of the content that can be downloaded. In both scenarios, the content
 is provided in the JSON format.
 
-## <a id='share/quran-json'>share/quran-json/TheQuran/</a>
+## <a id='share/quran-json'>share/ directory</a>
 
 * [share/quran-json/TheQuran/ar/](share/quran-json/TheQuran/ar/) contains The Quran in its original Arabic.
 * [share/quran-json/TheQuran/en/](share/quran-json/TheQuran/en/) contains an English translation of The Quran.
@@ -28,7 +28,7 @@ content of the ayah.
 
 See [Surah Al-Fatihah (English)](share/quran-json/TheQuran/en/1.json) for an example.
 
-## <a id='bin/quran-json'>bin/quran-json</a>
+## <a id='bin/quran-json'>bin/ directory</a>
 
 The [bin/quran-json](bin/quran-json) executable is a utility for downloading
 the content of The Quran in multiple languages.
