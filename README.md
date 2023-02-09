@@ -11,6 +11,7 @@ is provided in the JSON format.
 * [share/quran-json/TheQuran/en/](share/quran-json/TheQuran/en/) contains an English translation of The Quran.
 * [share/quran-json/TheQuran/fa/](share/quran-json/TheQuran/fa/) contains a Farsi translation of The Quran.
 * [share/quran-json/TheQuran/pt/](share/quran-json/TheQuran/pt/) contains a Portuguese translation of The Quran.
+* [share/quran-json/TheQuran/nl/](share/quran-json/TheQuran/nl/) contains a Dutch translation of The Quran.
 
 ### JSON layout
 
@@ -36,7 +37,8 @@ the content of The Quran in multiple languages.
 ### Usage
 
     Usage: quran-json pull [OPTIONS]
-        -l, --locale LOCALE        ar, en, pt, or fa (default: en)
+      -l, --locale LOCALE        ar, en, pt, fa, or nl (default: en)
+      -o, --overwrite            Overwrite existing JSON files that might exist (default: no)
 
 ## Thanks
 
