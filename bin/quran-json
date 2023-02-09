@@ -20,7 +20,7 @@ def main(argv)
   libexec_dir = File.join(root_dir, "libexec", "quran-json")
   require File.join(lib_dir, "pull")
 
-  case ARGV[0]
+  case argv[0]
   when "pull"
     options = Pull.cli(argv[1..])
     if %w[en pt fa].include?(options.locale)
