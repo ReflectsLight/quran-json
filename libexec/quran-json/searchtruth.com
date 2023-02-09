@@ -17,9 +17,8 @@ def main(argv)
     1.upto(114) do |surah_no|
       next is cmd.exist?(surah_no)
       rows = []
-      cmd.pull_surah(surah_no) do |res|
-        rows.concat(grep(res).map.with_index(1) { [_2, _1] })
-      end
+      res = cmd.pull_surah(surah_no)
+      rows.concat(grep(res).map.with_index(1) { [_2, _1] })
       cmd.line.rewind.print "Surah #{surah_no} [#{surah_no}/114]"
       cmd.write(surah_no, rows)
     end

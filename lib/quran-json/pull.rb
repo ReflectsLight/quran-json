@@ -32,12 +32,12 @@ class Pull
     @http = Net::HTTP.new(source.http.hostname, 443).tap { _1.use_ssl = true }
   end
 
-  def pull_surah(surah_no, &b)
-    pull req_path(vars(binding)), &b
+  def pull_surah(surah_no)
+    pull req_path(vars(binding))
   end
 
-  def pull_ayah(surah_no, ayah_no, &b)
-    pull req_path(vars(binding)), &b
+  def pull_ayah(surah_no, ayah_no)
+    pull req_path(vars(binding))
   end
 
   def write(surah_no, rows)
@@ -68,7 +68,7 @@ class Pull
     res = http.get(path)
     case res
     when Net::HTTPOK
-      yield(res)
+      res
     else
       ##
       # TODO: Handle error

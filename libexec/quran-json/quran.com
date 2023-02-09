@@ -19,9 +19,8 @@ def main(argv)
       next if cmd.exist?(surah_no)
       rows = []
       1.upto(cmd.count[surah_no]) do |ayah_no|
-        cmd.pull_ayah(surah_no, ayah_no) do |res|
-          rows.concat([ayah_no, grep(res)])
-        end
+        res = cmd.pull_ayah(surah_no, ayah_no)
+        rows.concat([ayah_no, grep(res)])
         cmd.line.rewind.print "Surah #{surah_no} [#{ayah_no}/#{cmd.count[surah_no]}]"
       end
       cmd.write(surah_no, rows)
