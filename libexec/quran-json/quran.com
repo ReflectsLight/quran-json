@@ -20,7 +20,7 @@ def main(argv)
       rows = []
       1.upto(cmd.count[surah_no]) do |ayah_no|
         res = cmd.pull_ayah(surah_no, ayah_no)
-        rows.concat([ayah_no, grep(res)])
+        rows.push([ayah_no, grep(res)])
         cmd.line.rewind.print "Surah #{surah_no} [#{ayah_no}/#{cmd.count[surah_no]}]"
       end
       cmd.write(surah_no, rows)
