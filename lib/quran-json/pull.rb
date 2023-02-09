@@ -18,7 +18,7 @@ class Pull
     OptionParser.new(nil, 26, " " * 2) do |o|
       o.banner = "Usage: quran-json pull [OPTIONS]"
       op = o
-      o.on("-l", "--locale LOCALE", "ar, en, pt, or fa (default: en)")
+      o.on("-l", "--locale LOCALE", "ar, en, pt, fa, or nl (default: en)")
       o.on("-o", "--overwrite", "Overwrite existing JSON files that might exist (default: no)")
     end.parse(argv, into: options)
     options

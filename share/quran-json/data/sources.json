@@ -38,5 +38,15 @@
     "dest": {
       "dir": "%{share_dir}/TheQuran/fa"
     }
+  },
+  "nl": {
+    "http": {
+      "hostname": "quran.com",
+      "path": "/nl/%{surah_no}/%{ayah_no}",
+      "vars": ["surah_no", "ayah_no"]
+    },
+    "dest": {
+      "dir": "%{share_dir}/TheQuran/nl"
+    }
   }
 }

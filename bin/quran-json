@@ -23,7 +23,7 @@ def main(argv)
   case argv[0]
   when "pull"
     options = Pull.cli(argv[1..])
-    if %w[en pt fa].include?(options.locale)
+    if %w[en pt fa nl].include?(options.locale)
       wait spawn(libexec_dir, "quran.com", *argv[1..])
     elsif %w[ar].include?(options.locale)
       wait spawn(libexec_dir, "searchtruth.com", *argv[1..])
