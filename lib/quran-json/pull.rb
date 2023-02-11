@@ -34,11 +34,11 @@ class Pull
   end
 
   def pull_surah(surah_no)
-    pull req_path(vars(binding))
+    pull path(vars(binding))
   end
 
   def pull_ayah(surah_no, ayah_no)
-    pull req_path(vars(binding))
+    pull path(vars(binding))
   end
 
   def write(surah_no, rows)
@@ -65,12 +65,18 @@ class Pull
 
   private
 
-  def req_path(vars)
+  def path(vars)
     format source.http.path, source.http.vars.map { [_1.to_sym, vars[_1.to_sym]] }.to_h
   end
 
-  def pull(path)
-    res = http.get(path)
+  def headers
+    @headers ||= {
+      "user-agent" => "quran-json (https://github.com/ReflectsLight/quran-json#readme)"
+    }
+  end
+
+  def pull(req_path)
+    res = http.get(req_path, headers)
     case res
     when Net::HTTPOK
       res
