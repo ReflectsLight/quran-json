@@ -12,6 +12,7 @@ is provided in the JSON format.
 * [share/quran-json/TheQuran/fa/](share/quran-json/TheQuran/fa/) contains a Farsi translation of The Quran.
 * [share/quran-json/TheQuran/pt/](share/quran-json/TheQuran/pt/) contains a Portuguese translation of The Quran.
 * [share/quran-json/TheQuran/nl/](share/quran-json/TheQuran/nl/) contains a Dutch translation of The Quran.
+* [share/quran-json/TheQuran/fr/](share/quran-json/TheQuran/nl/) contains a French translation of The Quran.
 
 ### JSON layout
 
@@ -37,8 +38,8 @@ the content of The Quran in multiple languages.
 ### Usage
 
     Usage: quran-json pull [OPTIONS]
-      -l, --locale LOCALE        ar, en, pt, fa, or nl (default: en)
-      -o, --overwrite            Overwrite existing JSON files that might exist (default: no)
+      -l, --locale LOCALE        ar, en, pt, fa, nl, or fr (default: en)
+      -o, --overwrite            Overwrite existing JSON files (default: no)
 
 ## Thanks
 
@@ -48,7 +49,7 @@ I'd also like to extend thanks to the following websites for providing
 the content that quran-json downloads:
 
   * https://searchtruth.com for the original Arabic.
-  * https://quran.com for the English, Portuguese, and Farsi translations.
+  * https://quran.com for the English, Farsi, Portuguese, Dutch and French translations.
 
 ## License
 
