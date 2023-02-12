@@ -5,8 +5,10 @@ require "optparse"
 require "nokogiri"
 
 def grep(res)
+  sel = "table[dir='ltr'] tr td div:last-child, " \
+        "table[dir='rtl'] tr td div:last-child"
   html = Nokogiri::HTML(res.body)
-  html.css("table[dir='rtl'] tr td div:last-child").map { _1.text.strip }
+  html.css(sel).map { _1.text.strip.gsub(/^[0-9]+\.\s*/, "") }
 end
 
 ##

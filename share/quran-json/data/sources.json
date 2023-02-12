@@ -58,5 +58,16 @@
     "dest": {
       "dir": "%{share_dir}/TheQuran/fr"
     }
+  },
+  "it": {
+    "http": {
+      "hostname": "www.searchtruth.com",
+      "path": "/chapter_display.php?chapter=%{surah_no}&translator=22",
+      "vars": ["surah_no"]
+    },
+    "dest": {
+      "dir": "%{share_dir}/TheQuran/it"
+    },
+    "author": "Hamza Roberto Piccardo"
   }
 }

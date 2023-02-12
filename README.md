@@ -12,7 +12,8 @@ is provided in the JSON format.
 * [share/quran-json/TheQuran/fa/](share/quran-json/TheQuran/fa/) contains a Farsi translation of The Quran.
 * [share/quran-json/TheQuran/pt/](share/quran-json/TheQuran/pt/) contains a Portuguese translation of The Quran.
 * [share/quran-json/TheQuran/nl/](share/quran-json/TheQuran/nl/) contains a Dutch translation of The Quran.
-* [share/quran-json/TheQuran/fr/](share/quran-json/TheQuran/nl/) contains a French translation of The Quran.
+* [share/quran-json/TheQuran/fr/](share/quran-json/TheQuran/fr/) contains a French translation of The Quran.
+* [share/quran-json/TheQuran/fr/](share/quran-json/TheQuran/it/) contains an Italian translation of The Quran.
 
 ### JSON layout
 
@@ -24,6 +25,7 @@ there is a JSON file for each surah (also known as a chapter).
 
 The structure of each JSON file can be described as an array where the first element is
 an object that contains information about a surah, and the rest of the array contains
+
 the content of the surah. The content is composed of two-element arrays - where the first
 element is the ayah number (also known as a verse number), and the second element is the
 content of the ayah.
@@ -38,7 +40,7 @@ the content of The Quran in multiple languages.
 ### Usage
 
     Usage: quran-json pull [OPTIONS]
-      -l, --locale LOCALE        ar, en, pt, fa, nl, or fr (default: en)
+      -l, --locale LOCALE        ar, en, pt, fa, nl, fr, or it (default: en)
       -o, --overwrite            Overwrite existing JSON files (default: no)
 
 ## Thanks
@@ -48,8 +50,8 @@ First and foremost, Alhamdulillah.
 I'd also like to extend thanks to the following websites for providing
 the content that quran-json downloads:
 
-  * https://searchtruth.com for the original Arabic.
-  * https://quran.com for the English, Farsi, Portuguese, Dutch and French translations.
+  * https://searchtruth.com for the original Arabic, and the Italian translation.
+  * https://quran.com for the English, Farsi, Portuguese, Dutch, and French translations.
 
 ## License
 
