@@ -13,7 +13,7 @@ is provided in the JSON format.
 * [share/quran-json/TheQuran/pt/](share/quran-json/TheQuran/pt/) contains a Portuguese translation of The Quran.
 * [share/quran-json/TheQuran/nl/](share/quran-json/TheQuran/nl/) contains a Dutch translation of The Quran.
 * [share/quran-json/TheQuran/fr/](share/quran-json/TheQuran/fr/) contains a French translation of The Quran.
-* [share/quran-json/TheQuran/fr/](share/quran-json/TheQuran/it/) contains an Italian translation of The Quran.
+* [share/quran-json/TheQuran/it/](share/quran-json/TheQuran/it/) contains an Italian translation of The Quran.
 
 ### JSON layout
 
