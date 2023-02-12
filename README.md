@@ -47,8 +47,7 @@ the content of The Quran in multiple languages.
 
 First and foremost, Alhamdulillah.
 
-I'd also like to extend thanks to the following websites for providing
-the content that quran-json downloads:
+Thanks to the following websites for providing the content that quran-json downloads:
 
   * https://searchtruth.com for the original Arabic, and the Italian translation.
   * https://quran.com for the English, Farsi, Portuguese, Dutch, and French translations.
