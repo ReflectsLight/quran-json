@@ -1,4 +1,5 @@
 #!/usr/bin/env ruby
+require "json"
 
 ##
 # Utils
@@ -18,15 +19,18 @@ def main(argv)
   root_dir = File.realpath(File.join(__dir__, ".."))
   lib_dir = File.join(root_dir, "lib", "quran-json")
   libexec_dir = File.join(root_dir, "libexec", "quran-json")
+  share_dir = File.join(root_dir, "share", "quran-json", "data")
+  sources = JSON.parse(File.binread(File.join(share_dir, "sources.json")))
   require File.join(lib_dir, "pull")
 
   case argv[0]
   when "pull"
     options = Pull.cli(argv[1..])
-    if %w[en pt fa nl fr].include?(options.locale)
-      wait spawn(libexec_dir, "quran.com", *argv[1..])
-    elsif %w[ar].include?(options.locale)
-      wait spawn(libexec_dir, "searchtruth.com", *argv[1..])
+    sources.each do |locale, source|
+      case options.locale
+      when locale
+        wait spawn(libexec_dir, source["http"]["hostname"], *argv[1..])
+      end
     end
   else
     warn "Usage: quran-json pull [OPTIONS]"
