@@ -25,7 +25,6 @@ there is a JSON file for each surah (also known as a chapter).
 
 The structure of each JSON file can be described as an array where the first element is
 an object that contains information about a surah, and the rest of the array contains
-
 the content of the surah. The content is composed of two-element arrays - where the first
 element is the ayah number (also known as a verse number), and the second element is the
 content of the ayah.
