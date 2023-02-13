@@ -4,6 +4,8 @@ require File.join(lib_dir, "quran", "json")
 require "optparse"
 require "nokogiri"
 
+##
+# Grep for ayah content
 def grep(res)
   sel = "table[dir='ltr'] tr td div:last-child, " \
         "table[dir='rtl'] tr td div:last-child"
@@ -12,9 +14,15 @@ def grep(res)
 end
 
 ##
+# CLI parser
+def parse_cli(argv)
+  Quran::JSON::Pull.cli(argv)
+end
+
+##
 # main
 def main(argv)
-  cmd = Quran::JSON::Pull.new(Quran::JSON::Pull.cli(argv))
+  cmd = Quran::JSON::Pull.new parse_cli(argv)
   cmd.keepalive do
     1.upto(114) do |surah_no|
       if cmd.keep?(surah_no)

@@ -25,9 +25,9 @@ def main(argv)
 
   case argv[0]
   when "pull"
-    options = Quran::JSON::Pull.cli(argv[1..])
+    cli = Quran::JSON::Pull.cli(argv[1..])
     sources.each do |locale, source|
-      case options.locale
+      case cli.locale
       when locale
         wait spawn(libexec_dir, source["http"]["hostname"], *argv[1..])
       end
