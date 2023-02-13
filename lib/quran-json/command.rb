@@ -19,6 +19,10 @@ module Command
     File.join(share_dir, "TheQuran")
   end
 
+  def locale_dir
+    File.join(share_dir, options.locale)
+  end
+
   def line
     @line ||= IO::Line.new($stdout)
   end

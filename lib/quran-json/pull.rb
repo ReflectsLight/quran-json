@@ -42,10 +42,9 @@ class Pull
   end
 
   def write(surah_no, rows)
-    dir = File.join(quran_dir, options.locale)
-    mkdir_p(dir)
+    mkdir_p(locale_dir)
     rows.unshift(Ryo.table_of(surah_info[surah_no - 1]))
-    File.binwrite File.join(dir, "#{surah_no}.json"), JSON.pretty_generate(rows)
+    File.binwrite File.join(locale_dir, "#{surah_no}.json"), JSON.pretty_generate(rows)
   end
 
   def keepalive
@@ -69,7 +68,7 @@ class Pull
   end
 
   def exist?(surah_no)
-    File.exist? File.join(quran_dir, options.locale, "#{surah_no}.json")
+    File.exist? File.join(locale_dir, "#{surah_no}.json")
   end
 
   def headers
