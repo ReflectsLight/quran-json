@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Quran::JSON::Pull
   require "ryo"
   require "json"
@@ -43,7 +45,7 @@ class Quran::JSON::Pull
 
   def write(surah_no, rows)
     mkdir_p(locale_dir)
-    rows[0] = Ryo.table_of(metadata[surah_no-1])
+    rows[0] = Ryo.table_of(metadata[surah_no - 1])
     write_json File.join(locale_dir, "#{surah_no}.json"), rows
   end
 
@@ -100,8 +102,6 @@ class Quran::JSON::Pull
   end
 
   def sources
-    @sources ||= Ryo.from(
-      JSON.parse File.binread(File.join(data_dir, "sources.json"))
-    )
+    @sources ||= Ryo.from read_json(File.join(data_dir, "sources.json"))
   end
 end

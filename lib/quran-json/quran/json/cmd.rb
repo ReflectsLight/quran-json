@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Quran::JSON::Cmd
   require "ryo"
   require "json"

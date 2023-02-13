@@ -10,6 +10,10 @@ inherit_gem:
 
 AllCops:
   TargetRubyVersion: 3.2
+  Include:
+    - libexec/quran-json/*
+    - lib/quran-json/**/*.rb
+    - bin/*
 
 ##
 # Enabled cops
@@ -23,6 +27,4 @@ Layout/MultilineMethodCallIndentation:
 Layout/ArgumentAlignment:
   Enabled: false
 Style/LambdaCall:
-  Enabled: false
-Style/FrozenStringLiteralComment:
   Enabled: false
