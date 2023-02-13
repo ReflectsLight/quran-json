@@ -7,7 +7,8 @@
     },
     "dest": {
       "dir": "%{share_dir}/TheQuran/ar"
-    }
+    },
+    "translated_by": null
   },
   "en": {
     "http": {
@@ -17,7 +18,8 @@
     },
     "dest": {
       "dir": "%{share_dir}/TheQuran/en"
-    }
+    },
+    "translated_by": "Dr. Mustafa Khattab"
   },
   "pt": {
     "http": {
@@ -27,7 +29,8 @@
     },
     "dest": {
       "dir": "%{share_dir}/TheQuran/pt"
-    }
+    },
+    "translated_by": null
   },
   "fa": {
     "http": {
@@ -37,7 +40,8 @@
     },
     "dest": {
       "dir": "%{share_dir}/TheQuran/fa"
-    }
+    },
+    "translated_by": "Hussein Taji Kal Dari"
   },
   "nl": {
     "http": {
@@ -47,7 +51,8 @@
     },
     "dest": {
       "dir": "%{share_dir}/TheQuran/nl"
-    }
+    },
+    "translated_by": "Sofian S. Siregar"
   },
   "fr": {
     "http": {
@@ -57,7 +62,8 @@
     },
     "dest": {
       "dir": "%{share_dir}/TheQuran/fr"
-    }
+    },
+    "translated_by": "Muhammad Hamidullah"
   },
   "it": {
     "http": {
@@ -68,6 +74,6 @@
     "dest": {
       "dir": "%{share_dir}/TheQuran/it"
     },
-    "author": "Hamza Roberto Piccardo"
+    "translated_by": "Hamza Roberto Piccardo"
   }
 }

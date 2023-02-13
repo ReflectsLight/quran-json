@@ -14,12 +14,13 @@ class Pull
 
   def self.cli(argv)
     op = nil
-    options = Ryo({locale: "en", overwrite: false})
+    options = Ryo({locale: "en", overwrite: false, update: false})
     OptionParser.new(nil, 26, " " * 2) do |o|
       o.banner = "Usage: quran-json pull [OPTIONS]"
       op = o
       o.on("-l", "--locale LOCALE", "ar, en, pt, fa, nl, fr, or it (default: en)")
       o.on("-o", "--overwrite", "Overwrite existing JSON files (default: no)")
+      o.on("-u", "--update", "Only update the surah metadata (implies -o, default: no)")
     end.parse(argv, into: options)
     options
   rescue
@@ -43,8 +44,13 @@ class Pull
 
   def write(surah_no, rows)
     mkdir_p(locale_dir)
-    rows.unshift(Ryo.table_of(surah_info[surah_no - 1]))
+    rows[0] = Ryo.table_of(metadata[surah_no-1])
     File.binwrite File.join(locale_dir, "#{surah_no}.json"), JSON.pretty_generate(rows)
+  end
+
+  def update(surah_no)
+    rows = JSON.parse File.binread(File.join(locale_dir, "#{surah_no}.json"))
+    write(surah_no, rows)
   end
 
   def keepalive
@@ -58,7 +64,7 @@ class Pull
   # @return [Boolean]
   #  Returns true when a surah shouldn't be replaced
   def keep?(surah_no)
-    exist?(surah_no) and [options.overwrite].all? { _1.equal?(false) }
+    exist?(surah_no) and [options.overwrite, options.update].all? { _1.equal?(false) }
   end
 
   private

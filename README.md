@@ -41,6 +41,7 @@ the content of The Quran in multiple languages.
     Usage: quran-json pull [OPTIONS]
       -l, --locale LOCALE        ar, en, pt, fa, nl, fr, or it (default: en)
       -o, --overwrite            Overwrite existing JSON files (default: no)
+      -u, --update               Only update the surah metadata (implies -o, default: no)
 
 ## Thanks
 

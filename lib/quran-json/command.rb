@@ -20,7 +20,7 @@ module Command
   end
 
   def locale_dir
-    File.join(share_dir, options.locale)
+    File.join(quran_dir, options.locale)
   end
 
   def line
@@ -33,9 +33,15 @@ module Command
     )
   end
 
-  def surah_info
-    @surah_info ||= Ryo.from(
-      JSON.parse File.binread(File.join(data_dir, "surahinfo.json"))
-    )
+  def metadata
+    @metadata ||= read_metadata
+  end
+
+  private
+
+  def read_metadata
+    c = File.binread(File.join(data_dir, "metadata.json"))
+    m = JSON.parse(c).map { _1.merge!("translated_by" => source.translated_by) }
+    Ryo.from(m)
   end
 end
