@@ -40,8 +40,17 @@ module Quran::JSON::Cmd
   private
 
   def read_metadata
-    c = File.binread(File.join(data_dir, "metadata.json"))
-    m = JSON.parse(c).map { _1.merge!("translated_by" => source.translated_by) }
-    Ryo.from(m)
+    o = read_json File.join(data_dir, "metadata.json")
+    Ryo.from o.map {
+      _1.merge!("translated_by" => source.translated_by)
+    }
+  end
+
+  def read_json(path)
+    JSON.parse File.binread(path)
+  end
+
+  def write_json(path, obj)
+    File.binwrite path, JSON.pretty_generate(obj)
   end
 end

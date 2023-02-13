@@ -44,11 +44,11 @@ class Quran::JSON::Pull
   def write(surah_no, rows)
     mkdir_p(locale_dir)
     rows[0] = Ryo.table_of(metadata[surah_no-1])
-    File.binwrite File.join(locale_dir, "#{surah_no}.json"), JSON.pretty_generate(rows)
+    write_json File.join(locale_dir, "#{surah_no}.json"), rows
   end
 
   def update(surah_no)
-    rows = JSON.parse File.binread(File.join(locale_dir, "#{surah_no}.json"))
+    rows = read_json File.join(locale_dir, "#{surah_no}.json")
     write(surah_no, rows)
   end
 
