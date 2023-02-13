@@ -30,10 +30,11 @@ def main(argv)
         cmd.update(surah_no)
       else
         rows = [nil]
-        1.upto(cmd.count[surah_no]) do |ayah_no|
+        ayah_count = cmd.metadata[surah_no].ayahs
+        1.upto(ayah_count) do |ayah_no|
           res = cmd.pull_ayah(surah_no, ayah_no)
           rows.push([ayah_no, grep(res)])
-          cmd.line.rewind.print "Surah #{surah_no} [#{ayah_no}/#{cmd.count[surah_no]}]"
+          cmd.line.rewind.print "Surah #{surah_no} [#{ayah_no}/#{ayah_count}]"
         end
         cmd.write(surah_no, rows)
         cmd.line.end

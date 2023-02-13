@@ -27,12 +27,6 @@ module Quran::JSON::Cmd
     @line ||= IO::Line.new($stdout)
   end
 
-  def count
-    @count ||= Ryo.from(
-      JSON.parse File.binread(File.join(data_dir, "count.json"))
-    )
-  end
-
   def metadata
     @metadata ||= read_metadata
   end
