@@ -21,11 +21,11 @@ def main(argv)
   libexec_dir = File.join(root_dir, "libexec", "quran-json")
   share_dir = File.join(root_dir, "share", "quran-json", "data")
   sources = JSON.parse(File.binread(File.join(share_dir, "sources.json")))
-  require File.join(lib_dir, "pull")
+  require File.join(lib_dir, "quran", "json")
 
   case argv[0]
   when "pull"
-    options = Pull.cli(argv[1..])
+    options = Quran::JSON::Pull.cli(argv[1..])
     sources.each do |locale, source|
       case options.locale
       when locale

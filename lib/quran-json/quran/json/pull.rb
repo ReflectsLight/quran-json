@@ -1,11 +1,10 @@
-class Pull
+class Quran::JSON::Pull
   require "ryo"
   require "json"
   require "net/http"
   require "fileutils"
   require "optparse"
-  require_relative "command"
-  include Command
+  include Quran::JSON::Cmd
   include FileUtils
 
   attr_reader :options,
@@ -62,7 +61,7 @@ class Pull
 
   ##
   # @return [Boolean]
-  #  Returns true when a surah shouldn't be replaced
+  #  Returns true when a surah shouldn't be replaced, or updated
   def keep?(surah_no)
     exist?(surah_no) and [options.replace, options.update].all? { _1.equal?(false) }
   end

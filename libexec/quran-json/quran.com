@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 lib_dir = File.realpath File.join(__dir__, "..", "..", "lib", "quran-json")
-require File.join(lib_dir, "pull")
+require File.join(lib_dir, "quran", "json")
 require "optparse"
 require "nokogiri"
 
@@ -13,7 +13,7 @@ end
 ##
 # main
 def main(argv)
-  cmd = Pull.new(Pull.cli(argv))
+  cmd = Quran::JSON::Pull.new(Quran::JSON::Pull.cli(argv))
   cmd.keepalive do
     1.upto(114) do |surah_no|
       if cmd.keep?(surah_no)
@@ -21,7 +21,7 @@ def main(argv)
       elsif cmd.options.update
         cmd.update(surah_no)
       else
-        rows = []
+        rows = [nil]
         1.upto(cmd.count[surah_no]) do |ayah_no|
           res = cmd.pull_ayah(surah_no, ayah_no)
           rows.push([ayah_no, grep(res)])

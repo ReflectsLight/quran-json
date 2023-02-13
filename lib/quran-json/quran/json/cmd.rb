@@ -1,10 +1,10 @@
-module Command
+module Quran::JSON::Cmd
   require "ryo"
   require "json"
   require "io/line"
 
   def root_dir
-    File.realpath File.join(__dir__, "..", "..")
+    File.realpath File.join(__dir__, "..", "..", "..", "..")
   end
 
   def share_dir
