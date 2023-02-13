@@ -55,18 +55,21 @@ class Pull
     http.finish
   end
 
-  def skip?(surah_no)
-    exist?(surah_no) && !options.overwrite
-  end
-
-  def exist?(surah_no)
-    File.exist? File.join(quran_dir, options.locale, "#{surah_no}.json")
+  ##
+  # @return [Boolean]
+  #  Returns true when a surah shouldn't be replaced
+  def keep?(surah_no)
+    exist?(surah_no) and [options.overwrite].all? { _1.equal?(false) }
   end
 
   private
 
   def path(vars)
     format source.http.path, source.http.vars.map { [_1.to_sym, vars[_1.to_sym]] }.to_h
+  end
+
+  def exist?(surah_no)
+    File.exist? File.join(quran_dir, options.locale, "#{surah_no}.json")
   end
 
   def headers

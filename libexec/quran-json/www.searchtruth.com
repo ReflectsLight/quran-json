@@ -17,7 +17,7 @@ def main(argv)
   cmd = Pull.new(Pull.cli(argv))
   cmd.keepalive do
     1.upto(114) do |surah_no|
-      next if cmd.skip?(surah_no)
+      next if cmd.keep?(surah_no)
       rows = []
       res = cmd.pull_surah(surah_no)
       rows.concat(grep(res).map.with_index(1) { [_2, _1] })
