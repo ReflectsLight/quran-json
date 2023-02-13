@@ -1,4 +1,6 @@
 #!/usr/bin/env ruby
+# frozen_string_literal: true
+
 lib_dir = File.realpath File.join(__dir__, "..", "..", "lib", "quran-json")
 require File.join(lib_dir, "quran", "json")
 require "optparse"
