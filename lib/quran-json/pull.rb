@@ -14,13 +14,13 @@ class Pull
 
   def self.cli(argv)
     op = nil
-    options = Ryo({locale: "en", overwrite: false, update: false})
+    options = Ryo({locale: "en", replace: false, update: false})
     OptionParser.new(nil, 26, " " * 2) do |o|
       o.banner = "Usage: quran-json pull [OPTIONS]"
       op = o
       o.on("-l", "--locale LOCALE", "ar, en, pt, fa, nl, fr, or it (default: en)")
-      o.on("-o", "--overwrite", "Overwrite existing JSON files (default: no)")
-      o.on("-u", "--update", "Only update the surah metadata (implies -o, default: no)")
+      o.on("-r", "--replace", "Replace existing JSON files (default: no)")
+      o.on("-u", "--update", "Only update the surah metadata (implies -r, default: no)")
     end.parse(argv, into: options)
     options
   rescue
@@ -64,7 +64,7 @@ class Pull
   # @return [Boolean]
   #  Returns true when a surah shouldn't be replaced
   def keep?(surah_no)
-    exist?(surah_no) and [options.overwrite, options.update].all? { _1.equal?(false) }
+    exist?(surah_no) and [options.replace, options.update].all? { _1.equal?(false) }
   end
 
   private
