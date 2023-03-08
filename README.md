@@ -1,6 +1,4 @@
-<p align="center">
-  <strong>quran-json</strong>
-</p>
+## About
 
 quran-json is a dual purpose project where on the one hand it provides a utility
 for downloading the content of The Quran in multiple languages, and on the other hand
