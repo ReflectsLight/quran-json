@@ -1,9 +1,9 @@
 ## About
 
-A git repository that contains a dual purpose project where on the one hand it provides
-a utility for downloading the content of The Quran in multiple languages, and on the
-other hand it provides a copy of the content that can be downloaded. The content is
-provided in the JSON format.
+quran-json is a dual purpose project where on the one hand it provides a utility
+for downloading the content of The Quran in multiple languages, and on the other hand
+it provides a copy of the content that can be downloaded. The content is provided in
+the JSON format.
 
 ## <a id='share/quran-json'>share/ directory</a>
 
