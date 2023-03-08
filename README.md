@@ -1,4 +1,6 @@
-## About
+<p align="center">
+  <strong>quran-json</strong>
+</p>
 
 quran-json is a dual purpose project where on the one hand it provides a utility
 for downloading the content of The Quran in multiple languages, and on the other hand
@@ -47,7 +49,7 @@ the content of The Quran in multiple languages.
 
 First and foremost, Alhamdulillah.
 
-And thanks to the following websites for providing the content that quran-json downloads:
+With thanks to the following websites for providing the content that quran-json downloads:
 
   * https://searchtruth.com for the original Arabic, and the Italian translation.
   * https://quran.com for the English, Farsi, Portuguese, Dutch, and French translations.
