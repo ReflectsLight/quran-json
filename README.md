@@ -1,9 +1,9 @@
 ## About
 
-quran-json is a dual purpose project where on the one hand it provides a utility
-for downloading the content of The Quran in multiple languages, and on the other hand
-it provides a copy of the content that can be downloaded. In both scenarios, the content
-is provided in the JSON format.
+A git repository that contains a dual purpose project where on the one hand it provides
+a utility for downloading the content of The Quran in multiple languages, and on the
+other hand it provides a copy of the content that can be downloaded. The content is
+provided in the JSON format.
 
 ## <a id='share/quran-json'>share/ directory</a>
 
@@ -47,12 +47,12 @@ the content of The Quran in multiple languages.
 
 First and foremost, Alhamdulillah.
 
-With thanks to the following websites for providing the content that quran-json downloads:
+Thanks to the following websites for making the content available to download:
 
   * https://searchtruth.com for the original Arabic, and the Italian translation.
   * https://quran.com for the English, Farsi, Portuguese, Dutch, and French translations.
 
-And thanks to the translators of the content that quran-json downloads:
+And thanks to the translators of the content:
 
   * _Dr. Mustafa Khattab_ for the English translation.
   * _Hussein Taji Kal Dari_ for the Farsi translation.
@@ -62,6 +62,6 @@ And thanks to the translators of the content that quran-json downloads:
 
 ## License
 
-The "source code" is released into the Public Domain.
+The "source code" is released under the [BSD0L](./LICENSE) license.
 <br>
-The translated content is copyrighted to the translators (listed above).
+The content is copyrighted to the translators (named above).
