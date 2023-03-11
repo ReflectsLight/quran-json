@@ -1,5 +1,5 @@
 <p align="left">
-  <strong>Introduction</strong>
+  <strong>About</strong>
 </p>
 
 quran-json is a dual purpose project where on the one hand it provides a
@@ -70,6 +70,6 @@ And thanks to the translators of the content:
   <strong>License</strong>
 </p>
 
-The "source code" is released under the [BSD0L](./LICENSE) license.
+The "source code" is released under the [GPL](./LICENSE) license.
 <br>
 The content is copyrighted to the translators (named above).
