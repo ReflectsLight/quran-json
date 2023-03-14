@@ -15,18 +15,33 @@ class Quran::JSON::Pull
 
   def self.cli(argv)
     op = nil
-    options = Ryo({locale: "en", replace: false, update: false})
-    OptionParser.new(nil, 26, " " * 2) do |o|
-      o.banner = "Usage: quran-json pull [OPTIONS]"
+    result = Ryo({locale: "en", replace: false, update: false})
+    OptionParser.new(nil, 22, " " * 2) do |o|
       op = o
-      o.on("-l", "--locale LOCALE", "ar, en, pt, fa, nl, fr, or it (default: en)")
-      o.on("-r", "--replace", "Replace existing JSON files (default: no)")
-      o.on("-u", "--update", "Only update the surah metadata (implies -r, default: no)")
-    end.parse(argv, into: options)
-    options
+      op.banner = "Usage: quran-json pull [OPTIONS]"
+      cli_options.each { op.on(*_1) }
+    end.parse(argv, into: result)
+    result
   rescue
     puts op.help
     exit
+  end
+
+  def self.cli_options
+    [
+      [
+        "-l", "--locale LOCALE",
+        "ar, en, pt, fa, nl, fr, or it (default: en)"
+      ],
+      [
+        "-r", "--replace",
+        "Replace existing JSON files (default: no)"
+      ],
+      [
+        "-u", "--update",
+        "Replace surah metadata with an updated copy (implies -r, default: no)"
+      ]
+    ]
   end
 
   def initialize(options)

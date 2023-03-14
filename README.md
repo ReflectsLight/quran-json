@@ -43,9 +43,10 @@ the content of The Quran in multiple languages.
 *Usage*
 
     Usage: quran-json pull [OPTIONS]
-      -l, --locale LOCALE        ar, en, pt, fa, nl, fr, or it (default: en)
-      -r, --replace              Replace existing JSON files (default: no)
-      -u, --update               Only update the surah metadata (implies -r, default: no)
+      -l, --locale LOCALE    ar, en, pt, fa, nl, fr, or it (default: en)
+      -r, --replace          Replace existing JSON files (default: no)
+      -u, --update           Replace surah metadata with an updated copy (implies -r, default: no)
+
 
 <p align="left">
   <strong>Thanks</strong>
@@ -53,12 +54,12 @@ the content of The Quran in multiple languages.
 
 First and foremost, Alhamdulillah.
 
-Thanks to the following websites for making the content available to download:
+Thanks to the following websites for providing the downloadable content:
 
   * https://searchtruth.com for the original Arabic, and the Italian translation.
   * https://quran.com for the English, Farsi, Portuguese, Dutch, and French translations.
 
-And thanks to the translators of the content:
+And sincere thanks to the translators of the content:
 
   * _Dr. Mustafa Khattab_ for the English translation.
   * _Hussein Taji Kal Dari_ for the Farsi translation.
@@ -72,4 +73,4 @@ And thanks to the translators of the content:
 
 The "source code" is released under the [GPL](./LICENSE) license.
 <br>
-The content is copyrighted to the translators (named above).
+The content is copyrighted to the translators (listed above).
