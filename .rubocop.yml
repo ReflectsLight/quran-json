@@ -28,3 +28,7 @@ Layout/ArgumentAlignment:
   Enabled: false
 Style/LambdaCall:
   Enabled: false
+Style/MixinUsage:
+  Exclude:
+    - 'bin/quran-json'
+    - 'libexec/quran-json/*'
