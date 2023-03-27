@@ -3,6 +3,6 @@
 module Quran
   module JSON
     require_relative "json/cmd"
-    require_relative "json/pull"
+    require_relative "json/cmd/pull"
   end
 end

@@ -16,12 +16,12 @@ AllCops:
     - bin/*
 
 ##
-# Enabled cops
+# Enabled
 Style/FrozenStringLiteralComment:
    Enabled: true
 
 ##
-# Disabled cops
+# Disabled
 Layout/MultilineMethodCallIndentation:
   Enabled: false
 Layout/ArgumentAlignment:

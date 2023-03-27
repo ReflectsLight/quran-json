@@ -7,6 +7,10 @@ require "optparse"
 require "nokogiri"
 
 ##
+# Provide short access to 'Quran::JSON::Cmd::Pull'
+include Quran::JSON
+
+##
 # Grep for ayah content
 def grep(res)
   html = Nokogiri::HTML(res.body)
@@ -15,15 +19,9 @@ def grep(res)
 end
 
 ##
-# CLI parser
-def parse_cli(argv)
-  Quran::JSON::Pull.cli(argv)
-end
-
-##
 # main
 def main(argv)
-  cmd = Quran::JSON::Pull.new parse_cli(argv)
+  cmd = Cmd::Pull.new(argv)
   cmd.keepalive do
     1.upto(114) do |surah_no|
       if cmd.keep?(surah_no)
@@ -32,7 +30,7 @@ def main(argv)
         cmd.update(surah_no)
       else
         rows = [nil]
-        ayah_count = cmd.metadata[surah_no].ayahs
+        ayah_count = cmd.metadata[surah_no - 1].ayahs
         1.upto(ayah_count) do |ayah_no|
           res = cmd.pull_ayah(surah_no, ayah_no)
           rows.push([ayah_no, grep(res)])

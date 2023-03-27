@@ -1,7 +1,13 @@
 #!/usr/bin/env ruby
 # frozen_string_literal: true
 
-require "json"
+root_dir = File.realpath(File.join(__dir__, ".."))
+lib_dir = File.join(root_dir, "lib", "quran-json")
+require File.join(lib_dir, "quran", "json")
+
+##
+# Provide short access to 'Quran::JSON::Cmd::Pull'
+include Quran::JSON
 
 ##
 # Utils
@@ -18,22 +24,11 @@ end
 ##
 # main
 def main(argv)
-  root_dir = File.realpath(File.join(__dir__, ".."))
-  lib_dir = File.join(root_dir, "lib", "quran-json")
-  libexec_dir = File.join(root_dir, "libexec", "quran-json")
-  share_dir = File.join(root_dir, "share", "quran-json", "data")
-  sources = JSON.parse(File.binread(File.join(share_dir, "sources.json")))
-  require File.join(lib_dir, "quran", "json")
-
   case argv[0]
   when "pull"
-    cli = Quran::JSON::Pull.cli(argv[1..])
-    sources.each do |locale, source|
-      case cli.locale
-      when locale
-        wait spawn(libexec_dir, source["http"]["hostname"], *argv[1..])
-      end
-    end
+    cmd = Cmd::Pull.new(argv[1..])
+    source = Ryo.find(cmd.sources) { _1 == cmd.options.locale }
+    wait spawn(cmd.libexec_dir, source[cmd.options.locale]["http"]["hostname"], *argv[1..])
   else
     warn "Usage: quran-json pull [OPTIONS]"
   end

@@ -25,6 +25,14 @@ module Quran::JSON::Cmd
     File.join(quran_dir, options.locale)
   end
 
+  def libexec_dir
+    File.join(root_dir, "libexec", "quran-json")
+  end
+
+  def sources
+    @sources ||= Ryo.from JSON.parse(File.binread(File.join(data_dir, "sources.json")))
+  end
+
   def line
     @line ||= IO::Line.new($stdout)
   end
