@@ -3,9 +3,9 @@
 </p>
 
 quran-json is a dual purpose project where on the one hand it provides a
-utility for downloading the content of The Quran in multiple languages, and on
-the other hand it provides a copy of the content that can be downloaded. The
-content is provided in the JSON format.
+command-line utility for downloading the content of The Quran in multiple
+languages, and on the other hand it provides a copy of the content that
+can be downloaded. The content is provided in the JSON format.
 
 <p align="left">
   <strong>share/</strong>
