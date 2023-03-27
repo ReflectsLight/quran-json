@@ -42,11 +42,12 @@ the content of The Quran in multiple languages.
 
 *Usage*
 
-    Usage: quran-json pull [OPTIONS]
-      -l, --locale LOCALE    ar, en, pt, fa, nl, fr, or it (default: en)
-      -r, --replace          Replace existing JSON files (default: no)
-      -u, --update           Replace surah metadata with an updated copy (implies -r, default: no)
-
+<pre>
+Usage: quran-json pull [OPTIONS]
+  -l, --locale LOCALE    A locale (eg 'en')
+  -r, --replace          Replace existing JSON files
+  -u, --update           Update surah metadata
+</pre>
 
 <p align="left">
   <strong>Thanks</strong>

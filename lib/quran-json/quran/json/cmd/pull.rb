@@ -32,7 +32,7 @@ module Quran::JSON::Cmd
       [
         ["-l", "--locale LOCALE", "A locale (eg 'en')"],
         ["-r", "--replace", "Replace existing JSON files"],
-        ["-u", "--update", "Replace surah metadata"]
+        ["-u", "--update", "Update surah metadata"]
       ]
     end
 
