@@ -60,7 +60,7 @@ Thanks to the following websites for providing the downloadable content:
   * https://searchtruth.com for the original Arabic, and the Italian translation.
   * https://quran.com for the English, Farsi, Portuguese, Dutch, and French translations.
 
-And sincere thanks to the translators of the content:
+And thanks to the translators of the content:
 
   * _Dr. Mustafa Khattab_ for the English translation.
   * _Hussein Taji Kal Dari_ for the Farsi translation.
