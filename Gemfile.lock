@@ -56,6 +56,7 @@ GEM
 
 PLATFORMS
   amd64-freebsd-14
+  x86_64-openbsd
 
 DEPENDENCIES
   io-line.rb (~> 0.1)!
@@ -66,4 +67,4 @@ DEPENDENCIES
   standard (~> 1.12)
 
 BUNDLED WITH
-   2.4.6
+   2.3.26
