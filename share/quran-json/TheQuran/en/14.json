@@ -1,21 +1,23 @@
 [
   {
-    "id": "14",
-    "place_of_revelation": "makkah",
-    "transliterated_name": "Ibrahim",
-    "translated_name": "Abraham",
+    "id": 14,
+    "origin": "makkah",
+    "name": {
+      "translated": "Abraham",
+      "transliterated": "Ibrahim",
+      "codepoints": [
+        1575,
+        1576,
+        1585,
+        1575,
+        1607,
+        1610,
+        1605
+      ]
+    },
     "ayahs": 52,
     "slug": "ibrahim",
-    "codepoints": [
-      1575,
-      1576,
-      1585,
-      1575,
-      1607,
-      1610,
-      1605
-    ],
-    "translated_by": "Dr. Mustafa Khattab"
+    "translator": "Dr. Mustafa Khattab"
   },
   [
     1,

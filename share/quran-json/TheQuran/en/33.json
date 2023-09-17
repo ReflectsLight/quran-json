@@ -1,21 +1,23 @@
 [
   {
-    "id": "33",
-    "place_of_revelation": "madinah",
-    "transliterated_name": "Al-Ahzab",
-    "translated_name": "The Combined Forces",
+    "id": 33,
+    "origin": "madinah",
+    "name": {
+      "translated": "The Combined Forces",
+      "transliterated": "Al-Ahzab",
+      "codepoints": [
+        1575,
+        1604,
+        1571,
+        1581,
+        1586,
+        1575,
+        1576
+      ]
+    },
     "ayahs": 73,
     "slug": "al-ahzab",
-    "codepoints": [
-      1575,
-      1604,
-      1571,
-      1581,
-      1586,
-      1575,
-      1576
-    ],
-    "translated_by": "Dr. Mustafa Khattab"
+    "translator": "Dr. Mustafa Khattab"
   },
   [
     1,

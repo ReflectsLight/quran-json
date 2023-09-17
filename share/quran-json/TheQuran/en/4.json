@@ -1,20 +1,22 @@
 [
   {
-    "id": "4",
-    "place_of_revelation": "madinah",
-    "transliterated_name": "An-Nisa",
-    "translated_name": "The Women",
+    "id": 4,
+    "origin": "madinah",
+    "name": {
+      "translated": "The Women",
+      "transliterated": "An-Nisa",
+      "codepoints": [
+        1575,
+        1604,
+        1606,
+        1587,
+        1575,
+        1569
+      ]
+    },
     "ayahs": 176,
     "slug": "an-nisa",
-    "codepoints": [
-      1575,
-      1604,
-      1606,
-      1587,
-      1575,
-      1569
-    ],
-    "translated_by": "Dr. Mustafa Khattab"
+    "translator": "Dr. Mustafa Khattab"
   },
   [
     1,

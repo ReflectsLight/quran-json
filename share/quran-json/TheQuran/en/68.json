@@ -1,19 +1,21 @@
 [
   {
-    "id": "68",
-    "place_of_revelation": "makkah",
-    "transliterated_name": "Al-Qalam",
-    "translated_name": "The Pen",
+    "id": 68,
+    "origin": "makkah",
+    "name": {
+      "translated": "The Pen",
+      "transliterated": "Al-Qalam",
+      "codepoints": [
+        1575,
+        1604,
+        1602,
+        1604,
+        1605
+      ]
+    },
     "ayahs": 52,
     "slug": "al-qalam",
-    "codepoints": [
-      1575,
-      1604,
-      1602,
-      1604,
-      1605
-    ],
-    "translated_by": "Dr. Mustafa Khattab"
+    "translator": "Dr. Mustafa Khattab"
   },
   [
     1,

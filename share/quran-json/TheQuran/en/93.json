@@ -1,19 +1,21 @@
 [
   {
-    "id": "93",
-    "place_of_revelation": "makkah",
-    "transliterated_name": "Ad-Duhaa",
-    "translated_name": "The Morning Hours",
+    "id": 93,
+    "origin": "makkah",
+    "name": {
+      "translated": "The Morning Hours",
+      "transliterated": "Ad-Duhaa",
+      "codepoints": [
+        1575,
+        1604,
+        1590,
+        1581,
+        1609
+      ]
+    },
     "ayahs": 11,
     "slug": "ad-duhaa",
-    "codepoints": [
-      1575,
-      1604,
-      1590,
-      1581,
-      1609
-    ],
-    "translated_by": "Dr. Mustafa Khattab"
+    "translator": "Dr. Mustafa Khattab"
   },
   [
     1,

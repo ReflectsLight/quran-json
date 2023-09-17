@@ -1,20 +1,22 @@
 [
   {
-    "id": "73",
-    "place_of_revelation": "makkah",
-    "transliterated_name": "Al-Muzzammil",
-    "translated_name": "The Enshrouded One",
+    "id": 73,
+    "origin": "makkah",
+    "name": {
+      "translated": "The Enshrouded One",
+      "transliterated": "Al-Muzzammil",
+      "codepoints": [
+        1575,
+        1604,
+        1605,
+        1586,
+        1605,
+        1604
+      ]
+    },
     "ayahs": 20,
     "slug": "al-muzzammil",
-    "codepoints": [
-      1575,
-      1604,
-      1605,
-      1586,
-      1605,
-      1604
-    ],
-    "translated_by": "Dr. Mustafa Khattab"
+    "translator": "Dr. Mustafa Khattab"
   },
   [
     1,

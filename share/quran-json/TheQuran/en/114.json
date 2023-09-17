@@ -1,19 +1,21 @@
 [
   {
-    "id": "114",
-    "place_of_revelation": "makkah",
-    "transliterated_name": "An-Nas",
-    "translated_name": "Mankind",
+    "id": 114,
+    "origin": "makkah",
+    "name": {
+      "translated": "Mankind",
+      "transliterated": "An-Nas",
+      "codepoints": [
+        1575,
+        1604,
+        1606,
+        1575,
+        1587
+      ]
+    },
     "ayahs": 6,
     "slug": "an-nas",
-    "codepoints": [
-      1575,
-      1604,
-      1606,
-      1575,
-      1587
-    ],
-    "translated_by": "Dr. Mustafa Khattab"
+    "translator": "Dr. Mustafa Khattab"
   },
   [
     1,

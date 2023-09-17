@@ -1,19 +1,21 @@
 [
   {
-    "id": "103",
-    "place_of_revelation": "makkah",
-    "transliterated_name": "Al-'Asr",
-    "translated_name": "The Declining Day",
+    "id": 103,
+    "origin": "makkah",
+    "name": {
+      "translated": "The Declining Day",
+      "transliterated": "Al-'Asr",
+      "codepoints": [
+        1575,
+        1604,
+        1593,
+        1589,
+        1585
+      ]
+    },
     "ayahs": 3,
     "slug": "al-asr",
-    "codepoints": [
-      1575,
-      1604,
-      1593,
-      1589,
-      1585
-    ],
-    "translated_by": "Dr. Mustafa Khattab"
+    "translator": "Dr. Mustafa Khattab"
   },
   [
     1,
