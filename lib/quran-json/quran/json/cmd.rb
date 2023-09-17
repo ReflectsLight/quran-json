@@ -46,7 +46,7 @@ module Quran::JSON::Cmd
   def read_metadata
     o = read_json File.join(data_dir, "metadata.json")
     Ryo.from o.map {
-      _1.merge!("translated_by" => source.translated_by)
+      _1.merge!("translator" => source.translated_by)
     }
   end
 

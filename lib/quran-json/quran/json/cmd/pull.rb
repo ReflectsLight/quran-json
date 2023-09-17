@@ -52,7 +52,7 @@ module Quran::JSON::Cmd
 
     def write(surah_no, rows)
       mkdir_p(locale_dir)
-      rows[0] = Ryo.table_of(metadata[surah_no - 1])
+      rows[0] = Ryo.table_of(metadata[surah_no - 1], recursive: true)
       write_json File.join(locale_dir, "#{surah_no}.json"), rows
     end
 

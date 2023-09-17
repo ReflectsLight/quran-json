@@ -8,10 +8,10 @@ GIT
 
 GIT
   remote: https://github.com/0x1eef/ryo.rb.git
-  revision: 1fc0e7a2187d8020aadfb71b6b066dbc3af2fc2e
-  tag: v0.3.0
+  revision: 2ad2a5d3a29cf94ff3313687c78dd3986884a8f0
+  tag: v0.4.3
   specs:
-    ryo.rb (0.3.0)
+    ryo.rb (0.4.3)
 
 GEM
   remote: https://rubygems.org/
@@ -63,7 +63,7 @@ DEPENDENCIES
   json (~> 2.6)
   nokogiri (~> 1.13)
   paint (~> 2.2)
-  ryo.rb (~> 0.3)!
+  ryo.rb (~> 0.4)!
   standard (~> 1.12)
 
 BUNDLED WITH

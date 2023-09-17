@@ -1,19 +1,21 @@
 [
   {
-    "id": "96",
-    "place_of_revelation": "makkah",
-    "transliterated_name": "Al-'Alaq",
-    "translated_name": "The Clot",
+    "id": 96,
+    "origin": "makkah",
+    "name": {
+      "translated": "The Clot",
+      "transliterated": "Al-'Alaq",
+      "codepoints": [
+        1575,
+        1604,
+        1593,
+        1604,
+        1602
+      ]
+    },
     "ayahs": 19,
     "slug": "al-alaq",
-    "codepoints": [
-      1575,
-      1604,
-      1593,
-      1604,
-      1602
-    ],
-    "translated_by": "Dr. Mustafa Khattab"
+    "translator": "Dr. Mustafa Khattab"
   },
   [
     1,

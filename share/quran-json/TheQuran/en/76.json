@@ -1,21 +1,23 @@
 [
   {
-    "id": "76",
-    "place_of_revelation": "madinah",
-    "transliterated_name": "Al-Insan",
-    "translated_name": "The Man",
+    "id": 76,
+    "origin": "madinah",
+    "name": {
+      "translated": "The Man",
+      "transliterated": "Al-Insan",
+      "codepoints": [
+        1575,
+        1604,
+        1575,
+        1606,
+        1587,
+        1575,
+        1606
+      ]
+    },
     "ayahs": 31,
     "slug": "al-insan",
-    "codepoints": [
-      1575,
-      1604,
-      1575,
-      1606,
-      1587,
-      1575,
-      1606
-    ],
-    "translated_by": "Dr. Mustafa Khattab"
+    "translator": "Dr. Mustafa Khattab"
   },
   [
     1,

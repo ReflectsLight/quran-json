@@ -1,21 +1,23 @@
 [
   {
-    "id": "102",
-    "place_of_revelation": "makkah",
-    "transliterated_name": "At-Takathur",
-    "translated_name": "The Rivalry in world increase",
+    "id": 102,
+    "origin": "makkah",
+    "name": {
+      "translated": "The Rivalry in world increase",
+      "transliterated": "At-Takathur",
+      "codepoints": [
+        1575,
+        1604,
+        1578,
+        1603,
+        1575,
+        1579,
+        1585
+      ]
+    },
     "ayahs": 8,
     "slug": "at-takathur",
-    "codepoints": [
-      1575,
-      1604,
-      1578,
-      1603,
-      1575,
-      1579,
-      1585
-    ],
-    "translated_by": "Dr. Mustafa Khattab"
+    "translator": "Dr. Mustafa Khattab"
   },
   [
     1,
