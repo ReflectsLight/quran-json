@@ -1,21 +1,23 @@
 [
   {
-    "id": "6",
-    "place_of_revelation": "makkah",
-    "transliterated_name": "Al-An'am",
-    "translated_name": "The Cattle",
+    "id": 6,
+    "city": "makkah",
+    "name": {
+      "translated": "The Cattle",
+      "transliterated": "Al-An'am",
+      "codepoints": [
+        1575,
+        1604,
+        1571,
+        1606,
+        1593,
+        1575,
+        1605
+      ]
+    },
     "ayahs": 165,
     "slug": "al-anam",
-    "codepoints": [
-      1575,
-      1604,
-      1571,
-      1606,
-      1593,
-      1575,
-      1605
-    ],
-    "translated_by": "Muhammad Hamidullah"
+    "translator": "Muhammad Hamidullah"
   },
   [
     1,

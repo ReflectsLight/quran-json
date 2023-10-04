@@ -1,15 +1,17 @@
 [
   {
-    "id": "38",
-    "place_of_revelation": "makkah",
-    "transliterated_name": "Sad",
-    "translated_name": "The Letter \"Saad\"",
+    "id": 38,
+    "city": "makkah",
+    "name": {
+      "translated": "The Letter \"Saad\"",
+      "transliterated": "Sad",
+      "codepoints": [
+        1589
+      ]
+    },
     "ayahs": 88,
     "slug": "sad",
-    "codepoints": [
-      1589
-    ],
-    "translated_by": "Sofian S. Siregar"
+    "translator": "Sofian S. Siregar"
   },
   [
     1,

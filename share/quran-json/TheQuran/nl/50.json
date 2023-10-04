@@ -1,15 +1,17 @@
 [
   {
-    "id": "50",
-    "place_of_revelation": "makkah",
-    "transliterated_name": "Qaf",
-    "translated_name": "The Letter \"Qaf\"",
+    "id": 50,
+    "city": "makkah",
+    "name": {
+      "translated": "The Letter \"Qaf\"",
+      "transliterated": "Qaf",
+      "codepoints": [
+        1602
+      ]
+    },
     "ayahs": 45,
     "slug": "qaf",
-    "codepoints": [
-      1602
-    ],
-    "translated_by": "Sofian S. Siregar"
+    "translator": "Sofian S. Siregar"
   },
   [
     1,

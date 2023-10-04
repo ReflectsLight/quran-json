@@ -1,19 +1,21 @@
 [
   {
-    "id": "78",
-    "place_of_revelation": "makkah",
-    "transliterated_name": "An-Naba",
-    "translated_name": "The Tidings",
+    "id": 78,
+    "city": "makkah",
+    "name": {
+      "translated": "The Tidings",
+      "transliterated": "An-Naba",
+      "codepoints": [
+        1575,
+        1604,
+        1606,
+        1576,
+        1573
+      ]
+    },
     "ayahs": 40,
     "slug": "an-naba",
-    "codepoints": [
-      1575,
-      1604,
-      1606,
-      1576,
-      1573
-    ],
-    "translated_by": "Hamza Roberto Piccardo"
+    "translator": "Hamza Roberto Piccardo"
   },
   [
     1,

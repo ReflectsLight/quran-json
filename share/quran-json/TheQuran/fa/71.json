@@ -1,17 +1,19 @@
 [
   {
-    "id": "71",
-    "place_of_revelation": "makkah",
-    "transliterated_name": "Nuh",
-    "translated_name": "Noah",
+    "id": 71,
+    "city": "makkah",
+    "name": {
+      "translated": "Noah",
+      "transliterated": "Nuh",
+      "codepoints": [
+        1606,
+        1608,
+        1581
+      ]
+    },
     "ayahs": 28,
     "slug": "nuh",
-    "codepoints": [
-      1606,
-      1608,
-      1581
-    ],
-    "translated_by": "Hussein Taji Kal Dari"
+    "translator": "Hussein Taji Kal Dari"
   },
   [
     1,

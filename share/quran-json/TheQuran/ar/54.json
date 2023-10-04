@@ -1,19 +1,21 @@
 [
   {
-    "id": "54",
-    "place_of_revelation": "makkah",
-    "transliterated_name": "Al-Qamar",
-    "translated_name": "The Moon",
+    "id": 54,
+    "city": "makkah",
+    "name": {
+      "translated": "The Moon",
+      "transliterated": "Al-Qamar",
+      "codepoints": [
+        1575,
+        1604,
+        1602,
+        1605,
+        1585
+      ]
+    },
     "ayahs": 55,
     "slug": "al-qamar",
-    "codepoints": [
-      1575,
-      1604,
-      1602,
-      1605,
-      1585
-    ],
-    "translated_by": null
+    "translator": null
   },
   [
     1,

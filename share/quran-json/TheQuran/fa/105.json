@@ -1,19 +1,21 @@
 [
   {
-    "id": "105",
-    "place_of_revelation": "makkah",
-    "transliterated_name": "Al-Fil",
-    "translated_name": "The Elephant",
+    "id": 105,
+    "city": "makkah",
+    "name": {
+      "translated": "The Elephant",
+      "transliterated": "Al-Fil",
+      "codepoints": [
+        1575,
+        1604,
+        1601,
+        1610,
+        1604
+      ]
+    },
     "ayahs": 5,
     "slug": "al-fil",
-    "codepoints": [
-      1575,
-      1604,
-      1601,
-      1610,
-      1604
-    ],
-    "translated_by": "Hussein Taji Kal Dari"
+    "translator": "Hussein Taji Kal Dari"
   },
   [
     1,

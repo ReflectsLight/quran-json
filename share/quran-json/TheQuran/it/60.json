@@ -1,22 +1,24 @@
 [
   {
-    "id": "60",
-    "place_of_revelation": "madinah",
-    "transliterated_name": "Al-Mumtahanah",
-    "translated_name": "She that is to be examined",
+    "id": 60,
+    "city": "madinah",
+    "name": {
+      "translated": "She that is to be examined",
+      "transliterated": "Al-Mumtahanah",
+      "codepoints": [
+        1575,
+        1604,
+        1605,
+        1605,
+        1578,
+        1581,
+        1606,
+        1577
+      ]
+    },
     "ayahs": 13,
     "slug": "al-mumtahanah",
-    "codepoints": [
-      1575,
-      1604,
-      1605,
-      1605,
-      1578,
-      1581,
-      1606,
-      1577
-    ],
-    "translated_by": "Hamza Roberto Piccardo"
+    "translator": "Hamza Roberto Piccardo"
   },
   [
     1,

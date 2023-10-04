@@ -1,17 +1,19 @@
 [
   {
-    "id": "80",
-    "place_of_revelation": "makkah",
-    "transliterated_name": "'Abasa",
-    "translated_name": "He Frowned",
+    "id": 80,
+    "city": "makkah",
+    "name": {
+      "translated": "He Frowned",
+      "transliterated": "'Abasa",
+      "codepoints": [
+        1593,
+        1576,
+        1587
+      ]
+    },
     "ayahs": 42,
     "slug": "abasa",
-    "codepoints": [
-      1593,
-      1576,
-      1587
-    ],
-    "translated_by": "Hussein Taji Kal Dari"
+    "translator": "Hussein Taji Kal Dari"
   },
   [
     1,

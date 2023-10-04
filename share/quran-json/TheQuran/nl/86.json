@@ -1,20 +1,22 @@
 [
   {
-    "id": "86",
-    "place_of_revelation": "makkah",
-    "transliterated_name": "At-Tariq",
-    "translated_name": "The Nightcommer",
+    "id": 86,
+    "city": "makkah",
+    "name": {
+      "translated": "The Nightcommer",
+      "transliterated": "At-Tariq",
+      "codepoints": [
+        1575,
+        1604,
+        1591,
+        1575,
+        1585,
+        1602
+      ]
+    },
     "ayahs": 17,
     "slug": "at-tariq",
-    "codepoints": [
-      1575,
-      1604,
-      1591,
-      1575,
-      1585,
-      1602
-    ],
-    "translated_by": "Sofian S. Siregar"
+    "translator": "Sofian S. Siregar"
   },
   [
     1,

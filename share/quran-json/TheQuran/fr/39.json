@@ -1,19 +1,21 @@
 [
   {
-    "id": "39",
-    "place_of_revelation": "makkah",
-    "transliterated_name": "Az-Zumar",
-    "translated_name": "The Troops",
+    "id": 39,
+    "city": "makkah",
+    "name": {
+      "translated": "The Troops",
+      "transliterated": "Az-Zumar",
+      "codepoints": [
+        1575,
+        1604,
+        1586,
+        1605,
+        1585
+      ]
+    },
     "ayahs": 75,
     "slug": "az-zumar",
-    "codepoints": [
-      1575,
-      1604,
-      1586,
-      1605,
-      1585
-    ],
-    "translated_by": "Muhammad Hamidullah"
+    "translator": "Muhammad Hamidullah"
   },
   [
     1,

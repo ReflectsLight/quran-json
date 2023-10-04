@@ -1,19 +1,21 @@
 [
   {
-    "id": "113",
-    "place_of_revelation": "makkah",
-    "transliterated_name": "Al-Falaq",
-    "translated_name": "The Daybreak",
+    "id": 113,
+    "city": "makkah",
+    "name": {
+      "translated": "The Daybreak",
+      "transliterated": "Al-Falaq",
+      "codepoints": [
+        1575,
+        1604,
+        1601,
+        1604,
+        1602
+      ]
+    },
     "ayahs": 5,
     "slug": "al-falaq",
-    "codepoints": [
-      1575,
-      1604,
-      1601,
-      1604,
-      1602
-    ],
-    "translated_by": "Muhammad Hamidullah"
+    "translator": "Muhammad Hamidullah"
   },
   [
     1,

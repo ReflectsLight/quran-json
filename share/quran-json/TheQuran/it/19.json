@@ -1,18 +1,20 @@
 [
   {
-    "id": "19",
-    "place_of_revelation": "makkah",
-    "transliterated_name": "Maryam",
-    "translated_name": "Mary",
+    "id": 19,
+    "city": "makkah",
+    "name": {
+      "translated": "Mary",
+      "transliterated": "Maryam",
+      "codepoints": [
+        1605,
+        1585,
+        1610,
+        1605
+      ]
+    },
     "ayahs": 98,
     "slug": "maryam",
-    "codepoints": [
-      1605,
-      1585,
-      1610,
-      1605
-    ],
-    "translated_by": "Hamza Roberto Piccardo"
+    "translator": "Hamza Roberto Piccardo"
   },
   [
     1,

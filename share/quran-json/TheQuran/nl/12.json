@@ -1,18 +1,20 @@
 [
   {
-    "id": "12",
-    "place_of_revelation": "makkah",
-    "transliterated_name": "Yusuf",
-    "translated_name": "Joseph",
+    "id": 12,
+    "city": "makkah",
+    "name": {
+      "translated": "Joseph",
+      "transliterated": "Yusuf",
+      "codepoints": [
+        1610,
+        1608,
+        1587,
+        1601
+      ]
+    },
     "ayahs": 111,
     "slug": "yusuf",
-    "codepoints": [
-      1610,
-      1608,
-      1587,
-      1601
-    ],
-    "translated_by": "Sofian S. Siregar"
+    "translator": "Sofian S. Siregar"
   },
   [
     1,

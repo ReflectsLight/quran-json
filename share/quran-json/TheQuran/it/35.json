@@ -1,18 +1,20 @@
 [
   {
-    "id": "35",
-    "place_of_revelation": "makkah",
-    "transliterated_name": "Fatir",
-    "translated_name": "Originator",
+    "id": 35,
+    "city": "makkah",
+    "name": {
+      "translated": "Cityator",
+      "transliterated": "Fatir",
+      "codepoints": [
+        1601,
+        1575,
+        1591,
+        1585
+      ]
+    },
     "ayahs": 45,
     "slug": "fatir",
-    "codepoints": [
-      1601,
-      1575,
-      1591,
-      1585
-    ],
-    "translated_by": "Hamza Roberto Piccardo"
+    "translator": "Hamza Roberto Piccardo"
   },
   [
     1,

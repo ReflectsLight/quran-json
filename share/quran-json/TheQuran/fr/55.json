@@ -1,20 +1,22 @@
 [
   {
-    "id": "55",
-    "place_of_revelation": "madinah",
-    "transliterated_name": "Ar-Rahman",
-    "translated_name": "The Beneficent",
+    "id": 55,
+    "city": "madinah",
+    "name": {
+      "translated": "The Beneficent",
+      "transliterated": "Ar-Rahman",
+      "codepoints": [
+        1575,
+        1604,
+        1585,
+        1581,
+        1605,
+        1606
+      ]
+    },
     "ayahs": 78,
     "slug": "ar-rahman",
-    "codepoints": [
-      1575,
-      1604,
-      1585,
-      1581,
-      1605,
-      1606
-    ],
-    "translated_by": "Muhammad Hamidullah"
+    "translator": "Muhammad Hamidullah"
   },
   [
     1,

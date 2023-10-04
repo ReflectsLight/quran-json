@@ -1,21 +1,23 @@
 [
   {
-    "id": "88",
-    "place_of_revelation": "makkah",
-    "transliterated_name": "Al-Ghashiyah",
-    "translated_name": "The Overwhelming",
+    "id": 88,
+    "city": "makkah",
+    "name": {
+      "translated": "The Overwhelming",
+      "transliterated": "Al-Ghashiyah",
+      "codepoints": [
+        1575,
+        1604,
+        1594,
+        1575,
+        1588,
+        1610,
+        1577
+      ]
+    },
     "ayahs": 26,
     "slug": "al-ghashiyah",
-    "codepoints": [
-      1575,
-      1604,
-      1594,
-      1575,
-      1588,
-      1610,
-      1577
-    ],
-    "translated_by": "Sofian S. Siregar"
+    "translator": "Sofian S. Siregar"
   },
   [
     1,

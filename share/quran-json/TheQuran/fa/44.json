@@ -1,20 +1,22 @@
 [
   {
-    "id": "44",
-    "place_of_revelation": "makkah",
-    "transliterated_name": "Ad-Dukhan",
-    "translated_name": "The Smoke",
+    "id": 44,
+    "city": "makkah",
+    "name": {
+      "translated": "The Smoke",
+      "transliterated": "Ad-Dukhan",
+      "codepoints": [
+        1575,
+        1604,
+        1583,
+        1582,
+        1575,
+        1606
+      ]
+    },
     "ayahs": 59,
     "slug": "ad-dukhan",
-    "codepoints": [
-      1575,
-      1604,
-      1583,
-      1582,
-      1575,
-      1606
-    ],
-    "translated_by": "Hussein Taji Kal Dari"
+    "translator": "Hussein Taji Kal Dari"
   },
   [
     1,

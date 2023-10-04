@@ -1,21 +1,23 @@
 [
   {
-    "id": "26",
-    "place_of_revelation": "makkah",
-    "transliterated_name": "Ash-Shu'ara",
-    "translated_name": "The Poets",
+    "id": 26,
+    "city": "makkah",
+    "name": {
+      "translated": "The Poets",
+      "transliterated": "Ash-Shu'ara",
+      "codepoints": [
+        1575,
+        1604,
+        1588,
+        1593,
+        1585,
+        1575,
+        1569
+      ]
+    },
     "ayahs": 227,
     "slug": "ash-shuara",
-    "codepoints": [
-      1575,
-      1604,
-      1588,
-      1593,
-      1585,
-      1575,
-      1569
-    ],
-    "translated_by": "Hussein Taji Kal Dari"
+    "translator": "Hussein Taji Kal Dari"
   },
   [
     1,

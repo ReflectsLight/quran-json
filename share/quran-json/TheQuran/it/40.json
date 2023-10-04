@@ -1,18 +1,20 @@
 [
   {
-    "id": "40",
-    "place_of_revelation": "makkah",
-    "transliterated_name": "Ghafir",
-    "translated_name": "The Forgiver",
+    "id": 40,
+    "city": "makkah",
+    "name": {
+      "translated": "The Forgiver",
+      "transliterated": "Ghafir",
+      "codepoints": [
+        1594,
+        1575,
+        1601,
+        1585
+      ]
+    },
     "ayahs": 85,
     "slug": "ghafir",
-    "codepoints": [
-      1594,
-      1575,
-      1601,
-      1585
-    ],
-    "translated_by": "Hamza Roberto Piccardo"
+    "translator": "Hamza Roberto Piccardo"
   },
   [
     1,

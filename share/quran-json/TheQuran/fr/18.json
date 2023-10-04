@@ -1,19 +1,21 @@
 [
   {
-    "id": "18",
-    "place_of_revelation": "makkah",
-    "transliterated_name": "Al-Kahf",
-    "translated_name": "The Cave",
+    "id": 18,
+    "city": "makkah",
+    "name": {
+      "translated": "The Cave",
+      "transliterated": "Al-Kahf",
+      "codepoints": [
+        1575,
+        1604,
+        1603,
+        1607,
+        1601
+      ]
+    },
     "ayahs": 110,
     "slug": "al-kahf",
-    "codepoints": [
-      1575,
-      1604,
-      1603,
-      1607,
-      1601
-    ],
-    "translated_by": "Muhammad Hamidullah"
+    "translator": "Muhammad Hamidullah"
   },
   [
     1,

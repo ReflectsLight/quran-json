@@ -1,19 +1,21 @@
 [
   {
-    "id": "97",
-    "place_of_revelation": "makkah",
-    "transliterated_name": "Al-Qadr",
-    "translated_name": "The Power",
+    "id": 97,
+    "city": "makkah",
+    "name": {
+      "translated": "The Power",
+      "transliterated": "Al-Qadr",
+      "codepoints": [
+        1575,
+        1604,
+        1602,
+        1583,
+        1585
+      ]
+    },
     "ayahs": 5,
     "slug": "al-qadr",
-    "codepoints": [
-      1575,
-      1604,
-      1602,
-      1583,
-      1585
-    ],
-    "translated_by": "Sofian S. Siregar"
+    "translator": "Sofian S. Siregar"
   },
   [
     1,

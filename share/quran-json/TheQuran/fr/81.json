@@ -1,21 +1,23 @@
 [
   {
-    "id": "81",
-    "place_of_revelation": "makkah",
-    "transliterated_name": "At-Takwir",
-    "translated_name": "The Overthrowing",
+    "id": 81,
+    "city": "makkah",
+    "name": {
+      "translated": "The Overthrowing",
+      "transliterated": "At-Takwir",
+      "codepoints": [
+        1575,
+        1604,
+        1578,
+        1603,
+        1608,
+        1610,
+        1585
+      ]
+    },
     "ayahs": 29,
     "slug": "at-takwir",
-    "codepoints": [
-      1575,
-      1604,
-      1578,
-      1603,
-      1608,
-      1610,
-      1585
-    ],
-    "translated_by": "Muhammad Hamidullah"
+    "translator": "Muhammad Hamidullah"
   },
   [
     1,

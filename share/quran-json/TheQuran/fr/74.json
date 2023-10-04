@@ -1,20 +1,22 @@
 [
   {
-    "id": "74",
-    "place_of_revelation": "makkah",
-    "transliterated_name": "Al-Muddaththir",
-    "translated_name": "The Cloaked One",
+    "id": 74,
+    "city": "makkah",
+    "name": {
+      "translated": "The Cloaked One",
+      "transliterated": "Al-Muddaththir",
+      "codepoints": [
+        1575,
+        1604,
+        1605,
+        1583,
+        1579,
+        1585
+      ]
+    },
     "ayahs": 56,
     "slug": "al-muddaththir",
-    "codepoints": [
-      1575,
-      1604,
-      1605,
-      1583,
-      1579,
-      1585
-    ],
-    "translated_by": "Muhammad Hamidullah"
+    "translator": "Muhammad Hamidullah"
   },
   [
     1,

@@ -1,18 +1,20 @@
 [
   {
-    "id": "72",
-    "place_of_revelation": "makkah",
-    "transliterated_name": "Al-Jinn",
-    "translated_name": "The Jinn",
+    "id": 72,
+    "city": "makkah",
+    "name": {
+      "translated": "The Jinn",
+      "transliterated": "Al-Jinn",
+      "codepoints": [
+        1575,
+        1604,
+        1580,
+        1606
+      ]
+    },
     "ayahs": 28,
     "slug": "al-jinn",
-    "codepoints": [
-      1575,
-      1604,
-      1580,
-      1606
-    ],
-    "translated_by": null
+    "translator": null
   },
   [
     1,

@@ -1,21 +1,23 @@
 [
   {
-    "id": "49",
-    "place_of_revelation": "madinah",
-    "transliterated_name": "Al-Hujurat",
-    "translated_name": "The Rooms",
+    "id": 49,
+    "city": "madinah",
+    "name": {
+      "translated": "The Rooms",
+      "transliterated": "Al-Hujurat",
+      "codepoints": [
+        1575,
+        1604,
+        1581,
+        1580,
+        1585,
+        1575,
+        1578
+      ]
+    },
     "ayahs": 18,
     "slug": "al-hujurat",
-    "codepoints": [
-      1575,
-      1604,
-      1581,
-      1580,
-      1585,
-      1575,
-      1578
-    ],
-    "translated_by": "Hussein Taji Kal Dari"
+    "translator": "Hussein Taji Kal Dari"
   },
   [
     1,

@@ -1,19 +1,21 @@
 [
   {
-    "id": "30",
-    "place_of_revelation": "makkah",
-    "transliterated_name": "Ar-Rum",
-    "translated_name": "The Romans",
+    "id": 30,
+    "city": "makkah",
+    "name": {
+      "translated": "The Romans",
+      "transliterated": "Ar-Rum",
+      "codepoints": [
+        1575,
+        1604,
+        1585,
+        1608,
+        1605
+      ]
+    },
     "ayahs": 60,
     "slug": "ar-rum",
-    "codepoints": [
-      1575,
-      1604,
-      1585,
-      1608,
-      1605
-    ],
-    "translated_by": "Hamza Roberto Piccardo"
+    "translator": "Hamza Roberto Piccardo"
   },
   [
     1,

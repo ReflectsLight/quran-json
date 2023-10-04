@@ -1,20 +1,22 @@
 [
   {
-    "id": "104",
-    "place_of_revelation": "makkah",
-    "transliterated_name": "Al-Humazah",
-    "translated_name": "The Traducer",
+    "id": 104,
+    "city": "makkah",
+    "name": {
+      "translated": "The Traducer",
+      "transliterated": "Al-Humazah",
+      "codepoints": [
+        1575,
+        1604,
+        1607,
+        1605,
+        1586,
+        1577
+      ]
+    },
     "ayahs": 9,
     "slug": "al-humazah",
-    "codepoints": [
-      1575,
-      1604,
-      1607,
-      1605,
-      1586,
-      1577
-    ],
-    "translated_by": "Hussein Taji Kal Dari"
+    "translator": "Hussein Taji Kal Dari"
   },
   [
     1,

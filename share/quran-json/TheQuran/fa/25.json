@@ -1,21 +1,23 @@
 [
   {
-    "id": "25",
-    "place_of_revelation": "makkah",
-    "transliterated_name": "Al-Furqan",
-    "translated_name": "The Criterion",
+    "id": 25,
+    "city": "makkah",
+    "name": {
+      "translated": "The Criterion",
+      "transliterated": "Al-Furqan",
+      "codepoints": [
+        1575,
+        1604,
+        1601,
+        1585,
+        1602,
+        1575,
+        1606
+      ]
+    },
     "ayahs": 77,
     "slug": "al-furqan",
-    "codepoints": [
-      1575,
-      1604,
-      1601,
-      1585,
-      1602,
-      1575,
-      1606
-    ],
-    "translated_by": "Hussein Taji Kal Dari"
+    "translator": "Hussein Taji Kal Dari"
   },
   [
     1,

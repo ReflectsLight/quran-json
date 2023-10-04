@@ -1,22 +1,24 @@
 [
   {
-    "id": "82",
-    "place_of_revelation": "makkah",
-    "transliterated_name": "Al-Infitar",
-    "translated_name": "The Cleaving",
+    "id": 82,
+    "city": "makkah",
+    "name": {
+      "translated": "The Cleaving",
+      "transliterated": "Al-Infitar",
+      "codepoints": [
+        1575,
+        1604,
+        1573,
+        1606,
+        1601,
+        1591,
+        1575,
+        1585
+      ]
+    },
     "ayahs": 19,
     "slug": "al-infitar",
-    "codepoints": [
-      1575,
-      1604,
-      1573,
-      1606,
-      1601,
-      1591,
-      1575,
-      1585
-    ],
-    "translated_by": "Hussein Taji Kal Dari"
+    "translator": "Hussein Taji Kal Dari"
   },
   [
     1,

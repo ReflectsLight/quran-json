@@ -1,21 +1,23 @@
 [
   {
-    "id": "75",
-    "place_of_revelation": "makkah",
-    "transliterated_name": "Al-Qiyamah",
-    "translated_name": "The Resurrection",
+    "id": 75,
+    "city": "makkah",
+    "name": {
+      "translated": "The Resurrection",
+      "transliterated": "Al-Qiyamah",
+      "codepoints": [
+        1575,
+        1604,
+        1602,
+        1610,
+        1575,
+        1605,
+        1577
+      ]
+    },
     "ayahs": 40,
     "slug": "al-qiyamah",
-    "codepoints": [
-      1575,
-      1604,
-      1602,
-      1610,
-      1575,
-      1605,
-      1577
-    ],
-    "translated_by": null
+    "translator": null
   },
   [
     1,

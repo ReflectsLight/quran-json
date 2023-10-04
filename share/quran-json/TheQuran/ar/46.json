@@ -1,21 +1,23 @@
 [
   {
-    "id": "46",
-    "place_of_revelation": "makkah",
-    "transliterated_name": "Al-Ahqaf",
-    "translated_name": "The Wind-Curved Sandhills",
+    "id": 46,
+    "city": "makkah",
+    "name": {
+      "translated": "The Wind-Curved Sandhills",
+      "transliterated": "Al-Ahqaf",
+      "codepoints": [
+        1575,
+        1604,
+        1571,
+        1581,
+        1602,
+        1575,
+        1601
+      ]
+    },
     "ayahs": 35,
     "slug": "al-ahqaf",
-    "codepoints": [
-      1575,
-      1604,
-      1571,
-      1581,
-      1602,
-      1575,
-      1601
-    ],
-    "translated_by": null
+    "translator": null
   },
   [
     1,

@@ -1,9 +1,9 @@
 [
   {
     "id": 35,
-    "origin": "makkah",
+    "city": "makkah",
     "name": {
-      "translated": "Originator",
+      "translated": "Cityator",
       "transliterated": "Fatir",
       "codepoints": [
         1601,

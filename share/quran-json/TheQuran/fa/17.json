@@ -1,21 +1,23 @@
 [
   {
-    "id": "17",
-    "place_of_revelation": "makkah",
-    "transliterated_name": "Al-Isra",
-    "translated_name": "The Night Journey",
+    "id": 17,
+    "city": "makkah",
+    "name": {
+      "translated": "The Night Journey",
+      "transliterated": "Al-Isra",
+      "codepoints": [
+        1575,
+        1604,
+        1573,
+        1587,
+        1585,
+        1575,
+        1569
+      ]
+    },
     "ayahs": 111,
     "slug": "al-isra",
-    "codepoints": [
-      1575,
-      1604,
-      1573,
-      1587,
-      1585,
-      1575,
-      1569
-    ],
-    "translated_by": "Hussein Taji Kal Dari"
+    "translator": "Hussein Taji Kal Dari"
   },
   [
     1,

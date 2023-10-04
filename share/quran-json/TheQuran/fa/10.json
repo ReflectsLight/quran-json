@@ -1,18 +1,20 @@
 [
   {
-    "id": "10",
-    "place_of_revelation": "makkah",
-    "transliterated_name": "Yunus",
-    "translated_name": "Jonah",
+    "id": 10,
+    "city": "makkah",
+    "name": {
+      "translated": "Jonah",
+      "transliterated": "Yunus",
+      "codepoints": [
+        1610,
+        1608,
+        1606,
+        1587
+      ]
+    },
     "ayahs": 109,
     "slug": "yunus",
-    "codepoints": [
-      1610,
-      1608,
-      1606,
-      1587
-    ],
-    "translated_by": "Hussein Taji Kal Dari"
+    "translator": "Hussein Taji Kal Dari"
   },
   [
     1,

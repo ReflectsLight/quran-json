@@ -1,22 +1,24 @@
 [
   {
-    "id": "3",
-    "place_of_revelation": "madinah",
-    "transliterated_name": "Ali 'Imran",
-    "translated_name": "Family of Imran",
+    "id": 3,
+    "city": "madinah",
+    "name": {
+      "translated": "Family of Imran",
+      "transliterated": "Ali 'Imran",
+      "codepoints": [
+        1570,
+        1604,
+        32,
+        1593,
+        1605,
+        1585,
+        1575,
+        1606
+      ]
+    },
     "ayahs": 200,
     "slug": "ali-imran",
-    "codepoints": [
-      1570,
-      1604,
-      32,
-      1593,
-      1605,
-      1585,
-      1575,
-      1606
-    ],
-    "translated_by": "Hamza Roberto Piccardo"
+    "translator": "Hamza Roberto Piccardo"
   },
   [
     1,

@@ -1,19 +1,21 @@
 [
   {
-    "id": "89",
-    "place_of_revelation": "makkah",
-    "transliterated_name": "Al-Fajr",
-    "translated_name": "The Dawn",
+    "id": 89,
+    "city": "makkah",
+    "name": {
+      "translated": "The Dawn",
+      "transliterated": "Al-Fajr",
+      "codepoints": [
+        1575,
+        1604,
+        1601,
+        1580,
+        1585
+      ]
+    },
     "ayahs": 30,
     "slug": "al-fajr",
-    "codepoints": [
-      1575,
-      1604,
-      1601,
-      1580,
-      1585
-    ],
-    "translated_by": "Sofian S. Siregar"
+    "translator": "Sofian S. Siregar"
   },
   [
     1,

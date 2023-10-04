@@ -1,17 +1,19 @@
 [
   {
-    "id": "11",
-    "place_of_revelation": "makkah",
-    "transliterated_name": "Hud",
-    "translated_name": "Hud",
+    "id": 11,
+    "city": "makkah",
+    "name": {
+      "translated": "Hud",
+      "transliterated": "Hud",
+      "codepoints": [
+        1607,
+        1608,
+        1583
+      ]
+    },
     "ayahs": 123,
     "slug": "hud",
-    "codepoints": [
-      1607,
-      1608,
-      1583
-    ],
-    "translated_by": "Hussein Taji Kal Dari"
+    "translator": "Hussein Taji Kal Dari"
   },
   [
     1,

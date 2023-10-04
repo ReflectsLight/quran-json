@@ -1,16 +1,18 @@
 [
   {
-    "id": "36",
-    "place_of_revelation": "makkah",
-    "transliterated_name": "Ya-Sin",
-    "translated_name": "Ya Sin",
+    "id": 36,
+    "city": "makkah",
+    "name": {
+      "translated": "Ya Sin",
+      "transliterated": "Ya-Sin",
+      "codepoints": [
+        1610,
+        1587
+      ]
+    },
     "ayahs": 83,
     "slug": "ya-sin",
-    "codepoints": [
-      1610,
-      1587
-    ],
-    "translated_by": "Hussein Taji Kal Dari"
+    "translator": "Hussein Taji Kal Dari"
   },
   [
     1,

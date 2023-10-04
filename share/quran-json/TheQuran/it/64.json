@@ -1,21 +1,23 @@
 [
   {
-    "id": "64",
-    "place_of_revelation": "madinah",
-    "transliterated_name": "At-Taghabun",
-    "translated_name": "The Mutual Disillusion",
+    "id": 64,
+    "city": "madinah",
+    "name": {
+      "translated": "The Mutual Disillusion",
+      "transliterated": "At-Taghabun",
+      "codepoints": [
+        1575,
+        1604,
+        1578,
+        1594,
+        1575,
+        1576,
+        1606
+      ]
+    },
     "ayahs": 18,
     "slug": "at-taghabun",
-    "codepoints": [
-      1575,
-      1604,
-      1578,
-      1594,
-      1575,
-      1576,
-      1606
-    ],
-    "translated_by": "Hamza Roberto Piccardo"
+    "translator": "Hamza Roberto Piccardo"
   },
   [
     1,

@@ -1,21 +1,23 @@
 [
   {
-    "id": "7",
-    "place_of_revelation": "makkah",
-    "transliterated_name": "Al-A'raf",
-    "translated_name": "The Heights",
+    "id": 7,
+    "city": "makkah",
+    "name": {
+      "translated": "The Heights",
+      "transliterated": "Al-A'raf",
+      "codepoints": [
+        1575,
+        1604,
+        1571,
+        1593,
+        1585,
+        1575,
+        1601
+      ]
+    },
     "ayahs": 206,
     "slug": "al-araf",
-    "codepoints": [
-      1575,
-      1604,
-      1571,
-      1593,
-      1585,
-      1575,
-      1601
-    ],
-    "translated_by": "Hussein Taji Kal Dari"
+    "translator": "Hussein Taji Kal Dari"
   },
   [
     1,

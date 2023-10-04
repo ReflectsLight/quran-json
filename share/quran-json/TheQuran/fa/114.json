@@ -1,19 +1,21 @@
 [
   {
-    "id": "114",
-    "place_of_revelation": "makkah",
-    "transliterated_name": "An-Nas",
-    "translated_name": "Mankind",
+    "id": 114,
+    "city": "makkah",
+    "name": {
+      "translated": "Mankind",
+      "transliterated": "An-Nas",
+      "codepoints": [
+        1575,
+        1604,
+        1606,
+        1575,
+        1587
+      ]
+    },
     "ayahs": 6,
     "slug": "an-nas",
-    "codepoints": [
-      1575,
-      1604,
-      1606,
-      1575,
-      1587
-    ],
-    "translated_by": "Hussein Taji Kal Dari"
+    "translator": "Hussein Taji Kal Dari"
   },
   [
     1,

@@ -1,21 +1,23 @@
 [
   {
-    "id": "1",
-    "place_of_revelation": "makkah",
-    "transliterated_name": "Al-Fatihah",
-    "translated_name": "The Opener",
+    "id": 1,
+    "city": "makkah",
+    "name": {
+      "translated": "The Opener",
+      "transliterated": "Al-Fatihah",
+      "codepoints": [
+        1575,
+        1604,
+        1601,
+        1575,
+        1578,
+        1581,
+        1577
+      ]
+    },
     "ayahs": 7,
     "slug": "al-fatihah",
-    "codepoints": [
-      1575,
-      1604,
-      1601,
-      1575,
-      1578,
-      1581,
-      1577
-    ],
-    "translated_by": "Hamza Roberto Piccardo"
+    "translator": "Hamza Roberto Piccardo"
   },
   [
     1,
