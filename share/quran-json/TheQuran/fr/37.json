@@ -1,21 +1,23 @@
 [
   {
-    "id": "37",
-    "place_of_revelation": "makkah",
-    "transliterated_name": "As-Saffat",
-    "translated_name": "Those who set the Ranks",
+    "id": 37,
+    "city": "makkah",
+    "name": {
+      "translated": "Those who set the Ranks",
+      "transliterated": "As-Saffat",
+      "codepoints": [
+        1575,
+        1604,
+        1589,
+        1575,
+        1601,
+        1575,
+        1578
+      ]
+    },
     "ayahs": 182,
     "slug": "as-saffat",
-    "codepoints": [
-      1575,
-      1604,
-      1589,
-      1575,
-      1601,
-      1575,
-      1578
-    ],
-    "translated_by": "Muhammad Hamidullah"
+    "translator": "Muhammad Hamidullah"
   },
   [
     1,

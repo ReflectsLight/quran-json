@@ -1,19 +1,21 @@
 [
   {
-    "id": "52",
-    "place_of_revelation": "makkah",
-    "transliterated_name": "At-Tur",
-    "translated_name": "The Mount",
+    "id": 52,
+    "city": "makkah",
+    "name": {
+      "translated": "The Mount",
+      "transliterated": "At-Tur",
+      "codepoints": [
+        1575,
+        1604,
+        1591,
+        1608,
+        1585
+      ]
+    },
     "ayahs": 49,
     "slug": "at-tur",
-    "codepoints": [
-      1575,
-      1604,
-      1591,
-      1608,
-      1585
-    ],
-    "translated_by": null
+    "translator": null
   },
   [
     1,

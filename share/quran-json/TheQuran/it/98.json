@@ -1,20 +1,22 @@
 [
   {
-    "id": "98",
-    "place_of_revelation": "madinah",
-    "transliterated_name": "Al-Bayyinah",
-    "translated_name": "The Clear Proof",
+    "id": 98,
+    "city": "madinah",
+    "name": {
+      "translated": "The Clear Proof",
+      "transliterated": "Al-Bayyinah",
+      "codepoints": [
+        1575,
+        1604,
+        1576,
+        1610,
+        1606,
+        1577
+      ]
+    },
     "ayahs": 8,
     "slug": "al-bayyinah",
-    "codepoints": [
-      1575,
-      1604,
-      1576,
-      1610,
-      1606,
-      1577
-    ],
-    "translated_by": "Hamza Roberto Piccardo"
+    "translator": "Hamza Roberto Piccardo"
   },
   [
     1,

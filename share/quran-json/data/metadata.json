@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "origin": "makkah",
+    "city": "makkah",
     "name": {
       "translated": "The Opener",
       "transliterated": "Al-Fatihah",
@@ -20,7 +20,7 @@
   },
   {
     "id": 2,
-    "origin": "madinah",
+    "city": "madinah",
     "name": {
       "translated": "The Cow",
       "transliterated": "Al-Baqarah",
@@ -38,7 +38,7 @@
   },
   {
     "id": 3,
-    "origin": "madinah",
+    "city": "madinah",
     "name": {
       "translated": "Family of Imran",
       "transliterated": "Ali 'Imran",
@@ -58,7 +58,7 @@
   },
   {
     "id": 4,
-    "origin": "madinah",
+    "city": "madinah",
     "name": {
       "translated": "The Women",
       "transliterated": "An-Nisa",
@@ -76,7 +76,7 @@
   },
   {
     "id": 5,
-    "origin": "madinah",
+    "city": "madinah",
     "name": {
       "translated": "The Table Spread",
       "transliterated": "Al-Ma'idah",
@@ -95,7 +95,7 @@
   },
   {
     "id": 6,
-    "origin": "makkah",
+    "city": "makkah",
     "name": {
       "translated": "The Cattle",
       "transliterated": "Al-An'am",
@@ -114,7 +114,7 @@
   },
   {
     "id": 7,
-    "origin": "makkah",
+    "city": "makkah",
     "name": {
       "translated": "The Heights",
       "transliterated": "Al-A'raf",
@@ -133,7 +133,7 @@
   },
   {
     "id": 8,
-    "origin": "madinah",
+    "city": "madinah",
     "name": {
       "translated": "The Spoils of War",
       "transliterated": "Al-Anfal",
@@ -152,7 +152,7 @@
   },
   {
     "id": 9,
-    "origin": "madinah",
+    "city": "madinah",
     "name": {
       "translated": "The Repentance",
       "transliterated": "At-Tawbah",
@@ -170,7 +170,7 @@
   },
   {
     "id": 10,
-    "origin": "makkah",
+    "city": "makkah",
     "name": {
       "translated": "Jonah",
       "transliterated": "Yunus",
@@ -186,7 +186,7 @@
   },
   {
     "id": 11,
-    "origin": "makkah",
+    "city": "makkah",
     "name": {
       "translated": "Hud",
       "transliterated": "Hud",
@@ -201,7 +201,7 @@
   },
   {
     "id": 12,
-    "origin": "makkah",
+    "city": "makkah",
     "name": {
       "translated": "Joseph",
       "transliterated": "Yusuf",
@@ -217,7 +217,7 @@
   },
   {
     "id": 13,
-    "origin": "madinah",
+    "city": "madinah",
     "name": {
       "translated": "The Thunder",
       "transliterated": "Ar-Ra'd",
@@ -234,7 +234,7 @@
   },
   {
     "id": 14,
-    "origin": "makkah",
+    "city": "makkah",
     "name": {
       "translated": "Abraham",
       "transliterated": "Ibrahim",
@@ -253,7 +253,7 @@
   },
   {
     "id": 15,
-    "origin": "makkah",
+    "city": "makkah",
     "name": {
       "translated": "The Rocky Tract",
       "transliterated": "Al-Hijr",
@@ -270,7 +270,7 @@
   },
   {
     "id": 16,
-    "origin": "makkah",
+    "city": "makkah",
     "name": {
       "translated": "The Bee",
       "transliterated": "An-Nahl",
@@ -287,7 +287,7 @@
   },
   {
     "id": 17,
-    "origin": "makkah",
+    "city": "makkah",
     "name": {
       "translated": "The Night Journey",
       "transliterated": "Al-Isra",
@@ -306,7 +306,7 @@
   },
   {
     "id": 18,
-    "origin": "makkah",
+    "city": "makkah",
     "name": {
       "translated": "The Cave",
       "transliterated": "Al-Kahf",
@@ -323,7 +323,7 @@
   },
   {
     "id": 19,
-    "origin": "makkah",
+    "city": "makkah",
     "name": {
       "translated": "Mary",
       "transliterated": "Maryam",
@@ -339,7 +339,7 @@
   },
   {
     "id": 20,
-    "origin": "makkah",
+    "city": "makkah",
     "name": {
       "translated": "Ta-Ha",
       "transliterated": "Taha",
@@ -353,7 +353,7 @@
   },
   {
     "id": 21,
-    "origin": "makkah",
+    "city": "makkah",
     "name": {
       "translated": "The Prophets",
       "transliterated": "Al-Anbya",
@@ -373,7 +373,7 @@
   },
   {
     "id": 22,
-    "origin": "madinah",
+    "city": "madinah",
     "name": {
       "translated": "The Pilgrimage",
       "transliterated": "Al-Hajj",
@@ -389,7 +389,7 @@
   },
   {
     "id": 23,
-    "origin": "makkah",
+    "city": "makkah",
     "name": {
       "translated": "The Believers",
       "transliterated": "Al-Mu'minun",
@@ -409,7 +409,7 @@
   },
   {
     "id": 24,
-    "origin": "madinah",
+    "city": "madinah",
     "name": {
       "translated": "The Light",
       "transliterated": "An-Nur",
@@ -426,7 +426,7 @@
   },
   {
     "id": 25,
-    "origin": "makkah",
+    "city": "makkah",
     "name": {
       "translated": "The Criterion",
       "transliterated": "Al-Furqan",
@@ -445,7 +445,7 @@
   },
   {
     "id": 26,
-    "origin": "makkah",
+    "city": "makkah",
     "name": {
       "translated": "The Poets",
       "transliterated": "Ash-Shu'ara",
@@ -464,7 +464,7 @@
   },
   {
     "id": 27,
-    "origin": "makkah",
+    "city": "makkah",
     "name": {
       "translated": "The Ant",
       "transliterated": "An-Naml",
@@ -481,7 +481,7 @@
   },
   {
     "id": 28,
-    "origin": "makkah",
+    "city": "makkah",
     "name": {
       "translated": "The Stories",
       "transliterated": "Al-Qasas",
@@ -498,7 +498,7 @@
   },
   {
     "id": 29,
-    "origin": "makkah",
+    "city": "makkah",
     "name": {
       "translated": "The Spider",
       "transliterated": "Al-'Ankabut",
@@ -518,7 +518,7 @@
   },
   {
     "id": 30,
-    "origin": "makkah",
+    "city": "makkah",
     "name": {
       "translated": "The Romans",
       "transliterated": "Ar-Rum",
@@ -535,7 +535,7 @@
   },
   {
     "id": 31,
-    "origin": "makkah",
+    "city": "makkah",
     "name": {
       "translated": "Luqman",
       "transliterated": "Luqman",
@@ -552,7 +552,7 @@
   },
   {
     "id": 32,
-    "origin": "makkah",
+    "city": "makkah",
     "name": {
       "translated": "The Prostration",
       "transliterated": "As-Sajdah",
@@ -570,7 +570,7 @@
   },
   {
     "id": 33,
-    "origin": "madinah",
+    "city": "madinah",
     "name": {
       "translated": "The Combined Forces",
       "transliterated": "Al-Ahzab",
@@ -589,7 +589,7 @@
   },
   {
     "id": 34,
-    "origin": "makkah",
+    "city": "makkah",
     "name": {
       "translated": "Sheba",
       "transliterated": "Saba",
@@ -604,9 +604,9 @@
   },
   {
     "id": 35,
-    "origin": "makkah",
+    "city": "makkah",
     "name": {
-      "translated": "Originator",
+      "translated": "Cityator",
       "transliterated": "Fatir",
       "codepoints": [
         1601,
@@ -620,7 +620,7 @@
   },
   {
     "id": 36,
-    "origin": "makkah",
+    "city": "makkah",
     "name": {
       "translated": "Ya Sin",
       "transliterated": "Ya-Sin",
@@ -634,7 +634,7 @@
   },
   {
     "id": 37,
-    "origin": "makkah",
+    "city": "makkah",
     "name": {
       "translated": "Those who set the Ranks",
       "transliterated": "As-Saffat",
@@ -653,7 +653,7 @@
   },
   {
     "id": 38,
-    "origin": "makkah",
+    "city": "makkah",
     "name": {
       "translated": "The Letter \"Saad\"",
       "transliterated": "Sad",
@@ -666,7 +666,7 @@
   },
   {
     "id": 39,
-    "origin": "makkah",
+    "city": "makkah",
     "name": {
       "translated": "The Troops",
       "transliterated": "Az-Zumar",
@@ -683,7 +683,7 @@
   },
   {
     "id": 40,
-    "origin": "makkah",
+    "city": "makkah",
     "name": {
       "translated": "The Forgiver",
       "transliterated": "Ghafir",
@@ -699,7 +699,7 @@
   },
   {
     "id": 41,
-    "origin": "makkah",
+    "city": "makkah",
     "name": {
       "translated": "Explained in Detail",
       "transliterated": "Fussilat",
@@ -715,7 +715,7 @@
   },
   {
     "id": 42,
-    "origin": "makkah",
+    "city": "makkah",
     "name": {
       "translated": "The Consultation",
       "transliterated": "Ash-Shuraa",
@@ -733,7 +733,7 @@
   },
   {
     "id": 43,
-    "origin": "makkah",
+    "city": "makkah",
     "name": {
       "translated": "The Ornaments of Gold",
       "transliterated": "Az-Zukhruf",
@@ -751,7 +751,7 @@
   },
   {
     "id": 44,
-    "origin": "makkah",
+    "city": "makkah",
     "name": {
       "translated": "The Smoke",
       "transliterated": "Ad-Dukhan",
@@ -769,7 +769,7 @@
   },
   {
     "id": 45,
-    "origin": "makkah",
+    "city": "makkah",
     "name": {
       "translated": "The Crouching",
       "transliterated": "Al-Jathiyah",
@@ -788,7 +788,7 @@
   },
   {
     "id": 46,
-    "origin": "makkah",
+    "city": "makkah",
     "name": {
       "translated": "The Wind-Curved Sandhills",
       "transliterated": "Al-Ahqaf",
@@ -807,7 +807,7 @@
   },
   {
     "id": 47,
-    "origin": "madinah",
+    "city": "madinah",
     "name": {
       "translated": "Muhammad",
       "transliterated": "Muhammad",
@@ -823,7 +823,7 @@
   },
   {
     "id": 48,
-    "origin": "madinah",
+    "city": "madinah",
     "name": {
       "translated": "The Victory",
       "transliterated": "Al-Fath",
@@ -840,7 +840,7 @@
   },
   {
     "id": 49,
-    "origin": "madinah",
+    "city": "madinah",
     "name": {
       "translated": "The Rooms",
       "transliterated": "Al-Hujurat",
@@ -859,7 +859,7 @@
   },
   {
     "id": 50,
-    "origin": "makkah",
+    "city": "makkah",
     "name": {
       "translated": "The Letter \"Qaf\"",
       "transliterated": "Qaf",
@@ -872,7 +872,7 @@
   },
   {
     "id": 51,
-    "origin": "makkah",
+    "city": "makkah",
     "name": {
       "translated": "The Winnowing Winds",
       "transliterated": "Adh-Dhariyat",
@@ -892,7 +892,7 @@
   },
   {
     "id": 52,
-    "origin": "makkah",
+    "city": "makkah",
     "name": {
       "translated": "The Mount",
       "transliterated": "At-Tur",
@@ -909,7 +909,7 @@
   },
   {
     "id": 53,
-    "origin": "makkah",
+    "city": "makkah",
     "name": {
       "translated": "The Star",
       "transliterated": "An-Najm",
@@ -926,7 +926,7 @@
   },
   {
     "id": 54,
-    "origin": "makkah",
+    "city": "makkah",
     "name": {
       "translated": "The Moon",
       "transliterated": "Al-Qamar",
@@ -943,7 +943,7 @@
   },
   {
     "id": 55,
-    "origin": "madinah",
+    "city": "madinah",
     "name": {
       "translated": "The Beneficent",
       "transliterated": "Ar-Rahman",
@@ -961,7 +961,7 @@
   },
   {
     "id": 56,
-    "origin": "makkah",
+    "city": "makkah",
     "name": {
       "translated": "The Inevitable",
       "transliterated": "Al-Waqi'ah",
@@ -980,7 +980,7 @@
   },
   {
     "id": 57,
-    "origin": "madinah",
+    "city": "madinah",
     "name": {
       "translated": "The Iron",
       "transliterated": "Al-Hadid",
@@ -998,7 +998,7 @@
   },
   {
     "id": 58,
-    "origin": "madinah",
+    "city": "madinah",
     "name": {
       "translated": "The Pleading Woman",
       "transliterated": "Al-Mujadila",
@@ -1018,7 +1018,7 @@
   },
   {
     "id": 59,
-    "origin": "madinah",
+    "city": "madinah",
     "name": {
       "translated": "The Exile",
       "transliterated": "Al-Hashr",
@@ -1035,7 +1035,7 @@
   },
   {
     "id": 60,
-    "origin": "madinah",
+    "city": "madinah",
     "name": {
       "translated": "She that is to be examined",
       "transliterated": "Al-Mumtahanah",
@@ -1055,7 +1055,7 @@
   },
   {
     "id": 61,
-    "origin": "madinah",
+    "city": "madinah",
     "name": {
       "translated": "The Ranks",
       "transliterated": "As-Saf",
@@ -1071,7 +1071,7 @@
   },
   {
     "id": 62,
-    "origin": "madinah",
+    "city": "madinah",
     "name": {
       "translated": "The Congregation, Friday",
       "transliterated": "Al-Jumu'ah",
@@ -1089,7 +1089,7 @@
   },
   {
     "id": 63,
-    "origin": "madinah",
+    "city": "madinah",
     "name": {
       "translated": "The Hypocrites",
       "transliterated": "Al-Munafiqun",
@@ -1110,7 +1110,7 @@
   },
   {
     "id": 64,
-    "origin": "madinah",
+    "city": "madinah",
     "name": {
       "translated": "The Mutual Disillusion",
       "transliterated": "At-Taghabun",
@@ -1129,7 +1129,7 @@
   },
   {
     "id": 65,
-    "origin": "madinah",
+    "city": "madinah",
     "name": {
       "translated": "The Divorce",
       "transliterated": "At-Talaq",
@@ -1147,7 +1147,7 @@
   },
   {
     "id": 66,
-    "origin": "madinah",
+    "city": "madinah",
     "name": {
       "translated": "The Prohibition",
       "transliterated": "At-Tahrim",
@@ -1166,7 +1166,7 @@
   },
   {
     "id": 67,
-    "origin": "makkah",
+    "city": "makkah",
     "name": {
       "translated": "The Sovereignty",
       "transliterated": "Al-Mulk",
@@ -1183,7 +1183,7 @@
   },
   {
     "id": 68,
-    "origin": "makkah",
+    "city": "makkah",
     "name": {
       "translated": "The Pen",
       "transliterated": "Al-Qalam",
@@ -1200,7 +1200,7 @@
   },
   {
     "id": 69,
-    "origin": "makkah",
+    "city": "makkah",
     "name": {
       "translated": "The Reality",
       "transliterated": "Al-Haqqah",
@@ -1218,7 +1218,7 @@
   },
   {
     "id": 70,
-    "origin": "makkah",
+    "city": "makkah",
     "name": {
       "translated": "The Ascending Stairways",
       "transliterated": "Al-Ma'arij",
@@ -1237,7 +1237,7 @@
   },
   {
     "id": 71,
-    "origin": "makkah",
+    "city": "makkah",
     "name": {
       "translated": "Noah",
       "transliterated": "Nuh",
@@ -1252,7 +1252,7 @@
   },
   {
     "id": 72,
-    "origin": "makkah",
+    "city": "makkah",
     "name": {
       "translated": "The Jinn",
       "transliterated": "Al-Jinn",
@@ -1268,7 +1268,7 @@
   },
   {
     "id": 73,
-    "origin": "makkah",
+    "city": "makkah",
     "name": {
       "translated": "The Enshrouded One",
       "transliterated": "Al-Muzzammil",
@@ -1286,7 +1286,7 @@
   },
   {
     "id": 74,
-    "origin": "makkah",
+    "city": "makkah",
     "name": {
       "translated": "The Cloaked One",
       "transliterated": "Al-Muddaththir",
@@ -1304,7 +1304,7 @@
   },
   {
     "id": 75,
-    "origin": "makkah",
+    "city": "makkah",
     "name": {
       "translated": "The Resurrection",
       "transliterated": "Al-Qiyamah",
@@ -1323,7 +1323,7 @@
   },
   {
     "id": 76,
-    "origin": "madinah",
+    "city": "madinah",
     "name": {
       "translated": "The Man",
       "transliterated": "Al-Insan",
@@ -1342,7 +1342,7 @@
   },
   {
     "id": 77,
-    "origin": "makkah",
+    "city": "makkah",
     "name": {
       "translated": "The Emissaries",
       "transliterated": "Al-Mursalat",
@@ -1362,7 +1362,7 @@
   },
   {
     "id": 78,
-    "origin": "makkah",
+    "city": "makkah",
     "name": {
       "translated": "The Tidings",
       "transliterated": "An-Naba",
@@ -1379,7 +1379,7 @@
   },
   {
     "id": 79,
-    "origin": "makkah",
+    "city": "makkah",
     "name": {
       "translated": "Those who drag forth",
       "transliterated": "An-Nazi'at",
@@ -1399,7 +1399,7 @@
   },
   {
     "id": 80,
-    "origin": "makkah",
+    "city": "makkah",
     "name": {
       "translated": "He Frowned",
       "transliterated": "'Abasa",
@@ -1414,7 +1414,7 @@
   },
   {
     "id": 81,
-    "origin": "makkah",
+    "city": "makkah",
     "name": {
       "translated": "The Overthrowing",
       "transliterated": "At-Takwir",
@@ -1433,7 +1433,7 @@
   },
   {
     "id": 82,
-    "origin": "makkah",
+    "city": "makkah",
     "name": {
       "translated": "The Cleaving",
       "transliterated": "Al-Infitar",
@@ -1453,7 +1453,7 @@
   },
   {
     "id": 83,
-    "origin": "makkah",
+    "city": "makkah",
     "name": {
       "translated": "The Defrauding",
       "transliterated": "Al-Mutaffifin",
@@ -1473,7 +1473,7 @@
   },
   {
     "id": 84,
-    "origin": "makkah",
+    "city": "makkah",
     "name": {
       "translated": "The Sundering",
       "transliterated": "Al-Inshiqaq",
@@ -1493,7 +1493,7 @@
   },
   {
     "id": 85,
-    "origin": "makkah",
+    "city": "makkah",
     "name": {
       "translated": "The Mansions of the Stars",
       "transliterated": "Al-Buruj",
@@ -1511,7 +1511,7 @@
   },
   {
     "id": 86,
-    "origin": "makkah",
+    "city": "makkah",
     "name": {
       "translated": "The Nightcommer",
       "transliterated": "At-Tariq",
@@ -1529,7 +1529,7 @@
   },
   {
     "id": 87,
-    "origin": "makkah",
+    "city": "makkah",
     "name": {
       "translated": "The Most High",
       "transliterated": "Al-A'la",
@@ -1547,7 +1547,7 @@
   },
   {
     "id": 88,
-    "origin": "makkah",
+    "city": "makkah",
     "name": {
       "translated": "The Overwhelming",
       "transliterated": "Al-Ghashiyah",
@@ -1566,7 +1566,7 @@
   },
   {
     "id": 89,
-    "origin": "makkah",
+    "city": "makkah",
     "name": {
       "translated": "The Dawn",
       "transliterated": "Al-Fajr",
@@ -1583,7 +1583,7 @@
   },
   {
     "id": 90,
-    "origin": "makkah",
+    "city": "makkah",
     "name": {
       "translated": "The City",
       "transliterated": "Al-Balad",
@@ -1600,7 +1600,7 @@
   },
   {
     "id": 91,
-    "origin": "makkah",
+    "city": "makkah",
     "name": {
       "translated": "The Sun",
       "transliterated": "Ash-Shams",
@@ -1617,7 +1617,7 @@
   },
   {
     "id": 92,
-    "origin": "makkah",
+    "city": "makkah",
     "name": {
       "translated": "The Night",
       "transliterated": "Al-Layl",
@@ -1634,7 +1634,7 @@
   },
   {
     "id": 93,
-    "origin": "makkah",
+    "city": "makkah",
     "name": {
       "translated": "The Morning Hours",
       "transliterated": "Ad-Duhaa",
@@ -1651,7 +1651,7 @@
   },
   {
     "id": 94,
-    "origin": "makkah",
+    "city": "makkah",
     "name": {
       "translated": "The Relief",
       "transliterated": "Ash-Sharh",
@@ -1668,7 +1668,7 @@
   },
   {
     "id": 95,
-    "origin": "makkah",
+    "city": "makkah",
     "name": {
       "translated": "The Fig",
       "transliterated": "At-Tin",
@@ -1685,7 +1685,7 @@
   },
   {
     "id": 96,
-    "origin": "makkah",
+    "city": "makkah",
     "name": {
       "translated": "The Clot",
       "transliterated": "Al-'Alaq",
@@ -1702,7 +1702,7 @@
   },
   {
     "id": 97,
-    "origin": "makkah",
+    "city": "makkah",
     "name": {
       "translated": "The Power",
       "transliterated": "Al-Qadr",
@@ -1719,7 +1719,7 @@
   },
   {
     "id": 98,
-    "origin": "madinah",
+    "city": "madinah",
     "name": {
       "translated": "The Clear Proof",
       "transliterated": "Al-Bayyinah",
@@ -1737,7 +1737,7 @@
   },
   {
     "id": 99,
-    "origin": "madinah",
+    "city": "madinah",
     "name": {
       "translated": "The Earthquake",
       "transliterated": "Az-Zalzalah",
@@ -1756,7 +1756,7 @@
   },
   {
     "id": 100,
-    "origin": "makkah",
+    "city": "makkah",
     "name": {
       "translated": "The Courser",
       "transliterated": "Al-'Adiyat",
@@ -1776,7 +1776,7 @@
   },
   {
     "id": 101,
-    "origin": "makkah",
+    "city": "makkah",
     "name": {
       "translated": "The Calamity",
       "transliterated": "Al-Qari'ah",
@@ -1795,7 +1795,7 @@
   },
   {
     "id": 102,
-    "origin": "makkah",
+    "city": "makkah",
     "name": {
       "translated": "The Rivalry in world increase",
       "transliterated": "At-Takathur",
@@ -1814,7 +1814,7 @@
   },
   {
     "id": 103,
-    "origin": "makkah",
+    "city": "makkah",
     "name": {
       "translated": "The Declining Day",
       "transliterated": "Al-'Asr",
@@ -1831,7 +1831,7 @@
   },
   {
     "id": 104,
-    "origin": "makkah",
+    "city": "makkah",
     "name": {
       "translated": "The Traducer",
       "transliterated": "Al-Humazah",
@@ -1849,7 +1849,7 @@
   },
   {
     "id": 105,
-    "origin": "makkah",
+    "city": "makkah",
     "name": {
       "translated": "The Elephant",
       "transliterated": "Al-Fil",
@@ -1866,7 +1866,7 @@
   },
   {
     "id": 106,
-    "origin": "makkah",
+    "city": "makkah",
     "name": {
       "translated": "Quraysh",
       "transliterated": "Quraysh",
@@ -1882,7 +1882,7 @@
   },
   {
     "id": 107,
-    "origin": "makkah",
+    "city": "makkah",
     "name": {
       "translated": "The Small kindnesses",
       "transliterated": "Al-Ma'un",
@@ -1901,7 +1901,7 @@
   },
   {
     "id": 108,
-    "origin": "makkah",
+    "city": "makkah",
     "name": {
       "translated": "The Abundance",
       "transliterated": "Al-Kawthar",
@@ -1919,7 +1919,7 @@
   },
   {
     "id": 109,
-    "origin": "makkah",
+    "city": "makkah",
     "name": {
       "translated": "The Disbelievers",
       "transliterated": "Al-Kafirun",
@@ -1939,7 +1939,7 @@
   },
   {
     "id": 110,
-    "origin": "madinah",
+    "city": "madinah",
     "name": {
       "translated": "The Divine Support",
       "transliterated": "An-Nasr",
@@ -1956,7 +1956,7 @@
   },
   {
     "id": 111,
-    "origin": "makkah",
+    "city": "makkah",
     "name": {
       "translated": "The Palm Fiber",
       "transliterated": "Al-Masad",
@@ -1973,7 +1973,7 @@
   },
   {
     "id": 112,
-    "origin": "makkah",
+    "city": "makkah",
     "name": {
       "translated": "The Sincerity",
       "transliterated": "Al-Ikhlas",
@@ -1992,7 +1992,7 @@
   },
   {
     "id": 113,
-    "origin": "makkah",
+    "city": "makkah",
     "name": {
       "translated": "The Daybreak",
       "transliterated": "Al-Falaq",
@@ -2009,7 +2009,7 @@
   },
   {
     "id": 114,
-    "origin": "makkah",
+    "city": "makkah",
     "name": {
       "translated": "Mankind",
       "transliterated": "An-Nas",

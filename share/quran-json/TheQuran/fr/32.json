@@ -1,20 +1,22 @@
 [
   {
-    "id": "32",
-    "place_of_revelation": "makkah",
-    "transliterated_name": "As-Sajdah",
-    "translated_name": "The Prostration",
+    "id": 32,
+    "city": "makkah",
+    "name": {
+      "translated": "The Prostration",
+      "transliterated": "As-Sajdah",
+      "codepoints": [
+        1575,
+        1604,
+        1587,
+        1580,
+        1583,
+        1577
+      ]
+    },
     "ayahs": 30,
     "slug": "as-sajdah",
-    "codepoints": [
-      1575,
-      1604,
-      1587,
-      1580,
-      1583,
-      1577
-    ],
-    "translated_by": "Muhammad Hamidullah"
+    "translator": "Muhammad Hamidullah"
   },
   [
     1,

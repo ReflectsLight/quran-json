@@ -1,19 +1,21 @@
 [
   {
-    "id": "91",
-    "place_of_revelation": "makkah",
-    "transliterated_name": "Ash-Shams",
-    "translated_name": "The Sun",
+    "id": 91,
+    "city": "makkah",
+    "name": {
+      "translated": "The Sun",
+      "transliterated": "Ash-Shams",
+      "codepoints": [
+        1575,
+        1604,
+        1588,
+        1605,
+        1587
+      ]
+    },
     "ayahs": 15,
     "slug": "ash-shams",
-    "codepoints": [
-      1575,
-      1604,
-      1588,
-      1605,
-      1587
-    ],
-    "translated_by": "Hussein Taji Kal Dari"
+    "translator": "Hussein Taji Kal Dari"
   },
   [
     1,

@@ -1,22 +1,24 @@
 [
   {
-    "id": "77",
-    "place_of_revelation": "makkah",
-    "transliterated_name": "Al-Mursalat",
-    "translated_name": "The Emissaries",
+    "id": 77,
+    "city": "makkah",
+    "name": {
+      "translated": "The Emissaries",
+      "transliterated": "Al-Mursalat",
+      "codepoints": [
+        1575,
+        1604,
+        1605,
+        1585,
+        1587,
+        1604,
+        1575,
+        1578
+      ]
+    },
     "ayahs": 50,
     "slug": "al-mursalat",
-    "codepoints": [
-      1575,
-      1604,
-      1605,
-      1585,
-      1587,
-      1604,
-      1575,
-      1578
-    ],
-    "translated_by": "Hamza Roberto Piccardo"
+    "translator": "Hamza Roberto Piccardo"
   },
   [
     1,

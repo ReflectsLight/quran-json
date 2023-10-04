@@ -1,20 +1,22 @@
 [
   {
-    "id": "62",
-    "place_of_revelation": "madinah",
-    "transliterated_name": "Al-Jumu'ah",
-    "translated_name": "The Congregation, Friday",
+    "id": 62,
+    "city": "madinah",
+    "name": {
+      "translated": "The Congregation, Friday",
+      "transliterated": "Al-Jumu'ah",
+      "codepoints": [
+        1575,
+        1604,
+        1580,
+        1605,
+        1593,
+        1577
+      ]
+    },
     "ayahs": 11,
     "slug": "al-jumuah",
-    "codepoints": [
-      1575,
-      1604,
-      1580,
-      1605,
-      1593,
-      1577
-    ],
-    "translated_by": "Sofian S. Siregar"
+    "translator": "Sofian S. Siregar"
   },
   [
     1,

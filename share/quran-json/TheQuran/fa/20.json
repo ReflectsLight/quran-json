@@ -1,16 +1,18 @@
 [
   {
-    "id": "20",
-    "place_of_revelation": "makkah",
-    "transliterated_name": "Taha",
-    "translated_name": "Ta-Ha",
+    "id": 20,
+    "city": "makkah",
+    "name": {
+      "translated": "Ta-Ha",
+      "transliterated": "Taha",
+      "codepoints": [
+        1591,
+        1607
+      ]
+    },
     "ayahs": 135,
     "slug": "taha",
-    "codepoints": [
-      1591,
-      1607
-    ],
-    "translated_by": "Hussein Taji Kal Dari"
+    "translator": "Hussein Taji Kal Dari"
   },
   [
     1,

@@ -1,19 +1,21 @@
 [
   {
-    "id": "27",
-    "place_of_revelation": "makkah",
-    "transliterated_name": "An-Naml",
-    "translated_name": "The Ant",
+    "id": 27,
+    "city": "makkah",
+    "name": {
+      "translated": "The Ant",
+      "transliterated": "An-Naml",
+      "codepoints": [
+        1575,
+        1604,
+        1606,
+        1605,
+        1604
+      ]
+    },
     "ayahs": 93,
     "slug": "an-naml",
-    "codepoints": [
-      1575,
-      1604,
-      1606,
-      1605,
-      1604
-    ],
-    "translated_by": "Muhammad Hamidullah"
+    "translator": "Muhammad Hamidullah"
   },
   [
     1,

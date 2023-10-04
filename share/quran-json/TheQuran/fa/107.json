@@ -1,21 +1,23 @@
 [
   {
-    "id": "107",
-    "place_of_revelation": "makkah",
-    "transliterated_name": "Al-Ma'un",
-    "translated_name": "The Small kindnesses",
+    "id": 107,
+    "city": "makkah",
+    "name": {
+      "translated": "The Small kindnesses",
+      "transliterated": "Al-Ma'un",
+      "codepoints": [
+        1575,
+        1604,
+        1605,
+        1575,
+        1593,
+        1608,
+        1606
+      ]
+    },
     "ayahs": 7,
     "slug": "al-maun",
-    "codepoints": [
-      1575,
-      1604,
-      1605,
-      1575,
-      1593,
-      1608,
-      1606
-    ],
-    "translated_by": "Hussein Taji Kal Dari"
+    "translator": "Hussein Taji Kal Dari"
   },
   [
     1,

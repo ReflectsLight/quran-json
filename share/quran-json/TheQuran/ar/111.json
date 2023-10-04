@@ -1,19 +1,21 @@
 [
   {
-    "id": "111",
-    "place_of_revelation": "makkah",
-    "transliterated_name": "Al-Masad",
-    "translated_name": "The Palm Fiber",
+    "id": 111,
+    "city": "makkah",
+    "name": {
+      "translated": "The Palm Fiber",
+      "transliterated": "Al-Masad",
+      "codepoints": [
+        1575,
+        1604,
+        1605,
+        1587,
+        1583
+      ]
+    },
     "ayahs": 5,
     "slug": "al-masad",
-    "codepoints": [
-      1575,
-      1604,
-      1605,
-      1587,
-      1583
-    ],
-    "translated_by": null
+    "translator": null
   },
   [
     1,

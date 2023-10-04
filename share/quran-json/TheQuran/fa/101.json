@@ -1,21 +1,23 @@
 [
   {
-    "id": "101",
-    "place_of_revelation": "makkah",
-    "transliterated_name": "Al-Qari'ah",
-    "translated_name": "The Calamity",
+    "id": 101,
+    "city": "makkah",
+    "name": {
+      "translated": "The Calamity",
+      "transliterated": "Al-Qari'ah",
+      "codepoints": [
+        1575,
+        1604,
+        1602,
+        1575,
+        1585,
+        1593,
+        1577
+      ]
+    },
     "ayahs": 11,
     "slug": "al-qariah",
-    "codepoints": [
-      1575,
-      1604,
-      1602,
-      1575,
-      1585,
-      1593,
-      1577
-    ],
-    "translated_by": "Hussein Taji Kal Dari"
+    "translator": "Hussein Taji Kal Dari"
   },
   [
     1,

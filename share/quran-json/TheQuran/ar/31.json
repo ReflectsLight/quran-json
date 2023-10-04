@@ -1,19 +1,21 @@
 [
   {
-    "id": "31",
-    "place_of_revelation": "makkah",
-    "transliterated_name": "Luqman",
-    "translated_name": "Luqman",
+    "id": 31,
+    "city": "makkah",
+    "name": {
+      "translated": "Luqman",
+      "transliterated": "Luqman",
+      "codepoints": [
+        1604,
+        1602,
+        1605,
+        1575,
+        1606
+      ]
+    },
     "ayahs": 34,
     "slug": "luqman",
-    "codepoints": [
-      1604,
-      1602,
-      1605,
-      1575,
-      1606
-    ],
-    "translated_by": null
+    "translator": null
   },
   [
     1,

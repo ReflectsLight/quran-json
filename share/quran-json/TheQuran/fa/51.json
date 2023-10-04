@@ -1,22 +1,24 @@
 [
   {
-    "id": "51",
-    "place_of_revelation": "makkah",
-    "transliterated_name": "Adh-Dhariyat",
-    "translated_name": "The Winnowing Winds",
+    "id": 51,
+    "city": "makkah",
+    "name": {
+      "translated": "The Winnowing Winds",
+      "transliterated": "Adh-Dhariyat",
+      "codepoints": [
+        1575,
+        1604,
+        1584,
+        1575,
+        1585,
+        1610,
+        1575,
+        1578
+      ]
+    },
     "ayahs": 60,
     "slug": "adh-dhariyat",
-    "codepoints": [
-      1575,
-      1604,
-      1584,
-      1575,
-      1585,
-      1610,
-      1575,
-      1578
-    ],
-    "translated_by": "Hussein Taji Kal Dari"
+    "translator": "Hussein Taji Kal Dari"
   },
   [
     1,

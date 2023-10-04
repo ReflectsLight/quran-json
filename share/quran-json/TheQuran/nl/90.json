@@ -1,19 +1,21 @@
 [
   {
-    "id": "90",
-    "place_of_revelation": "makkah",
-    "transliterated_name": "Al-Balad",
-    "translated_name": "The City",
+    "id": 90,
+    "city": "makkah",
+    "name": {
+      "translated": "The City",
+      "transliterated": "Al-Balad",
+      "codepoints": [
+        1575,
+        1604,
+        1576,
+        1604,
+        1583
+      ]
+    },
     "ayahs": 20,
     "slug": "al-balad",
-    "codepoints": [
-      1575,
-      1604,
-      1576,
-      1604,
-      1583
-    ],
-    "translated_by": "Sofian S. Siregar"
+    "translator": "Sofian S. Siregar"
   },
   [
     1,

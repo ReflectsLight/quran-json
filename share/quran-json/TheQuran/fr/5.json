@@ -1,21 +1,23 @@
 [
   {
-    "id": "5",
-    "place_of_revelation": "madinah",
-    "transliterated_name": "Al-Ma'idah",
-    "translated_name": "The Table Spread",
+    "id": 5,
+    "city": "madinah",
+    "name": {
+      "translated": "The Table Spread",
+      "transliterated": "Al-Ma'idah",
+      "codepoints": [
+        1575,
+        1604,
+        1605,
+        1575,
+        1574,
+        1583,
+        1577
+      ]
+    },
     "ayahs": 120,
     "slug": "al-maidah",
-    "codepoints": [
-      1575,
-      1604,
-      1605,
-      1575,
-      1574,
-      1583,
-      1577
-    ],
-    "translated_by": "Muhammad Hamidullah"
+    "translator": "Muhammad Hamidullah"
   },
   [
     1,

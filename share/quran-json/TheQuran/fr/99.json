@@ -1,21 +1,23 @@
 [
   {
-    "id": "99",
-    "place_of_revelation": "madinah",
-    "transliterated_name": "Az-Zalzalah",
-    "translated_name": "The Earthquake",
+    "id": 99,
+    "city": "madinah",
+    "name": {
+      "translated": "The Earthquake",
+      "transliterated": "Az-Zalzalah",
+      "codepoints": [
+        1575,
+        1604,
+        1586,
+        1604,
+        1586,
+        1604,
+        1577
+      ]
+    },
     "ayahs": 8,
     "slug": "az-zalzalah",
-    "codepoints": [
-      1575,
-      1604,
-      1586,
-      1604,
-      1586,
-      1604,
-      1577
-    ],
-    "translated_by": "Muhammad Hamidullah"
+    "translator": "Muhammad Hamidullah"
   },
   [
     1,

@@ -1,22 +1,24 @@
 [
   {
-    "id": "83",
-    "place_of_revelation": "makkah",
-    "transliterated_name": "Al-Mutaffifin",
-    "translated_name": "The Defrauding",
+    "id": 83,
+    "city": "makkah",
+    "name": {
+      "translated": "The Defrauding",
+      "transliterated": "Al-Mutaffifin",
+      "codepoints": [
+        1575,
+        1604,
+        1605,
+        1591,
+        1601,
+        1601,
+        1610,
+        1606
+      ]
+    },
     "ayahs": 36,
     "slug": "al-mutaffifin",
-    "codepoints": [
-      1575,
-      1604,
-      1605,
-      1591,
-      1601,
-      1601,
-      1610,
-      1606
-    ],
-    "translated_by": "Sofian S. Siregar"
+    "translator": "Sofian S. Siregar"
   },
   [
     1,

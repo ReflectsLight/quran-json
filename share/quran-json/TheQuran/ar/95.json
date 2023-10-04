@@ -1,19 +1,21 @@
 [
   {
-    "id": "95",
-    "place_of_revelation": "makkah",
-    "transliterated_name": "At-Tin",
-    "translated_name": "The Fig",
+    "id": 95,
+    "city": "makkah",
+    "name": {
+      "translated": "The Fig",
+      "transliterated": "At-Tin",
+      "codepoints": [
+        1575,
+        1604,
+        1578,
+        1610,
+        1606
+      ]
+    },
     "ayahs": 8,
     "slug": "at-tin",
-    "codepoints": [
-      1575,
-      1604,
-      1578,
-      1610,
-      1606
-    ],
-    "translated_by": null
+    "translator": null
   },
   [
     1,

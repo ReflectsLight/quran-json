@@ -1,19 +1,21 @@
 [
   {
-    "id": "16",
-    "place_of_revelation": "makkah",
-    "transliterated_name": "An-Nahl",
-    "translated_name": "The Bee",
+    "id": 16,
+    "city": "makkah",
+    "name": {
+      "translated": "The Bee",
+      "transliterated": "An-Nahl",
+      "codepoints": [
+        1575,
+        1604,
+        1606,
+        1581,
+        1604
+      ]
+    },
     "ayahs": 128,
     "slug": "an-nahl",
-    "codepoints": [
-      1575,
-      1604,
-      1606,
-      1581,
-      1604
-    ],
-    "translated_by": "Sofian S. Siregar"
+    "translator": "Sofian S. Siregar"
   },
   [
     1,

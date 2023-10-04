@@ -1,19 +1,21 @@
 [
   {
-    "id": "110",
-    "place_of_revelation": "madinah",
-    "transliterated_name": "An-Nasr",
-    "translated_name": "The Divine Support",
+    "id": 110,
+    "city": "madinah",
+    "name": {
+      "translated": "The Divine Support",
+      "transliterated": "An-Nasr",
+      "codepoints": [
+        1575,
+        1604,
+        1606,
+        1589,
+        1585
+      ]
+    },
     "ayahs": 3,
     "slug": "an-nasr",
-    "codepoints": [
-      1575,
-      1604,
-      1606,
-      1589,
-      1585
-    ],
-    "translated_by": "Hussein Taji Kal Dari"
+    "translator": "Hussein Taji Kal Dari"
   },
   [
     1,

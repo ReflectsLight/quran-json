@@ -1,19 +1,21 @@
 [
   {
-    "id": "24",
-    "place_of_revelation": "madinah",
-    "transliterated_name": "An-Nur",
-    "translated_name": "The Light",
+    "id": 24,
+    "city": "madinah",
+    "name": {
+      "translated": "The Light",
+      "transliterated": "An-Nur",
+      "codepoints": [
+        1575,
+        1604,
+        1606,
+        1608,
+        1585
+      ]
+    },
     "ayahs": 64,
     "slug": "an-nur",
-    "codepoints": [
-      1575,
-      1604,
-      1606,
-      1608,
-      1585
-    ],
-    "translated_by": null
+    "translator": null
   },
   [
     1,

@@ -1,21 +1,23 @@
 [
   {
-    "id": "56",
-    "place_of_revelation": "makkah",
-    "transliterated_name": "Al-Waqi'ah",
-    "translated_name": "The Inevitable",
+    "id": 56,
+    "city": "makkah",
+    "name": {
+      "translated": "The Inevitable",
+      "transliterated": "Al-Waqi'ah",
+      "codepoints": [
+        1575,
+        1604,
+        1608,
+        1575,
+        1602,
+        1593,
+        1577
+      ]
+    },
     "ayahs": 96,
     "slug": "al-waqiah",
-    "codepoints": [
-      1575,
-      1604,
-      1608,
-      1575,
-      1602,
-      1593,
-      1577
-    ],
-    "translated_by": "Muhammad Hamidullah"
+    "translator": "Muhammad Hamidullah"
   },
   [
     1,

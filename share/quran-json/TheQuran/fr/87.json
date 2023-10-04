@@ -1,20 +1,22 @@
 [
   {
-    "id": "87",
-    "place_of_revelation": "makkah",
-    "transliterated_name": "Al-A'la",
-    "translated_name": "The Most High",
+    "id": 87,
+    "city": "makkah",
+    "name": {
+      "translated": "The Most High",
+      "transliterated": "Al-A'la",
+      "codepoints": [
+        1575,
+        1604,
+        1571,
+        1593,
+        1604,
+        1609
+      ]
+    },
     "ayahs": 19,
     "slug": "al-ala",
-    "codepoints": [
-      1575,
-      1604,
-      1571,
-      1593,
-      1604,
-      1609
-    ],
-    "translated_by": "Muhammad Hamidullah"
+    "translator": "Muhammad Hamidullah"
   },
   [
     1,

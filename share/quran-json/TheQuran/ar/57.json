@@ -1,20 +1,22 @@
 [
   {
-    "id": "57",
-    "place_of_revelation": "madinah",
-    "transliterated_name": "Al-Hadid",
-    "translated_name": "The Iron",
+    "id": 57,
+    "city": "madinah",
+    "name": {
+      "translated": "The Iron",
+      "transliterated": "Al-Hadid",
+      "codepoints": [
+        1575,
+        1604,
+        1581,
+        1583,
+        1610,
+        1583
+      ]
+    },
     "ayahs": 29,
     "slug": "al-hadid",
-    "codepoints": [
-      1575,
-      1604,
-      1581,
-      1583,
-      1610,
-      1583
-    ],
-    "translated_by": null
+    "translator": null
   },
   [
     1,

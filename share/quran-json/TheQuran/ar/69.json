@@ -1,20 +1,22 @@
 [
   {
-    "id": "69",
-    "place_of_revelation": "makkah",
-    "transliterated_name": "Al-Haqqah",
-    "translated_name": "The Reality",
+    "id": 69,
+    "city": "makkah",
+    "name": {
+      "translated": "The Reality",
+      "transliterated": "Al-Haqqah",
+      "codepoints": [
+        1575,
+        1604,
+        1581,
+        1575,
+        1602,
+        1577
+      ]
+    },
     "ayahs": 52,
     "slug": "al-haqqah",
-    "codepoints": [
-      1575,
-      1604,
-      1581,
-      1575,
-      1602,
-      1577
-    ],
-    "translated_by": null
+    "translator": null
   },
   [
     1,

@@ -1,19 +1,21 @@
 [
   {
-    "id": "94",
-    "place_of_revelation": "makkah",
-    "transliterated_name": "Ash-Sharh",
-    "translated_name": "The Relief",
+    "id": 94,
+    "city": "makkah",
+    "name": {
+      "translated": "The Relief",
+      "transliterated": "Ash-Sharh",
+      "codepoints": [
+        1575,
+        1604,
+        1588,
+        1585,
+        1581
+      ]
+    },
     "ayahs": 8,
     "slug": "ash-sharh",
-    "codepoints": [
-      1575,
-      1604,
-      1588,
-      1585,
-      1581
-    ],
-    "translated_by": null
+    "translator": null
   },
   [
     1,

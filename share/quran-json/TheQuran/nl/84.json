@@ -1,22 +1,24 @@
 [
   {
-    "id": "84",
-    "place_of_revelation": "makkah",
-    "transliterated_name": "Al-Inshiqaq",
-    "translated_name": "The Sundering",
+    "id": 84,
+    "city": "makkah",
+    "name": {
+      "translated": "The Sundering",
+      "transliterated": "Al-Inshiqaq",
+      "codepoints": [
+        1575,
+        1604,
+        1573,
+        1606,
+        1588,
+        1602,
+        1575,
+        1602
+      ]
+    },
     "ayahs": 25,
     "slug": "al-inshiqaq",
-    "codepoints": [
-      1575,
-      1604,
-      1573,
-      1606,
-      1588,
-      1602,
-      1575,
-      1602
-    ],
-    "translated_by": "Sofian S. Siregar"
+    "translator": "Sofian S. Siregar"
   },
   [
     1,

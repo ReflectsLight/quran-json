@@ -1,19 +1,21 @@
 [
   {
-    "id": "59",
-    "place_of_revelation": "madinah",
-    "transliterated_name": "Al-Hashr",
-    "translated_name": "The Exile",
+    "id": 59,
+    "city": "madinah",
+    "name": {
+      "translated": "The Exile",
+      "transliterated": "Al-Hashr",
+      "codepoints": [
+        1575,
+        1604,
+        1581,
+        1588,
+        1585
+      ]
+    },
     "ayahs": 24,
     "slug": "al-hashr",
-    "codepoints": [
-      1575,
-      1604,
-      1581,
-      1588,
-      1585
-    ],
-    "translated_by": "Hamza Roberto Piccardo"
+    "translator": "Hamza Roberto Piccardo"
   },
   [
     1,

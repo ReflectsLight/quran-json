@@ -1,18 +1,20 @@
 [
   {
-    "id": "22",
-    "place_of_revelation": "madinah",
-    "transliterated_name": "Al-Hajj",
-    "translated_name": "The Pilgrimage",
+    "id": 22,
+    "city": "madinah",
+    "name": {
+      "translated": "The Pilgrimage",
+      "transliterated": "Al-Hajj",
+      "codepoints": [
+        1575,
+        1604,
+        1581,
+        1580
+      ]
+    },
     "ayahs": 78,
     "slug": "al-hajj",
-    "codepoints": [
-      1575,
-      1604,
-      1581,
-      1580
-    ],
-    "translated_by": "Muhammad Hamidullah"
+    "translator": "Muhammad Hamidullah"
   },
   [
     1,

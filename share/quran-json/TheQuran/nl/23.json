@@ -1,22 +1,24 @@
 [
   {
-    "id": "23",
-    "place_of_revelation": "makkah",
-    "transliterated_name": "Al-Mu'minun",
-    "translated_name": "The Believers",
+    "id": 23,
+    "city": "makkah",
+    "name": {
+      "translated": "The Believers",
+      "transliterated": "Al-Mu'minun",
+      "codepoints": [
+        1575,
+        1604,
+        1605,
+        1572,
+        1605,
+        1606,
+        1608,
+        1606
+      ]
+    },
     "ayahs": 118,
     "slug": "al-muminun",
-    "codepoints": [
-      1575,
-      1604,
-      1605,
-      1572,
-      1605,
-      1606,
-      1608,
-      1606
-    ],
-    "translated_by": "Sofian S. Siregar"
+    "translator": "Sofian S. Siregar"
   },
   [
     1,

@@ -1,20 +1,22 @@
 [
   {
-    "id": "42",
-    "place_of_revelation": "makkah",
-    "transliterated_name": "Ash-Shuraa",
-    "translated_name": "The Consultation",
+    "id": 42,
+    "city": "makkah",
+    "name": {
+      "translated": "The Consultation",
+      "transliterated": "Ash-Shuraa",
+      "codepoints": [
+        1575,
+        1604,
+        1588,
+        1608,
+        1585,
+        1609
+      ]
+    },
     "ayahs": 53,
     "slug": "ash-shuraa",
-    "codepoints": [
-      1575,
-      1604,
-      1588,
-      1608,
-      1585,
-      1609
-    ],
-    "translated_by": "Muhammad Hamidullah"
+    "translator": "Muhammad Hamidullah"
   },
   [
     1,

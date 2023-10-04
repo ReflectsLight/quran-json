@@ -1,21 +1,23 @@
 [
   {
-    "id": "8",
-    "place_of_revelation": "madinah",
-    "transliterated_name": "Al-Anfal",
-    "translated_name": "The Spoils of War",
+    "id": 8,
+    "city": "madinah",
+    "name": {
+      "translated": "The Spoils of War",
+      "transliterated": "Al-Anfal",
+      "codepoints": [
+        1575,
+        1604,
+        1571,
+        1606,
+        1601,
+        1575,
+        1604
+      ]
+    },
     "ayahs": 75,
     "slug": "al-anfal",
-    "codepoints": [
-      1575,
-      1604,
-      1571,
-      1606,
-      1601,
-      1575,
-      1604
-    ],
-    "translated_by": "Hussein Taji Kal Dari"
+    "translator": "Hussein Taji Kal Dari"
   },
   [
     1,

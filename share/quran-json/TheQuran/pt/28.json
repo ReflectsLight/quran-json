@@ -1,19 +1,21 @@
 [
   {
-    "id": "28",
-    "place_of_revelation": "makkah",
-    "transliterated_name": "Al-Qasas",
-    "translated_name": "The Stories",
+    "id": 28,
+    "city": "makkah",
+    "name": {
+      "translated": "The Stories",
+      "transliterated": "Al-Qasas",
+      "codepoints": [
+        1575,
+        1604,
+        1602,
+        1589,
+        1589
+      ]
+    },
     "ayahs": 88,
     "slug": "al-qasas",
-    "codepoints": [
-      1575,
-      1604,
-      1602,
-      1589,
-      1589
-    ],
-    "translated_by": null
+    "translator": null
   },
   [
     1,

@@ -1,23 +1,25 @@
 [
   {
-    "id": "63",
-    "place_of_revelation": "madinah",
-    "transliterated_name": "Al-Munafiqun",
-    "translated_name": "The Hypocrites",
+    "id": 63,
+    "city": "madinah",
+    "name": {
+      "translated": "The Hypocrites",
+      "transliterated": "Al-Munafiqun",
+      "codepoints": [
+        1575,
+        1604,
+        1605,
+        1606,
+        1575,
+        1601,
+        1602,
+        1608,
+        1606
+      ]
+    },
     "ayahs": 11,
     "slug": "al-munafiqun",
-    "codepoints": [
-      1575,
-      1604,
-      1605,
-      1606,
-      1575,
-      1601,
-      1602,
-      1608,
-      1606
-    ],
-    "translated_by": "Muhammad Hamidullah"
+    "translator": "Muhammad Hamidullah"
   },
   [
     1,

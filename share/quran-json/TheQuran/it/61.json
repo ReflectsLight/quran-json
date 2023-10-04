@@ -1,18 +1,20 @@
 [
   {
-    "id": "61",
-    "place_of_revelation": "madinah",
-    "transliterated_name": "As-Saf",
-    "translated_name": "The Ranks",
+    "id": 61,
+    "city": "madinah",
+    "name": {
+      "translated": "The Ranks",
+      "transliterated": "As-Saf",
+      "codepoints": [
+        1575,
+        1604,
+        1589,
+        1601
+      ]
+    },
     "ayahs": 14,
     "slug": "as-saf",
-    "codepoints": [
-      1575,
-      1604,
-      1589,
-      1601
-    ],
-    "translated_by": "Hamza Roberto Piccardo"
+    "translator": "Hamza Roberto Piccardo"
   },
   [
     1,

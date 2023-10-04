@@ -1,22 +1,24 @@
 [
   {
-    "id": "21",
-    "place_of_revelation": "makkah",
-    "transliterated_name": "Al-Anbya",
-    "translated_name": "The Prophets",
+    "id": 21,
+    "city": "makkah",
+    "name": {
+      "translated": "The Prophets",
+      "transliterated": "Al-Anbya",
+      "codepoints": [
+        1575,
+        1604,
+        1571,
+        1606,
+        1576,
+        1610,
+        1575,
+        1569
+      ]
+    },
     "ayahs": 112,
     "slug": "al-anbya",
-    "codepoints": [
-      1575,
-      1604,
-      1571,
-      1606,
-      1576,
-      1610,
-      1575,
-      1569
-    ],
-    "translated_by": null
+    "translator": null
   },
   [
     1,

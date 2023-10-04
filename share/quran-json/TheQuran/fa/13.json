@@ -1,19 +1,21 @@
 [
   {
-    "id": "13",
-    "place_of_revelation": "madinah",
-    "transliterated_name": "Ar-Ra'd",
-    "translated_name": "The Thunder",
+    "id": 13,
+    "city": "madinah",
+    "name": {
+      "translated": "The Thunder",
+      "transliterated": "Ar-Ra'd",
+      "codepoints": [
+        1575,
+        1604,
+        1585,
+        1593,
+        1583
+      ]
+    },
     "ayahs": 43,
     "slug": "ar-rad",
-    "codepoints": [
-      1575,
-      1604,
-      1585,
-      1593,
-      1583
-    ],
-    "translated_by": "Hussein Taji Kal Dari"
+    "translator": "Hussein Taji Kal Dari"
   },
   [
     1,

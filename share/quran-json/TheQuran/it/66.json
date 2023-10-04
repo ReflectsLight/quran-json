@@ -1,21 +1,23 @@
 [
   {
-    "id": "66",
-    "place_of_revelation": "madinah",
-    "transliterated_name": "At-Tahrim",
-    "translated_name": "The Prohibition",
+    "id": 66,
+    "city": "madinah",
+    "name": {
+      "translated": "The Prohibition",
+      "transliterated": "At-Tahrim",
+      "codepoints": [
+        1575,
+        1604,
+        1578,
+        1581,
+        1585,
+        1610,
+        1605
+      ]
+    },
     "ayahs": 12,
     "slug": "at-tahrim",
-    "codepoints": [
-      1575,
-      1604,
-      1578,
-      1581,
-      1585,
-      1610,
-      1605
-    ],
-    "translated_by": "Hamza Roberto Piccardo"
+    "translator": "Hamza Roberto Piccardo"
   },
   [
     1,

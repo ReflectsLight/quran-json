@@ -1,22 +1,24 @@
 [
   {
-    "id": "100",
-    "place_of_revelation": "makkah",
-    "transliterated_name": "Al-'Adiyat",
-    "translated_name": "The Courser",
+    "id": 100,
+    "city": "makkah",
+    "name": {
+      "translated": "The Courser",
+      "transliterated": "Al-'Adiyat",
+      "codepoints": [
+        1575,
+        1604,
+        1593,
+        1575,
+        1583,
+        1610,
+        1575,
+        1578
+      ]
+    },
     "ayahs": 11,
     "slug": "al-adiyat",
-    "codepoints": [
-      1575,
-      1604,
-      1593,
-      1575,
-      1583,
-      1610,
-      1575,
-      1578
-    ],
-    "translated_by": "Hamza Roberto Piccardo"
+    "translator": "Hamza Roberto Piccardo"
   },
   [
     1,
