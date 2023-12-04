@@ -1,15 +1,11 @@
-<p align="left">
-  <strong>About</strong>
-</p>
+## About
 
 quran-json is a dual purpose project where on the one hand it provides a
 command-line utility for downloading the content of The Quran in multiple
 languages, and on the other hand it provides a copy of the content that
 can be downloaded. The content is provided in the JSON format.
 
-<p align="left">
-  <strong>share/</strong>
-</p>
+## share/
 
 * [share/quran-json/TheQuran/ar/](share/quran-json/TheQuran/ar/) contains The Quran in its original Arabic.
 * [share/quran-json/TheQuran/en/](share/quran-json/TheQuran/en/) contains an English translation of The Quran.
@@ -33,9 +29,7 @@ content of the ayah.
 
 See [Surah Al-Fatihah (English)](share/quran-json/TheQuran/en/1.json) for an example.
 
-<p align=left">
-  <strong>bin/</strong>
-</p>
+## bin/
 
 The [bin/quran-json](bin/quran-json) executable is a utility for downloading
 the content of The Quran in multiple languages.
@@ -49,9 +43,7 @@ Usage: quran-json pull [OPTIONS]
   -u, --update           Update surah metadata
 </pre>
 
-<p align="left">
-  <strong>Thanks</strong>
-</p>
+## Thanks
 
 First and foremost, Alhamdulillah.
 
@@ -68,9 +60,7 @@ And thanks to the translators of the content:
   * _Muhammad Hamidullah_ for the French translation.
   * _Hamza Roberto Piccardo_ for the Italian translation.
 
-<p align="left">
-  <strong>License</strong>
-</p>
+## License
 
 The "source code" is released under the [GPL](./LICENSE) license.
 <br>
