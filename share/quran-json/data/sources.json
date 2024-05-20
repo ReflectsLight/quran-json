@@ -34,14 +34,14 @@
   },
   "fa": {
     "http": {
-      "hostname": "quran.com",
-      "path": "/fa/%{surah_no}/%{ayah_no}",
-      "vars": ["surah_no", "ayah_no"]
+      "hostname": "www.searchtruth.com",
+      "path": "/chapter_display.php?chapter=%{surah_no}&translator=24",
+      "vars": ["surah_no"]
     },
     "dest": {
       "dir": "%{share_dir}/TheQuran/fa"
     },
-    "translated_by": "Hussein Taji Kal Dari"
+    "translated_by": "Hussain Ansarian"
   },
   "nl": {
     "http": {
