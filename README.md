@@ -45,23 +45,23 @@ Usage: quran-json pull [OPTIONS]
 
 ## Thanks
 
-First and foremost, Alhamdulillah.
+Alhamdulillah
 
 Thanks to the following websites for providing the downloadable content:
 
-  * https://searchtruth.com for the original Arabic, and the Italian translation.
-  * https://quran.com for the English, Farsi, Portuguese, Dutch, and French translations.
+  * https://searchtruth.com for the original Arabic, and the Farsi, Italian translations
+  * https://quran.com for the English, Portuguese, Dutch, and French translations
 
-And thanks to the translators of the content:
+Thanks to the translators:
 
-  * _Dr. Mustafa Khattab_ for the English translation.
-  * _Hussein Taji Kal Dari_ for the Farsi translation.
-  * _Sofian S. Siregar_ for the Dutch translation.
-  * _Muhammad Hamidullah_ for the French translation.
-  * _Hamza Roberto Piccardo_ for the Italian translation.
+  * _Dr. Mustafa Khattab_ for the English translation
+  * _Hussain Ansarian_ for the Farsi translation
+  * _Sofian S. Siregar_ for the Dutch translation
+  * _Muhammad Hamidullah_ for the French translation
+  * _Hamza Roberto Piccardo_ for the Italian translation
 
 ## License
 
-The "source code" is released under the [GPL](./LICENSE) license.
+The "source code" is released under the [GPL](./LICENSE) license
 <br>
-The content is copyrighted to the translators (listed above).
+The translators hold the copyright for the translated content
