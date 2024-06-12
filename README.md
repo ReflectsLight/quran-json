@@ -16,6 +16,16 @@ and https://www.searchtruth.com.
 
 See [Surah Al-Fatihah (English)](share/quran-json/TheQuran/en/1.json) for an example
 
+## Usage
+
+    # Clone
+    git clone https://github.com/ReflectsLight/quran-json
+    cd quran-json
+
+    # Install
+    bundle install
+    bundle exec ruby bin/quran-json --help
+
 ## Thanks
 
 Alhamdulillah
