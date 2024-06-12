@@ -1,2 +1,3 @@
 ---
 BUNDLE_PATH: ".gems"
+BUNDLE_BUILD__NOKOGIRI: "--enable-system-libraries"
