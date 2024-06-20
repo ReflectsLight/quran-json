@@ -1,8 +1,7 @@
 ## About
 
-This repository contains The Noble Quran, and multiple
-translations that have been sourced from https://quran.com,
-and https://www.searchtruth.com.
+This repository contains The Noble Quran in its original Arabic, 
+alongside multiple translations.
 
 ## share/
 
@@ -16,15 +15,12 @@ and https://www.searchtruth.com.
 
 See [Surah Al-Fatihah (English)](share/quran-json/TheQuran/en/1.json) for an example
 
-## Usage
+## Install
 
-    # Clone
-    git clone https://github.com/ReflectsLight/quran-json
-    cd quran-json
-
-    # Install
-    bundle install
-    bundle exec ruby bin/quran-json --help
+    user@localhost$ git clone https://github.com/ReflectsLight/quran-json
+    user@localhost$ cd quran-json
+    user@localhost$ bundle install
+    user@localhost$ bundle exec ruby bin/quran-json --help
 
 ## Thanks
 
