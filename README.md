@@ -17,6 +17,8 @@ See [Surah Al-Fatihah (English)](share/quran-json/TheQuran/en/1.json) for an exa
 
 ## Install
 
+quran-json can be installed via git:
+
     user@localhost$ git clone https://github.com/ReflectsLight/quran-json
     user@localhost$ cd quran-json
     user@localhost$ bundle install
