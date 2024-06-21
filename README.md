@@ -5,15 +5,15 @@ alongside multiple translations.
 
 ## share/
 
-* [share/quran-json/TheQuran/ar/](share/quran-json/TheQuran/ar/) contains The Noble Quran
-* [share/quran-json/TheQuran/en/](share/quran-json/TheQuran/en/) contains an English translation
-* [share/quran-json/TheQuran/fa/](share/quran-json/TheQuran/fa/) contains a Farsi translation
-* [share/quran-json/TheQuran/pt/](share/quran-json/TheQuran/pt/) contains a Portuguese translation
-* [share/quran-json/TheQuran/nl/](share/quran-json/TheQuran/nl/) contains a Dutch translation
-* [share/quran-json/TheQuran/fr/](share/quran-json/TheQuran/fr/) contains a French translation
-* [share/quran-json/TheQuran/it/](share/quran-json/TheQuran/it/) contains an Italian translation
+* [share/quran-json/TheNobleQuran/ar/](share/quran-json/TheNobleQuran/ar/) contains The Noble Quran
+* [share/quran-json/TheNobleQuran/en/](share/quran-json/TheNobleQuran/en/) contains an English translation
+* [share/quran-json/TheNobleQuran/fa/](share/quran-json/TheNobleQuran/fa/) contains a Farsi translation
+* [share/quran-json/TheNobleQuran/pt/](share/quran-json/TheNobleQuran/pt/) contains a Portuguese translation
+* [share/quran-json/TheNobleQuran/nl/](share/quran-json/TheNobleQuran/nl/) contains a Dutch translation
+* [share/quran-json/TheNobleQuran/fr/](share/quran-json/TheNobleQuran/fr/) contains a French translation
+* [share/quran-json/TheNobleQuran/it/](share/quran-json/TheNobleQuran/it/) contains an Italian translation
 
-See [Surah Al-Fatihah (English)](share/quran-json/TheQuran/en/1.json) for an example
+See [Surah Al-Fatihah (English)](share/quran-json/TheNobleQuran/en/1.json) for an example
 
 ## Install
 

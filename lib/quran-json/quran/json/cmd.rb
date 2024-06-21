@@ -18,7 +18,7 @@ module Quran::JSON::Cmd
   end
 
   def quran_dir
-    File.join(share_dir, "TheQuran")
+    File.join(share_dir, "TheNobleQuran")
   end
 
   def locale_dir
