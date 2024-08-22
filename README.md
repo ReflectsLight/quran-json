@@ -26,7 +26,7 @@ quran-json can be installed via git:
 
 ## Thanks
 
-Alhamdulillah
+الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ
 
 Thanks to the following websites for providing the downloadable content:
 
