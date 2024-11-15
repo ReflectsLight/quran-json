@@ -1,3 +1,7 @@
+<p align="center">
+الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ
+</p>
+
 ## About
 
 This repository contains The Noble Quran in its original Arabic, 
@@ -15,31 +19,20 @@ alongside multiple translations.
 
 See [Surah Al-Fatihah (English)](share/quran-json/TheNobleQuran/en/1.json) for an example
 
-## Install
+## Credit
 
-quran-json can be installed via git:
-
-    user@localhost$ git clone https://github.com/ReflectsLight/quran-json
-    user@localhost$ cd quran-json
-    user@localhost$ bundle install
-    user@localhost$ bundle exec ruby bin/quran-json --help
-
-## Thanks
-
-الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ
-
-Thanks to the following websites for providing the downloadable content:
-
-  * https://quran.com for the English, Portuguese, Dutch, and French translations
-  * https://searchtruth.com for the original Arabic, and the Farsi, Italian translations
-
-Thanks to the translators:
+**Translations**
 
   * __Dr. Mustafa Khattab__ for the English translation
   * __Hussain Ansarian__ for the Farsi translation
   * __Sofian S. Siregar__ for the Dutch translation
   * __Muhammad Hamidullah__ for the French translation
   * __Hamza Roberto Piccardo__ for the Italian translation
+
+**Sources**
+
+  * https://quran.com for the English, Portuguese, Dutch, and French translations
+  * https://searchtruth.com for the original Arabic, and the Farsi, Italian translations
 
 ## License
 
