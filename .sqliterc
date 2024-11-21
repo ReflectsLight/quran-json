@@ -1,4 +1,0 @@
-PRAGMA case_sensitive_like=ON;
-pragma FOREIGN_KEYS = on;
-.headers on
-.mode column

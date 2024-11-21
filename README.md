@@ -36,6 +36,4 @@ See [Surah Al-Fatihah (English)](share/quran-json/TheNobleQuran/en/1.json) for a
 
 ## License
 
-The "source code" is released under the [GPL](./LICENSE) license
-<br>
 The translators hold the copyright for the translated content
