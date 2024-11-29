@@ -34,6 +34,12 @@ See [Surah Al-Fatihah (English)](share/quran-json/TheNobleQuran/en/1.json) for a
   * https://quran.com for the English, Portuguese, Dutch, and French translations
   * https://searchtruth.com for the original Arabic, and the Farsi, Italian translations
 
+## Sources
+
+* [github.com/@ReflectsLight](https://github.com/ReflectsLight/quran-json)
+* [gitlab.com/@ReflectsLight](https://gitlab.com/ReflectsLight/quran-json)
+* [brew.bsd.cafe/@ReflectsLight](https://brew.bsd.cafe/ReflectsLight/quran-json)
+
 ## License
 
 The translators hold the copyright for the translated content
