@@ -38,6 +38,7 @@ See [Surah Al-Fatihah (English)](share/quran-json/TheNobleQuran/en/1.json) for a
 
 * [github.com/@ReflectsLight](https://github.com/ReflectsLight/quran-json)
 * [gitlab.com/@ReflectsLight](https://gitlab.com/ReflectsLight/quran-json)
+* [codeberg.org/@ReflectsLight](https://codeberg.org/ReflectsLight/quran-json)
 * [brew.bsd.cafe/@ReflectsLight](https://brew.bsd.cafe/ReflectsLight/quran-json)
 
 ## License
